@@ -1,0 +1,5 @@
+# ignore all temporary xlsx files
+~$*.xlsx
+# ignore these folders
+.idea
+__pycache__
