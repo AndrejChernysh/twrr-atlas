@@ -1,5 +1,7 @@
 # ignore all temporary xlsx files
 ~$*.xlsx
+# ignore desktop.ini
+desktop.ini
 # ignore these folders
 .idea
 __pycache__
