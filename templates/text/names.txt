@@ -1,0 +1,4 @@
+
+#for @Name in @Get.AllNamesDistinct():
+{@{Name.Id}}@{Name.Text}
+#end

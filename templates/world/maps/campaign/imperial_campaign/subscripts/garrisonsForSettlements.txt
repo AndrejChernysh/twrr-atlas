@@ -1,0 +1,42 @@
+
+monitor_event BuildingCompleted TrueCondition
+and SettlementBuildingExists = garrison
+    destroy_building "local" garrison
+    #for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+        if RandomPercent < 15
+            #for @Faction in @Get.AllFactions():
+                if I_SettlementOwner local = @Faction.Id
+                    console_command create_unit local_settlement "@{Faction.getRandomStarterUnitLand().Id}"
+                    inc_counter UnitCount 1
+                end_if
+            #end
+            console_command reseed_random
+        end_if
+    #end
+    if I_CompareCounter UnitCount = 0
+        @Scripter.MessageInfo("No garrison units recruited", "The emergency garrison recruitment order in your settlement was not successful - no units could be recruited.")
+    end_if
+    #for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter UnitCount = @i
+        @Scripter.MessageInfo("@{i} garrison units recruited", "The emergency garrison recruitment order in your settlement was successful - @{i} units could be recruited.")
+    end_if
+    #end
+    set_counter UnitCount 0
+end_monitor
+
+monitor_event FactionTurnStart FactionType slave
+#for @Faction in @Get.AllFactions():
+    if not I_LocalFaction @Faction.Id
+        #for @Region in @Get.AllRegions():
+            if I_CompareCounter IsUnderSiege@{Region.UID} = 1
+            and I_SettlementOwner @{Region.IdCity} = @Faction.Id
+                console_command add_population @{Region.IdCity} -350
+                console_command create_unit @{Region.IdCity} "@{Faction.getRandomStarterUnitLand("missiles").Id}"
+                console_command create_unit @{Region.IdCity} "@{Faction.getRandomStarterUnitLand("missiles").Id}"
+                @Region.scriptFireInCity()
+                @Region.scriptFireInRegion()
+            end_if
+        #end
+    end_if
+#end
+end_monitor

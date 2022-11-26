@@ -1,0 +1,377 @@
+navy
+{
+#for @Faction in @Get.AllFactions():
+	faction @Faction.Id
+	{
+		large 	data/models_off_map/bireme_OFF_MAP.CAS	100 0
+		medium	data/models_off_map/bireme_OFF_MAP.CAS	100 0
+		small	data/models_off_map/bireme_OFF_MAP.CAS	100 0
+	}
+#end
+}
+
+settlement
+{
+	culture roman
+	{
+		level village
+        {
+            data/models_building/offmap_village_dummy.cas	        200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_roman.cas	        200         0
+		}
+
+		level large_town
+        {
+            data/models_building/offmap_town_roman.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_city_roman.cas 	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_city_roman.cas 	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_city_roman.cas	        200         0
+        }
+	}
+
+	culture barbarian
+	{
+		level village
+        {
+            data/models_building/offmap_village_dummy.cas	        200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_barb.cas	        200         0
+        }
+
+		level large_town
+        {
+            data/models_building/offmap_town_barb.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_town_barb.cas 	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_town_barb.cas	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_town_barb.cas	        200         0
+        }
+	}
+
+	culture carthaginian
+	{
+		level village
+        {
+            data/models_building/offmap_village_dummy.cas	        200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level large_town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_city_east.cas 	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_city_east.cas  	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_city_east.cas 	        200         0
+        }
+	}
+
+	culture greek
+	{
+		level village
+        {
+            data/models_building/offmap_village_dummy.cas	    200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_roman.cas	        200         0
+        }
+
+		level large_town
+        {
+            data/models_building/offmap_town_roman.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_city_roman.cas 	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_city_roman.cas 	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_city_roman.cas	        200         0
+        }
+	}
+
+	culture egyptian
+	{
+		level village
+        {
+            data/models_building/offmap_village_dummy.cas	        200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level large_town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_city_east.cas 	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_city_east.cas	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_city_east.cas	        200         0
+        }
+	}
+
+	culture eastern
+	{
+		level village
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level large_town
+        {
+            data/models_building/offmap_town_east.cas	        200         0
+        }
+
+		level city
+        {
+            data/models_building/offmap_city_east.cas	        200         0
+        }
+
+		level large_city
+        {
+            data/models_building/offmap_city_east.cas 	        200         0
+        }
+
+		level huge_city
+        {
+            data/models_building/offmap_city_east.cas	        200         0
+        }
+	}
+}
+
+wonder
+{
+	;temple					data/models_strat/wonder_artemis.cas		        200 0
+	;pyramids_and_sphinx 			data/models_strat/wonder_pyramids.cas		200 0
+	;statue					data/models_strat/wonder_artemis.cas		        200 0
+	;mausoleum	    			data/models_strat/wonder_mausoleum.CAS		    200 0
+	;pharos					data/models_strat/wonder_pharos.cas			        200 0
+	;colossus					data/models_strat/wonder_colossus.cas			200 0
+	;stonehenge				data/models_strat/icon_colossus.cas			    	200 0
+	;barge					data/models_strat/icon_colossus.cas			    	200 0
+	;gardens					data/models_strat/wonder_gardens.cas			200 0
+
+	;; Changes for Rome HD
+	temple					data/models_building/rhd_temple_to_artemis.cas		        	200 0
+	pyramids_and_sphinx 			data/models_building/rhd_pyramids_of_giza.cas			200 0
+	statue					data/models_strat/rhd_zeus.cas		        				200 0
+	mausoleum	    			data/models_building/rhd_mausoleum_halicarnassus.CAS		200 0
+	pharos					data/models_building/rhd_pharos.cas			        		200 0
+	colossus					data/models_strat/rhd_colossus_of_rhodes.cas			200 0
+	stonehenge				data/models_strat/rhd_colossus_of_rhodes.cas			    200 0
+	barge					data/models_strat/rhd_colossus_of_rhodes.cas			    200 0
+	gardens					data/models_building/rhd_hanging_gardens_of_babylon.cas		200 0
+}
+
+port
+{
+	culture roman
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_roman.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+	}
+
+	culture barbarian
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_barb.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_barb.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_barb.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_barb.cas	        200         0
+		}
+	}
+
+	culture carthaginian
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_east.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+	}
+
+	culture greek
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_roman.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_roman.cas	        200         0
+		}
+	}
+
+	culture egyptian
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_east.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+	}
+
+	culture eastern
+	{
+		level fishing_village
+		{
+			data/models_building/offmap_fishing_village_east.CAS	        200         0
+		}
+
+		level sea_port
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level shipwright
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+
+		level dockyard
+		{
+            data/models_building/offmap_port_east.cas	        200         0
+		}
+	}
+}

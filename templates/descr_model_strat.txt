@@ -1,0 +1,865 @@
+ignore_registry
+
+type				armenia_admiral
+skeleton			strat_navy
+male
+pbr_texture armenia, data/models_strat/textures/boat_01_pbr.tga
+texture				armenia, data/models_strat/textures/boat_01_base_armenia.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type assassin
+skeleton			strat_assassin
+scale				0.7
+male
+body Bulky
+angry_face yes
+medieval_features no
+tired Tired
+aged 0.00
+pbr_texture data/characters/textures/strat_assassin_greek_cities_pbr.tga
+#for @Faction in @Get.AllFactions():
+texture @{Faction.Id}, data/characters/textures/assassin_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_assassin_romans_scipii_African
+no_variation model African data/characters/strat_assassin_romans_scipii_African_no_variation
+model Arabic data/characters/strat_assassin_romans_scipii_Arabic
+no_variation model Arabic data/characters/strat_assassin_romans_scipii_Arabic_no_variation
+model Caucasian data/characters/strat_assassin_romans_scipii_Caucasian
+no_variation model Caucasian data/characters/strat_assassin_romans_scipii_Caucasian_no_variation
+model EastAsian data/characters/strat_assassin_romans_scipii_Caucasian
+no_variation model EastAsian data/characters/strat_assassin_romans_scipii_Caucasian_no_variation
+model Egyptian data/characters/strat_assassin_romans_scipii_Caucasian
+no_variation model Egyptian data/characters/strat_assassin_romans_scipii_Caucasian_no_variation
+model Indian data/characters/strat_assassin_romans_scipii_Caucasian
+no_variation model Indian data/characters/strat_assassin_romans_scipii_Caucasian_no_variation
+model Mediterranean data/characters/strat_assassin_romans_scipii_Caucasian
+no_variation model Mediterranean data/characters/strat_assassin_romans_scipii_Caucasian_no_variation
+
+type				briton_admiral
+skeleton			strat_navy
+male
+pbr_texture britons, data/models_strat/textures/boat_03_pbr.tga
+texture				britons, data/models_strat/textures/boat_03_base_britannia.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type				brutii_admiral
+skeleton			strat_navy
+male
+pbr_texture romans_brutii, data/models_strat/textures/boat_04_pbr.tga
+texture				romans_brutii, data/models_strat/textures/boat_04_base_brutii.tga
+model_flexi			data/models_strat/boat_04.cas, max
+no_variation model_flexi			data/models_strat/boat_04.cas, max
+
+type				carthage_admiral
+skeleton			strat_navy
+male
+pbr_texture carthage, data/models_strat/textures/boat_05_pbr.tga
+texture				carthage, data/models_strat/textures/boat_05_base_carthage.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				dacia_admiral
+skeleton			strat_navy
+male
+pbr_texture dacia, data/models_strat/textures/boat_03_pbr.tga
+texture				dacia, data/models_strat/textures/boat_03_base_dacia.tga
+model_flexi			data/models_strat/boat_03.cas, max
+no_variation model_flexi			data/models_strat/boat_03.cas, max
+
+type diplomat
+skeleton			strat_diplomat
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 1.00
+pbr_texture data/characters/textures/strat_diplomat_egypt_pbr.tga
+#for @Faction in @Get.AllFactions():
+texture @{Faction.Id}, data/characters/textures/diplomat_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_diplomat_romans_julii_African
+no_variation model African data/characters/strat_diplomat_romans_julii_African_no_variation
+model Arabic data/characters/strat_diplomat_romans_julii_Arabic
+no_variation model Arabic data/characters/strat_diplomat_romans_julii_Arabic_no_variation
+model Caucasian data/characters/strat_diplomat_romans_julii_Caucasian
+no_variation model Caucasian data/characters/strat_diplomat_romans_julii_Caucasian_no_variation
+model EastAsian data/characters/strat_diplomat_romans_julii_Caucasian
+no_variation model EastAsian data/characters/strat_diplomat_romans_julii_Caucasian_no_variation
+model Egyptian data/characters/strat_diplomat_romans_julii_Caucasian
+no_variation model Egyptian data/characters/strat_diplomat_romans_julii_Caucasian_no_variation
+model Indian data/characters/strat_diplomat_romans_julii_Caucasian
+no_variation model Indian data/characters/strat_diplomat_romans_julii_Caucasian_no_variation
+model Mediterranean data/characters/strat_diplomat_romans_julii_Caucasian
+no_variation model Mediterranean data/characters/strat_diplomat_romans_julii_Caucasian_no_variation
+
+type				slave_admiral
+skeleton			strat_navy
+male
+#for @Faction in @Get.AllFactions():pbr_texture @{Faction.Id}, data/models_strat/textures/boat_05_pbr.tga
+#end
+#for @Faction in @Get.AllFactions():texture @{Faction.Id}, data/models_strat/textures/boat_05_base_rebels.tga
+#end
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type merchant
+skeleton			strat_diplomat
+scale				0.7
+male
+body Overweight
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_merchant_greek_cities_pbr.tga
+#for @Faction in @Get.AllFactions():
+texture @{Faction.Id}, data/characters/textures/merchant_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_merchant_greek_cities_African
+no_variation model African data/characters/strat_merchant_greek_cities_African_no_variation
+model Arabic data/characters/strat_merchant_greek_cities_Arabic
+no_variation model Arabic data/characters/strat_merchant_greek_cities_Arabic_no_variation
+model Caucasian data/characters/strat_merchant_greek_cities_Caucasian
+no_variation model Caucasian data/characters/strat_merchant_greek_cities_Caucasian_no_variation
+model EastAsian data/characters/strat_merchant_greek_cities_EastAsian
+no_variation model EastAsian data/characters/strat_merchant_greek_cities_EastAsian_no_variation
+model Egyptian data/characters/strat_merchant_greek_cities_Egyptian
+no_variation model Egyptian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+model Indian data/characters/strat_merchant_greek_cities_Egyptian
+no_variation model Indian data/characters/strat_merchant_greek_cities_Egyptian_no_variation
+model Mediterranean data/characters/strat_merchant_greek_cities_Mediterranean
+no_variation model Mediterranean data/characters/strat_merchant_greek_cities_Mediterranean_no_variation
+
+type				pontus_general					; Not sure if character is used - Currently references original data
+skeleton			strat_navy
+male
+pbr_texture slave, data/models_strat/textures/boat_05_pbr.tga
+texture				slave, data/models_strat/textures/boat_05_base_pontus.tga
+model_flexi			data/models_strat/boat_05.cas, max
+no_variation model_flexi			data/models_strat/boat_05.cas, max
+
+type				pontus_named					; Not sure if character is used - Currently references original data
+skeleton			strat_navy
+male
+pbr_texture slave, data/models_strat/textures/boat_01_pbr.tga
+texture				slave, data/models_strat/textures/boat_01_base_pontus.tga
+model_flexi			data/models_strat/boat_01.cas, max
+no_variation model_flexi			data/models_strat/boat_01.cas, max
+
+type sm_barb_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired Tired
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_barb_general_britons_pbr.tga
+#for @Faction in @Get.FactionsByCulture("barbarian"):
+texture @{Faction.Id}, data/characters/textures/sm_barb_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_barb_general_gauls_African
+model britons, African data/characters/strat_sm_barb_general_britons_African
+model dacia, African data/characters/strat_sm_barb_general_dacia_African
+model scythia, African data/characters/strat_sm_barb_general_scythia_African
+model spain, African data/characters/strat_sm_barb_general_spain_African
+no_variation model African data/characters/strat_sm_barb_general_gauls_African_no_variation
+no_variation model britons, African data/characters/strat_sm_barb_general_britons_African_no_variation
+no_variation model dacia, African data/characters/strat_sm_barb_general_dacia_African_no_variation
+no_variation model scythia, African data/characters/strat_sm_barb_general_scythia_African_no_variation
+no_variation model spain, African data/characters/strat_sm_barb_general_spain_African_no_variation
+model Arabic data/characters/strat_sm_barb_general_britons_Arabic
+model dacia, Arabic data/characters/strat_sm_barb_general_dacia_Arabic
+model gauls, Arabic data/characters/strat_sm_barb_general_gauls_Arabic
+model scythia, Arabic data/characters/strat_sm_barb_general_dacia_Arabic
+model spain, Arabic data/characters/strat_sm_barb_general_spain_Arabic
+no_variation model Arabic data/characters/strat_sm_barb_general_britons_Arabic_no_variation
+no_variation model dacia, Arabic data/characters/strat_sm_barb_general_dacia_Arabic_no_variation
+no_variation model gauls, Arabic data/characters/strat_sm_barb_general_gauls_Arabic_no_variation
+no_variation model scythia, Arabic data/characters/strat_sm_barb_general_dacia_Arabic_no_variation
+no_variation model spain, Arabic data/characters/strat_sm_barb_general_spain_Arabic_no_variation
+model Caucasian data/characters/strat_sm_barb_general_dacia_Caucasian
+model britons, Caucasian data/characters/strat_sm_barb_general_britons_Caucasian
+model scythia, Caucasian data/characters/strat_sm_barb_general_scythia_Caucasian
+model spain, Caucasian data/characters/strat_sm_barb_general_spain_Caucasian
+no_variation model Caucasian data/characters/strat_sm_barb_general_dacia_Caucasian_no_variation
+no_variation model britons, Caucasian data/characters/strat_sm_barb_general_britons_Caucasian_no_variation
+no_variation model scythia, Caucasian data/characters/strat_sm_barb_general_scythia_Caucasian_no_variation
+no_variation model spain, Caucasian data/characters/strat_sm_barb_general_spain_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_barb_general_britons_EastAsian
+model dacia, EastAsian data/characters/strat_sm_barb_general_dacia_EastAsian
+model spain, EastAsian data/characters/strat_sm_barb_general_dacia_EastAsian
+no_variation model EastAsian data/characters/strat_sm_barb_general_britons_EastAsian_no_variation
+no_variation model dacia, EastAsian data/characters/strat_sm_barb_general_dacia_EastAsian_no_variation
+no_variation model spain, EastAsian data/characters/strat_sm_barb_general_dacia_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_barb_general_dacia_Egyptian
+model britons, Egyptian data/characters/strat_sm_barb_general_britons_Egyptian
+model gauls, Egyptian data/characters/strat_sm_barb_general_britons_Egyptian
+no_variation model Egyptian data/characters/strat_sm_barb_general_dacia_Egyptian_no_variation
+no_variation model britons, Egyptian data/characters/strat_sm_barb_general_britons_Egyptian_no_variation
+no_variation model gauls, Egyptian data/characters/strat_sm_barb_general_britons_Egyptian_no_variation
+model Indian data/characters/strat_sm_barb_general_gauls_Indian
+model britons, Indian data/characters/strat_sm_barb_general_britons_Indian
+model dacia, Indian data/characters/strat_sm_barb_general_dacia_Indian
+model germans, Indian data/characters/strat_sm_barb_general_germans_Indian
+model spain, Indian data/characters/strat_sm_barb_general_spain_Indian
+no_variation model Indian data/characters/strat_sm_barb_general_gauls_Indian_no_variation
+no_variation model britons, Indian data/characters/strat_sm_barb_general_britons_Indian_no_variation
+no_variation model dacia, Indian data/characters/strat_sm_barb_general_dacia_Indian_no_variation
+no_variation model germans, Indian data/characters/strat_sm_barb_general_germans_Indian_no_variation
+no_variation model spain, Indian data/characters/strat_sm_barb_general_spain_Indian_no_variation
+model Mediterranean data/characters/strat_sm_barb_general_britons_Mediterranean
+model dacia, Mediterranean data/characters/strat_sm_barb_general_dacia_Mediterranean
+model gauls, Mediterranean data/characters/strat_sm_barb_general_gauls_Mediterranean
+model germans, Mediterranean data/characters/strat_sm_barb_general_germans_Mediterranean
+model scythia, Mediterranean data/characters/strat_sm_barb_general_scythia_Mediterranean
+model spain, Mediterranean data/characters/strat_sm_barb_general_spain_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_barb_general_britons_Mediterranean_no_variation
+no_variation model dacia, Mediterranean data/characters/strat_sm_barb_general_dacia_Mediterranean_no_variation
+no_variation model gauls, Mediterranean data/characters/strat_sm_barb_general_gauls_Mediterranean_no_variation
+no_variation model germans, Mediterranean data/characters/strat_sm_barb_general_germans_Mediterranean_no_variation
+no_variation model scythia, Mediterranean data/characters/strat_sm_barb_general_scythia_Mediterranean_no_variation
+no_variation model spain, Mediterranean data/characters/strat_sm_barb_general_spain_Mediterranean_no_variation
+
+type sm_barb_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Athletic
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_barb_lesser_general_britons_pbr.tga
+#for @Faction in @Get.FactionsByCulture("barbarian"):
+texture @{Faction.Id}, data/characters/textures/sm_barb_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_barb_lesser_general_britons_African
+model dacia, African data/characters/strat_sm_barb_lesser_general_dacia_African
+model gauls, African data/characters/strat_sm_barb_lesser_general_gauls_African
+model germans, African data/characters/strat_sm_barb_lesser_general_germans_African
+model scythia, African data/characters/strat_sm_barb_lesser_general_scythia_African
+model spain, African data/characters/strat_sm_barb_lesser_general_spain_African
+no_variation model African data/characters/strat_sm_barb_lesser_general_britons_African_no_variation
+no_variation model dacia, African data/characters/strat_sm_barb_lesser_general_dacia_African_no_variation
+no_variation model gauls, African data/characters/strat_sm_barb_lesser_general_gauls_African_no_variation
+no_variation model germans, African data/characters/strat_sm_barb_lesser_general_germans_African_no_variation
+no_variation model scythia, African data/characters/strat_sm_barb_lesser_general_scythia_African_no_variation
+no_variation model spain, African data/characters/strat_sm_barb_lesser_general_spain_African_no_variation
+model Arabic data/characters/strat_sm_barb_lesser_general_britons_Arabic
+model dacia, Arabic data/characters/strat_sm_barb_lesser_general_dacia_Arabic
+model germans, Arabic data/characters/strat_sm_barb_lesser_general_germans_Arabic
+model scythia, Arabic data/characters/strat_sm_barb_lesser_general_scythia_Arabic
+model spain, Arabic data/characters/strat_sm_barb_lesser_general_spain_Arabic
+no_variation model Arabic data/characters/strat_sm_barb_lesser_general_britons_Arabic_no_variation
+no_variation model dacia, Arabic data/characters/strat_sm_barb_lesser_general_dacia_Arabic_no_variation
+no_variation model germans, Arabic data/characters/strat_sm_barb_lesser_general_germans_Arabic_no_variation
+no_variation model scythia, Arabic data/characters/strat_sm_barb_lesser_general_scythia_Arabic_no_variation
+no_variation model spain, Arabic data/characters/strat_sm_barb_lesser_general_spain_Arabic_no_variation
+model Caucasian data/characters/strat_sm_barb_lesser_general_britons_Caucasian
+model dacia, Caucasian data/characters/strat_sm_barb_lesser_general_dacia_Caucasian
+model gauls, Caucasian data/characters/strat_sm_barb_lesser_general_gauls_Caucasian
+model scythia, Caucasian data/characters/strat_sm_barb_lesser_general_scythia_Caucasian
+model spain, Caucasian data/characters/strat_sm_barb_lesser_general_spain_Caucasian
+no_variation model Caucasian data/characters/strat_sm_barb_lesser_general_britons_Caucasian_no_variation
+no_variation model dacia, Caucasian data/characters/strat_sm_barb_lesser_general_dacia_Caucasian_no_variation
+no_variation model gauls, Caucasian data/characters/strat_sm_barb_lesser_general_gauls_Caucasian_no_variation
+no_variation model scythia, Caucasian data/characters/strat_sm_barb_lesser_general_scythia_Caucasian_no_variation
+no_variation model spain, Caucasian data/characters/strat_sm_barb_lesser_general_spain_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_barb_lesser_general_britons_EastAsian
+model dacia, EastAsian data/characters/strat_sm_barb_lesser_general_dacia_EastAsian
+model germans, EastAsian data/characters/strat_sm_barb_lesser_general_dacia_EastAsian
+model scythia, EastAsian data/characters/strat_sm_barb_lesser_general_scythia_EastAsian
+model spain, EastAsian data/characters/strat_sm_barb_lesser_general_spain_EastAsian
+no_variation model EastAsian data/characters/strat_sm_barb_lesser_general_britons_EastAsian_no_variation
+no_variation model dacia, EastAsian data/characters/strat_sm_barb_lesser_general_dacia_EastAsian_no_variation
+no_variation model germans, EastAsian data/characters/strat_sm_barb_lesser_general_dacia_EastAsian_no_variation
+no_variation model scythia, EastAsian data/characters/strat_sm_barb_lesser_general_scythia_EastAsian_no_variation
+no_variation model spain, EastAsian data/characters/strat_sm_barb_lesser_general_spain_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_barb_lesser_general_britons_Egyptian
+model gauls, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian
+model germans, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian
+model spain, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian
+no_variation model Egyptian data/characters/strat_sm_barb_lesser_general_britons_Egyptian_no_variation
+no_variation model gauls, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian_no_variation
+no_variation model germans, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian_no_variation
+no_variation model spain, Egyptian data/characters/strat_sm_barb_lesser_general_gauls_Egyptian_no_variation
+model Indian data/characters/strat_sm_barb_lesser_general_gauls_Indian
+model britons, Indian data/characters/strat_sm_barb_lesser_general_britons_Indian
+model dacia, Indian data/characters/strat_sm_barb_lesser_general_dacia_Indian
+model germans, Indian data/characters/strat_sm_barb_lesser_general_germans_Indian
+model spain, Indian data/characters/strat_sm_barb_lesser_general_spain_Indian
+no_variation model Indian data/characters/strat_sm_barb_lesser_general_gauls_Indian_no_variation
+no_variation model britons, Indian data/characters/strat_sm_barb_lesser_general_britons_Indian_no_variation
+no_variation model dacia, Indian data/characters/strat_sm_barb_lesser_general_dacia_Indian_no_variation
+no_variation model germans, Indian data/characters/strat_sm_barb_lesser_general_germans_Indian_no_variation
+no_variation model spain, Indian data/characters/strat_sm_barb_lesser_general_spain_Indian_no_variation
+model Mediterranean data/characters/strat_sm_barb_lesser_general_britons_Mediterranean
+model dacia, Mediterranean data/characters/strat_sm_barb_lesser_general_dacia_Mediterranean
+model gauls, Mediterranean data/characters/strat_sm_barb_lesser_general_gauls_Mediterranean
+model germans, Mediterranean data/characters/strat_sm_barb_lesser_general_germans_Mediterranean
+model scythia, Mediterranean data/characters/strat_sm_barb_lesser_general_scythia_Mediterranean
+model spain, Mediterranean data/characters/strat_sm_barb_lesser_general_spain_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_barb_lesser_general_britons_Mediterranean_no_variation
+no_variation model dacia, Mediterranean data/characters/strat_sm_barb_lesser_general_dacia_Mediterranean_no_variation
+no_variation model gauls, Mediterranean data/characters/strat_sm_barb_lesser_general_gauls_Mediterranean_no_variation
+no_variation model germans, Mediterranean data/characters/strat_sm_barb_lesser_general_germans_Mediterranean_no_variation
+no_variation model scythia, Mediterranean data/characters/strat_sm_barb_lesser_general_scythia_Mediterranean_no_variation
+no_variation model spain, Mediterranean data/characters/strat_sm_barb_lesser_general_spain_Mediterranean_no_variation
+
+type sm_carthage_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired VeryTired
+aged 0.00
+pbr_texture data/characters/textures/carthaginian_general_pbr.tga
+pbr_texture numidia, data/characters/textures/carthaginian_general_numidia_pbr.tga
+pbr_texture spain, data/characters/textures/carthaginian_general_spain_pbr.tga
+#for @Faction in @Get.FactionsByCulture("carthaginian"):
+texture @{Faction.Id}, data/characters/textures/sm_carthage_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/carthaginian_general_carthage_African
+model numidia, African data/characters/carthaginian_general_numidia_African
+model spain, African data/characters/carthaginian_general_spain_African
+no_variation model African data/characters/carthaginian_general_carthage_African_no_variation
+no_variation model numidia, African data/characters/carthaginian_general_numidia_African_no_variation
+no_variation model spain, African data/characters/carthaginian_general_spain_African_no_variation
+model Arabic data/characters/carthaginian_general_Arabic
+model spain, Arabic data/characters/carthaginian_general_spain_Arabic
+no_variation model Arabic data/characters/carthaginian_general_Arabic_no_variation
+no_variation model spain, Arabic data/characters/carthaginian_general_spain_Arabic_no_variation
+model Caucasian data/characters/carthaginian_general_carthage_Caucasian
+model numidia, Caucasian data/characters/carthaginian_general_numidia_Caucasian
+model spain, Caucasian data/characters/carthaginian_general_spain_Caucasian
+no_variation model Caucasian data/characters/carthaginian_general_carthage_Caucasian_no_variation
+no_variation model numidia, Caucasian data/characters/carthaginian_general_numidia_Caucasian_no_variation
+no_variation model spain, Caucasian data/characters/carthaginian_general_spain_Caucasian_no_variation
+model EastAsian data/characters/carthaginian_general_carthage_EastAsian
+model spain, EastAsian data/characters/carthaginian_general_spain_EastAsian
+no_variation model EastAsian data/characters/carthaginian_general_carthage_EastAsian_no_variation
+no_variation model spain, EastAsian data/characters/carthaginian_general_spain_EastAsian_no_variation
+model Egyptian data/characters/carthaginian_general_Egyptian
+model spain, Egyptian data/characters/carthaginian_general_spain_Egyptian
+no_variation model Egyptian data/characters/carthaginian_general_Egyptian_no_variation
+no_variation model spain, Egyptian data/characters/carthaginian_general_spain_Egyptian_no_variation
+model Indian data/characters/carthaginian_general_carthage_Indian
+model numidia, Indian data/characters/carthaginian_general_numidia_Indian
+model spain, Indian data/characters/carthaginian_general_spain_Indian
+no_variation model Indian data/characters/carthaginian_general_carthage_Indian_no_variation
+no_variation model numidia, Indian data/characters/carthaginian_general_numidia_Indian_no_variation
+no_variation model spain, Indian data/characters/carthaginian_general_spain_Indian_no_variation
+model Mediterranean data/characters/carthaginian_general_Mediterranean
+model spain, Mediterranean data/characters/carthaginian_general_spain_Mediterranean
+no_variation model Mediterranean data/characters/carthaginian_general_Mediterranean_no_variation
+no_variation model spain, Mediterranean data/characters/carthaginian_general_spain_Mediterranean_no_variation
+
+type sm_carthage_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired VeryTired
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_carthage_lesser_general_carthage_pbr.tga
+#for @Faction in @Get.FactionsByCulture("carthaginian"):
+texture @{Faction.Id}, data/characters/textures/sm_carthage_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_carthage_lesser_general_carthage_African
+model numidia, African data/characters/strat_sm_carthage_lesser_general_numidia_African
+model spain, African data/characters/strat_sm_carthage_lesser_general_spain_African
+no_variation model African data/characters/strat_sm_carthage_lesser_general_carthage_African_no_variation
+no_variation model numidia, African data/characters/strat_sm_carthage_lesser_general_numidia_African_no_variation
+no_variation model spain, African data/characters/strat_sm_carthage_lesser_general_spain_African_no_variation
+model Arabic data/characters/strat_sm_carthage_lesser_general_carthage_Arabic
+model numidia, Arabic data/characters/strat_sm_carthage_lesser_general_numidia_Arabic
+model spain, Arabic data/characters/strat_sm_carthage_lesser_general_spain_Arabic
+no_variation model Arabic data/characters/strat_sm_carthage_lesser_general_carthage_Arabic_no_variation
+no_variation model numidia, Arabic data/characters/strat_sm_carthage_lesser_general_numidia_Arabic_no_variation
+no_variation model spain, Arabic data/characters/strat_sm_carthage_lesser_general_spain_Arabic_no_variation
+model Caucasian data/characters/strat_sm_carthage_lesser_general_carthage_Caucasian
+model numidia, Caucasian data/characters/strat_sm_carthage_lesser_general_numidia_Caucasian
+model spain, Caucasian data/characters/strat_sm_carthage_lesser_general_spain_Caucasian
+no_variation model Caucasian data/characters/strat_sm_carthage_lesser_general_carthage_Caucasian_no_variation
+no_variation model numidia, Caucasian data/characters/strat_sm_carthage_lesser_general_numidia_Caucasian_no_variation
+no_variation model spain, Caucasian data/characters/strat_sm_carthage_lesser_general_spain_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_carthage_lesser_general_carthage_EastAsian
+model numidia, EastAsian data/characters/strat_sm_carthage_lesser_general_numidia_EastAsian
+no_variation model EastAsian data/characters/strat_sm_carthage_lesser_general_carthage_EastAsian_no_variation
+no_variation model numidia, EastAsian data/characters/strat_sm_carthage_lesser_general_numidia_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_carthage_lesser_general_carthage_Egyptian
+model spain, Egyptian data/characters/strat_sm_carthage_lesser_general_spain_Egyptian
+no_variation model Egyptian data/characters/strat_sm_carthage_lesser_general_carthage_Egyptian_no_variation
+no_variation model spain, Egyptian data/characters/strat_sm_carthage_lesser_general_spain_Egyptian_no_variation
+model Indian data/characters/strat_sm_carthage_lesser_general_carthage_Indian
+model numidia, Indian data/characters/strat_sm_carthage_lesser_general_numidia_Indian
+model spain, Indian data/characters/strat_sm_carthage_lesser_general_spain_Indian
+no_variation model Indian data/characters/strat_sm_carthage_lesser_general_carthage_Indian_no_variation
+no_variation model numidia, Indian data/characters/strat_sm_carthage_lesser_general_numidia_Indian_no_variation
+no_variation model spain, Indian data/characters/strat_sm_carthage_lesser_general_spain_Indian_no_variation
+model Mediterranean data/characters/strat_sm_carthage_lesser_general_carthage_Mediterranean
+model numidia, Mediterranean data/characters/strat_sm_carthage_lesser_general_numidia_Mediterranean
+model spain, Mediterranean data/characters/strat_sm_carthage_lesser_general_spain_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_carthage_lesser_general_carthage_Mediterranean_no_variation
+no_variation model numidia, Mediterranean data/characters/strat_sm_carthage_lesser_general_numidia_Mediterranean_no_variation
+no_variation model spain, Mediterranean data/characters/strat_sm_carthage_lesser_general_spain_Mediterranean_no_variation
+
+type sm_eastern_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_eastern_general_armenia_pbr.tga
+#for @Faction in @Get.FactionsByCulture("eastern"):
+texture @{Faction.Id}, data/characters/textures/sm_eastern_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_eastern_general_armenia_African
+no_variation model African data/characters/strat_sm_eastern_general_armenia_African
+model Arabic data/characters/strat_sm_eastern_general_armenia_Arabic
+no_variation model Arabic data/characters/strat_sm_eastern_general_armenia_Arabic
+model Caucasian data/characters/strat_sm_eastern_general_armenia_Caucasian
+no_variation model Caucasian data/characters/strat_sm_eastern_general_armenia_Caucasian
+model EastAsian data/characters/strat_sm_eastern_general_armenia_EastAsian
+no_variation model EastAsian data/characters/strat_sm_eastern_general_armenia_EastAsian
+model Egyptian data/characters/strat_sm_eastern_general_armenia_Egyptian
+no_variation model Egyptian data/characters/strat_sm_eastern_general_armenia_Egyptian
+model Indian data/characters/strat_sm_eastern_general_armenia_Indian
+no_variation model Indian data/characters/strat_sm_eastern_general_armenia_Indian
+model Mediterranean data/characters/strat_sm_eastern_general_armenia_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_eastern_general_armenia_Mediterranean
+
+type sm_eastern_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/east_crew_pbr.tga
+#for @Faction in @Get.FactionsByCulture("eastern"):
+texture @{Faction.Id}, data/characters/textures/sm_eastern_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_eastern_lesser_general_parthia_African
+model armenia, African data/characters/strat_sm_eastern_lesser_general_armenia_African
+no_variation model African data/characters/strat_sm_eastern_lesser_general_parthia_African_no_variation
+no_variation model armenia, African data/characters/strat_sm_eastern_lesser_general_armenia_African_no_variation
+model Arabic data/characters/strat_sm_eastern_lesser_general_armenia_Arabic
+model parthia, Arabic data/characters/strat_sm_eastern_lesser_general_parthia_Arabic
+model pontus, Arabic data/characters/strat_sm_eastern_lesser_general_pontus_Arabic
+no_variation model Arabic data/characters/strat_sm_eastern_lesser_general_armenia_Arabic_no_variation
+no_variation model parthia, Arabic data/characters/strat_sm_eastern_lesser_general_parthia_Arabic_no_variation
+no_variation model pontus, Arabic data/characters/strat_sm_eastern_lesser_general_pontus_Arabic_no_variation
+model Caucasian data/characters/strat_sm_eastern_lesser_general_armenia_Caucasian
+model parthia, Caucasian data/characters/strat_sm_eastern_lesser_general_parthia_Caucasian
+model pontus, Caucasian data/characters/strat_sm_eastern_lesser_general_pontus_Caucasian
+no_variation model Caucasian data/characters/strat_sm_eastern_lesser_general_armenia_Caucasian_no_variation
+no_variation model parthia, Caucasian data/characters/strat_sm_eastern_lesser_general_parthia_Caucasian_no_variation
+no_variation model pontus, Caucasian data/characters/strat_sm_eastern_lesser_general_pontus_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_eastern_lesser_general_armenia_EastAsian
+model parthia, EastAsian data/characters/strat_sm_eastern_lesser_general_parthia_EastAsian
+model pontus, EastAsian data/characters/strat_sm_eastern_lesser_general_pontus_EastAsian
+no_variation model EastAsian data/characters/strat_sm_eastern_lesser_general_armenia_EastAsian_no_variation
+no_variation model parthia, EastAsian data/characters/strat_sm_eastern_lesser_general_parthia_EastAsian_no_variation
+no_variation model pontus, EastAsian data/characters/strat_sm_eastern_lesser_general_pontus_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_eastern_lesser_general_armenia_Egyptian
+model parthia, Egyptian data/characters/strat_sm_eastern_lesser_general_parthia_Egyptian
+no_variation model Egyptian data/characters/Alex_east_crew_parthia_Egyptian_no_variation
+no_variation model parthia, Egyptian data/characters/strat_sm_eastern_lesser_general_parthia_Egyptian_no_variation
+model Indian data/characters/strat_sm_eastern_lesser_general_armenia_Indian
+model parthia, Indian data/characters/strat_sm_eastern_lesser_general_parthia_Indian
+model pontus, Indian data/characters/strat_sm_eastern_lesser_general_pontus_Indian
+no_variation model Indian data/characters/strat_sm_eastern_lesser_general_armenia_Indian_no_variation
+no_variation model parthia, Indian data/characters/strat_sm_eastern_lesser_general_parthia_Indian_no_variation
+no_variation model pontus, Indian data/characters/east_crew_armenia_Indian_no_variation
+model Mediterranean data/characters/strat_sm_eastern_lesser_general_armenia_Mediterranean
+model pontus, Mediterranean data/characters/strat_sm_eastern_lesser_general_pontus_Mediterranean
+no_variation model Mediterranean data/characters/east_crew_Mediterranean_no_variation
+no_variation model pontus, Mediterranean data/characters/strat_sm_eastern_lesser_general_pontus_Mediterranean_no_variation
+
+type sm_egypt_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body SkinnyAthletic
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_egypt_general_egypt_pbr.tga
+#for @Faction in @Get.FactionsByCulture("egyptian"):
+texture @{Faction.Id}, data/characters/textures/sm_egypt_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_egypt_general_egypt_African
+no_variation model African data/characters/strat_sm_egypt_general_egypt_African_no_variation
+model Arabic data/characters/strat_sm_egypt_general_egypt_Arabic
+no_variation model Arabic data/characters/strat_sm_egypt_general_egypt_Arabic_no_variation
+model Caucasian data/characters/strat_sm_egypt_general_egypt_Caucasian
+no_variation model Caucasian data/characters/strat_sm_egypt_general_egypt_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_egypt_general_egypt_EastAsian
+no_variation model EastAsian data/characters/strat_sm_egypt_general_egypt_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_egypt_general_egypt_Egyptian
+no_variation model Egyptian data/characters/strat_sm_egypt_general_egypt_Egyptian
+model Indian data/characters/strat_sm_egypt_general_egypt_Indian
+no_variation model Indian data/characters/strat_sm_egypt_general_egypt_Indian_no_variation
+model Mediterranean data/characters/strat_sm_egypt_general_egypt_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_egypt_general_egypt_Mediterranean_no_variation
+
+type sm_egypt_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body SkinnyAthletic
+angry_face no
+medieval_features no
+tired Tired
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_egypt_lesser_general_egypt_pbr.tga
+#for @Faction in @Get.FactionsByCulture("egyptian"):
+texture @{Faction.Id}, data/characters/textures/sm_egypt_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_egypt_lesser_general_egypt_African
+no_variation model African data/characters/strat_sm_egypt_lesser_general_egypt_African_no_variation
+model Arabic data/characters/strat_sm_egypt_lesser_general_egypt_Arabic
+no_variation model Arabic data/characters/strat_sm_egypt_lesser_general_egypt_Arabic_no_variation
+model Caucasian data/characters/strat_sm_egypt_lesser_general_egypt_Caucasian
+no_variation model Caucasian data/characters/strat_sm_egypt_lesser_general_egypt_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_egypt_lesser_general_egypt_EastAsian
+no_variation model EastAsian data/characters/strat_sm_egypt_lesser_general_egypt_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_egypt_lesser_general_egypt_Egyptian
+no_variation model Egyptian data/characters/strat_sm_egypt_lesser_general_egypt_Egyptian
+model Indian data/characters/strat_sm_egypt_lesser_general_egypt_Indian
+no_variation model Indian data/characters/strat_sm_egypt_lesser_general_egypt_Indian_no_variation
+model Mediterranean data/characters/strat_sm_egypt_lesser_general_egypt_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_egypt_lesser_general_egypt_Mediterranean_no_variation
+
+type sm_greek_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/greek_general_greek_cities_pbr.tga
+#for @Faction in @Get.FactionsByCulture("greek"):
+texture @{Faction.Id}, data/characters/textures/sm_greek_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/greek_general_thrace_African
+model greek_cities, African data/characters/greek_general_greek_cities_African
+model thrace, African data/characters/greek_general_African
+no_variation model African data/characters/greek_general_thrace_African_no_variation
+no_variation model greek_cities, African data/characters/greek_general_greek_cities_African_no_variation
+no_variation model thrace, African data/characters/greek_general_African_no_variation
+model Arabic data/characters/strat_sm_greek_general_seleucid_Arabic
+model greek_cities, Arabic data/characters/strat_sm_greek_general_greek_cities_Arabic
+model macedon, Arabic data/characters/strat_sm_greek_general_macedon_Arabic
+no_variation model Arabic data/characters/strat_sm_greek_general_seleucid_Arabic_no_variation
+no_variation model greek_cities, Arabic data/characters/greek_general_seleucid_Arabic_no_variation
+no_variation model macedon, Arabic data/characters/strat_sm_greek_general_macedon_Arabic_no_variation
+model Caucasian data/characters/strat_sm_greek_general_greek_cities_Caucasian
+model macedon, Caucasian data/characters/strat_sm_greek_general_macedon_Caucasian
+model seleucid, Caucasian data/characters/strat_sm_greek_general_seleucid_Caucasian
+no_variation model Caucasian data/characters/greek_general_seleucid_Caucasian_no_variation
+no_variation model macedon, Caucasian data/characters/strat_sm_greek_general_macedon_Caucasian_no_variation
+no_variation model seleucid, Caucasian data/characters/strat_sm_greek_general_seleucid_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_greek_general_greek_cities_EastAsian
+model thrace, EastAsian data/characters/strat_sm_greek_general_thrace_EastAsian
+no_variation model EastAsian data/characters/strat_sm_greek_general_greek_cities_EastAsian_no_variation
+no_variation model thrace, EastAsian data/characters/strat_sm_greek_general_thrace_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_greek_general_greek_cities_Egyptian
+model thrace, Egyptian data/characters/strat_sm_greek_general_thrace_Egyptian
+no_variation model Egyptian data/characters/greek_general_Egyptian_no_variation
+no_variation model thrace, Egyptian data/characters/strat_sm_greek_general_thrace_Egyptian_no_variation
+model Indian data/characters/strat_sm_greek_general_greek_cities_Indian
+model seleucid, Indian data/characters/greek_general_thrace_Indian
+no_variation model Indian data/characters/strat_sm_greek_general_greek_cities_Indian_no_variation
+no_variation model seleucid, Indian data/characters/greek_general_thrace_Indian_no_variation
+model Mediterranean data/characters/strat_sm_greek_general_greek_cities_Mediterranean
+model macedon, Mediterranean data/characters/strat_sm_greek_general_macedon_Mediterranean
+model seleucid, Mediterranean data/characters/strat_sm_greek_general_macedon_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_greek_general_greek_cities_Mediterranean_no_variation
+no_variation model macedon, Mediterranean data/characters/greek_general_Mediterranean_no_variation
+no_variation model seleucid, Mediterranean data/characters/greek_general_Mediterranean_no_variation
+
+type sm_greek_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Athletic
+angry_face no
+medieval_features no
+tired VeryTired
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_greek_lesser_general_greek_cities_pbr.tga
+#for @Faction in @Get.FactionsByCulture("greek"):
+texture @{Faction.Id}, data/characters/textures/sm_greek_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_greek_lesser_general_greek_cities_African
+model macedon, African data/characters/strat_sm_greek_lesser_general_macedon_African
+model seleucid, African data/characters/strat_sm_greek_lesser_general_seleucid_African
+model thrace, African data/characters/strat_sm_greek_lesser_general_thrace_African
+no_variation model African data/characters/strat_sm_greek_lesser_general_greek_cities_African_no_variation
+no_variation model macedon, African data/characters/strat_sm_greek_lesser_general_macedon_African_no_variation
+no_variation model seleucid, African data/characters/strat_sm_greek_lesser_general_seleucid_African_no_variation
+no_variation model thrace, African data/characters/strat_sm_greek_lesser_general_thrace_African_no_variation
+model Arabic data/characters/strat_sm_greek_lesser_general_macedon_Arabic
+model greek_cities, Arabic data/characters/strat_sm_greek_lesser_general_greek_cities_Arabic
+model thrace, Arabic data/characters/strat_sm_greek_lesser_general_thrace_Arabic
+no_variation model Arabic data/characters/strat_sm_greek_lesser_general_macedon_Arabic_no_variation
+no_variation model greek_cities, Arabic data/characters/strat_sm_greek_lesser_general_greek_cities_Arabic_no_variation
+no_variation model thrace, Arabic data/characters/strat_sm_greek_lesser_general_thrace_Arabic_no_variation
+model Caucasian data/characters/strat_sm_greek_lesser_general_greek_cities_Caucasian
+model macedon, Caucasian data/characters/strat_sm_greek_lesser_general_macedon_Caucasian
+model seleucid, Caucasian data/characters/strat_sm_greek_lesser_general_seleucid_Caucasian
+model thrace, Caucasian data/characters/strat_sm_greek_lesser_general_thrace_Caucasian
+no_variation model Caucasian data/characters/strat_sm_greek_lesser_general_greek_cities_Caucasian_no_variation
+no_variation model macedon, Caucasian data/characters/strat_sm_greek_lesser_general_macedon_Caucasian_no_variation
+no_variation model seleucid, Caucasian data/characters/strat_sm_greek_lesser_general_seleucid_Caucasian_no_variation
+no_variation model thrace, Caucasian data/characters/strat_sm_greek_lesser_general_thrace_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_greek_lesser_general_greek_cities_EastAsian
+model macedon, EastAsian data/characters/strat_sm_greek_lesser_general_macedon_EastAsian
+model seleucid, EastAsian data/characters/strat_sm_greek_lesser_general_seleucid_EastAsian
+no_variation model EastAsian data/characters/strat_sm_greek_lesser_general_greek_cities_EastAsian_no_variation
+no_variation model macedon, EastAsian data/characters/strat_sm_greek_lesser_general_macedon_EastAsian_no_variation
+no_variation model seleucid, EastAsian data/characters/strat_sm_greek_lesser_general_seleucid_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_greek_lesser_general_greek_cities_Egyptian
+model macedon, Egyptian data/characters/strat_sm_greek_lesser_general_macedon_Egyptian
+no_variation model Egyptian data/characters/strat_sm_greek_lesser_general_greek_cities_Egyptian_no_variation
+no_variation model macedon, Egyptian data/characters/strat_sm_greek_lesser_general_macedon_Egyptian_no_variation
+model Indian data/characters/strat_sm_greek_lesser_general_greek_cities_Indian
+model macedon, Indian data/characters/strat_sm_greek_lesser_general_macedon_Indian
+model seleucid, Indian data/characters/strat_sm_greek_lesser_general_seleucid_Indian
+model thrace, Indian data/characters/strat_sm_greek_lesser_general_thrace_Indian
+no_variation model Indian data/characters/strat_sm_greek_lesser_general_greek_cities_Indian_no_variation
+no_variation model macedon, Indian data/characters/strat_sm_greek_lesser_general_macedon_Indian_no_variation
+no_variation model seleucid, Indian data/characters/strat_sm_greek_lesser_general_seleucid_Indian_no_variation
+no_variation model thrace, Indian data/characters/strat_sm_greek_lesser_general_thrace_Indian_no_variation
+model Mediterranean data/characters/strat_sm_greek_lesser_general_greek_cities_Mediterranean
+model macedon, Mediterranean data/characters/strat_sm_greek_lesser_general_macedon_Mediterranean
+model seleucid, Mediterranean data/characters/strat_sm_greek_lesser_general_seleucid_Mediterranean
+model thrace, Mediterranean data/characters/strat_sm_greek_lesser_general_thrace_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_greek_lesser_general_greek_cities_Mediterranean_no_variation
+no_variation model macedon, Mediterranean data/characters/strat_sm_greek_lesser_general_macedon_Mediterranean_no_variation
+no_variation model seleucid, Mediterranean data/characters/strat_sm_greek_lesser_general_seleucid_Mediterranean_no_variation
+no_variation model thrace, Mediterranean data/characters/strat_sm_greek_lesser_general_thrace_Mediterranean_no_variation
+
+type sm_rebel_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Athletic
+angry_face no
+medieval_features no
+tired VeryTired
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_rebel_general_slave_pbr.tga
+texture data/characters/textures/strat_sm_rebel_general_slave.tga
+model African data/characters/strat_sm_rebel_general_slave_African
+no_variation model African data/characters/strat_sm_rebel_general_slave_African_no_variation
+model Arabic data/characters/strat_sm_rebel_general_slave_Arabic
+no_variation model Arabic data/characters/strat_sm_rebel_general_slave_Arabic_no_variation
+model Caucasian data/characters/strat_sm_rebel_general_slave_Caucasian
+no_variation model Caucasian data/characters/strat_sm_rebel_general_slave_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_rebel_general_slave_EastAsian
+no_variation model EastAsian data/characters/strat_sm_rebel_general_slave_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_rebel_general_slave_Egyptian
+no_variation model Egyptian data/characters/strat_sm_rebel_general_slave_Egyptian_no_variation
+model Indian data/characters/strat_sm_rebel_general_slave_Indian
+no_variation model Indian data/characters/strat_sm_rebel_general_slave_Indian_no_variation
+model Mediterranean data/characters/strat_sm_rebel_general_slave_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_rebel_general_slave_Mediterranean_no_variation
+
+type sm_rebel_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/greek_crew_greek_cities_pbr.tga
+texture data/characters/textures/greek_crew_slave.tga
+model African data/characters/strat_sm_rebel_lesser_general_slave_African
+no_variation model African data/characters/strat_sm_rebel_lesser_general_slave_African_no_variation
+model Arabic data/characters/strat_sm_rebel_lesser_general_slave_Arabic
+no_variation model Arabic data/characters/strat_sm_rebel_lesser_general_slave_Arabic_no_variation
+model Caucasian data/characters/strat_sm_rebel_lesser_general_slave_Caucasian
+no_variation model Caucasian data/characters/strat_sm_rebel_lesser_general_slave_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_rebel_lesser_general_slave_EastAsian
+no_variation model EastAsian data/characters/strat_sm_rebel_lesser_general_slave_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_rebel_lesser_general_slave_Egyptian
+no_variation model Egyptian data/characters/strat_sm_rebel_lesser_general_slave_Egyptian_no_variation
+model Indian data/characters/strat_sm_rebel_lesser_general_slave_Indian
+no_variation model Indian data/characters/strat_sm_rebel_lesser_general_slave_Indian_no_variation
+model Mediterranean data/characters/strat_sm_rebel_lesser_general_slave_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_rebel_lesser_general_slave_Mediterranean_no_variation
+
+type sm_roman_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/Alex_roman_general_romans_brutii_pbr.tga
+#for @Faction in @Get.FactionsByCulture("roman"):
+texture @{Faction.Id}, data/characters/textures/sm_roman_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_roman_general_romans_brutii_African
+model romans_julii, African data/characters/Alex_roman_general_romans_brutii_African
+model romans_scipii, African data/characters/strat_sm_roman_general_romans_scipii_African
+model romans_senate, African data/characters/strat_sm_roman_general_romans_senate_African
+no_variation model African data/characters/strat_sm_roman_general_romans_brutii_African_no_variation
+no_variation model romans_julii, African data/characters/Alex_roman_general_romans_brutii_African_no_variation
+no_variation model romans_scipii, African data/characters/strat_sm_roman_general_romans_scipii_African_no_variation
+no_variation model romans_senate, African data/characters/strat_sm_roman_general_romans_senate_African_no_variation
+model Arabic data/characters/strat_sm_roman_general_romans_brutii_Arabic
+model romans_julii, Arabic data/characters/strat_sm_roman_general_romans_julii_Arabic
+model romans_scipii, Arabic data/characters/strat_sm_roman_general_romans_scipii_Arabic
+model romans_senate, Arabic data/characters/strat_sm_roman_general_romans_senate_Arabic
+no_variation model Arabic data/characters/strat_sm_roman_general_romans_brutii_Arabic_no_variation
+no_variation model romans_julii, Arabic data/characters/strat_sm_roman_general_romans_julii_Arabic_no_variation
+no_variation model romans_scipii, Arabic data/characters/strat_sm_roman_general_romans_scipii_Arabic_no_variation
+no_variation model romans_senate, Arabic data/characters/strat_sm_roman_general_romans_senate_Arabic_no_variation
+model Caucasian data/characters/strat_sm_roman_general_romans_brutii_Caucasian
+model romans_julii, Caucasian data/characters/strat_sm_roman_general_romans_julii_Caucasian
+model romans_scipii, Caucasian data/characters/strat_sm_roman_general_romans_scipii_Caucasian
+model romans_senate, Caucasian data/characters/strat_sm_roman_general_romans_senate_Caucasian
+no_variation model Caucasian data/characters/strat_sm_roman_general_romans_brutii_Caucasian_no_variation
+no_variation model romans_julii, Caucasian data/characters/strat_sm_roman_general_romans_julii_Caucasian_no_variation
+no_variation model romans_scipii, Caucasian data/characters/Alex_roman_general_romans_senate_Caucasian_no_variation
+no_variation model romans_senate, Caucasian data/characters/strat_sm_roman_general_romans_senate_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_roman_general_romans_julii_EastAsian
+model romans_brutii, EastAsian data/characters/strat_sm_roman_general_romans_brutii_EastAsian
+model romans_senate, EastAsian data/characters/strat_sm_roman_general_romans_senate_EastAsian
+no_variation model EastAsian data/characters/strat_sm_roman_general_romans_julii_EastAsian_no_variation
+no_variation model romans_brutii, EastAsian data/characters/strat_sm_roman_general_romans_brutii_EastAsian_no_variation
+no_variation model romans_senate, EastAsian data/characters/strat_sm_roman_general_romans_senate_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_roman_general_romans_brutii_Egyptian
+model romans_senate, Egyptian data/characters/strat_sm_roman_general_romans_senate_Egyptian
+no_variation model Egyptian data/characters/Alex_roman_general_romans_brutii_Egyptian_no_variation
+no_variation model romans_senate, Egyptian data/characters/strat_sm_roman_general_romans_senate_Egyptian_no_variation
+model Indian data/characters/Alex_roman_general_romans_scipii_Indian
+model romans_julii, Indian data/characters/strat_sm_roman_general_romans_julii_Indian
+model romans_scipii, Indian data/characters/Alex_roman_general_romans_senate_Indian
+model romans_senate, Indian data/characters/strat_sm_roman_general_romans_senate_Indian
+no_variation model Indian data/characters/Alex_roman_general_romans_scipii_Indian_no_variation
+no_variation model romans_julii, Indian data/characters/strat_sm_roman_general_romans_julii_Indian_no_variation
+no_variation model romans_scipii, Indian data/characters/Alex_roman_general_romans_senate_Indian_no_variation
+no_variation model romans_senate, Indian data/characters/strat_sm_roman_general_romans_senate_Indian_no_variation
+model Mediterranean data/characters/strat_sm_roman_general_romans_brutii_Mediterranean
+model romans_julii, Mediterranean data/characters/strat_sm_roman_general_romans_julii_Mediterranean
+model romans_scipii, Mediterranean data/characters/strat_sm_roman_general_romans_scipii_Mediterranean
+model romans_senate, Mediterranean data/characters/strat_sm_roman_general_romans_senate_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_roman_general_romans_brutii_Mediterranean_no_variation
+no_variation model romans_julii, Mediterranean data/characters/strat_sm_roman_general_romans_julii_Mediterranean_no_variation
+no_variation model romans_scipii, Mediterranean data/characters/strat_sm_roman_general_romans_scipii_Mediterranean_no_variation
+no_variation model romans_senate, Mediterranean data/characters/strat_sm_roman_general_romans_senate_Mediterranean_no_variation
+
+type sm_roman_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired No
+aged 0.00
+pbr_texture data/characters/textures/strat_sm_roman_lesser_general_romans_brutii_pbr.tga
+#for @Faction in @Get.FactionsByCulture("roman"):
+texture @{Faction.Id}, data/characters/textures/sm_roman_lesser_general_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_sm_roman_lesser_general_romans_brutii_African
+model romans_julii, African data/characters/strat_sm_roman_lesser_general_romans_julii_African
+model romans_scipii, African data/characters/strat_sm_roman_lesser_general_romans_scipii_African
+model romans_senate, African data/characters/strat_sm_roman_lesser_general_romans_senate_African
+no_variation model African data/characters/strat_sm_roman_lesser_general_romans_brutii_African_no_variation
+no_variation model romans_julii, African data/characters/strat_sm_roman_lesser_general_romans_julii_African_no_variation
+no_variation model romans_scipii, African data/characters/strat_sm_roman_lesser_general_romans_scipii_African_no_variation
+no_variation model romans_senate, African data/characters/strat_sm_roman_lesser_general_romans_senate_African_no_variation
+model Arabic data/characters/strat_sm_roman_lesser_general_romans_brutii_Arabic
+model romans_julii, Arabic data/characters/strat_sm_roman_lesser_general_romans_julii_Arabic
+model romans_scipii, Arabic data/characters/strat_sm_roman_lesser_general_romans_scipii_Arabic
+model romans_senate, Arabic data/characters/strat_sm_roman_lesser_general_romans_senate_Arabic
+no_variation model Arabic data/characters/strat_sm_roman_lesser_general_romans_brutii_Arabic_no_variation
+no_variation model romans_julii, Arabic data/characters/strat_sm_roman_lesser_general_romans_julii_Arabic_no_variation
+no_variation model romans_scipii, Arabic data/characters/strat_sm_roman_lesser_general_romans_scipii_Arabic_no_variation
+no_variation model romans_senate, Arabic data/characters/strat_sm_roman_lesser_general_romans_senate_Arabic_no_variation
+model Caucasian data/characters/strat_sm_roman_lesser_general_romans_brutii_Caucasian
+model romans_julii, Caucasian data/characters/strat_sm_roman_lesser_general_romans_julii_Caucasian
+model romans_scipii, Caucasian data/characters/strat_sm_roman_lesser_general_romans_scipii_Caucasian
+model romans_senate, Caucasian data/characters/strat_sm_roman_lesser_general_romans_senate_Caucasian
+no_variation model Caucasian data/characters/strat_sm_roman_lesser_general_romans_brutii_Caucasian_no_variation
+no_variation model romans_julii, Caucasian data/characters/strat_sm_roman_lesser_general_romans_julii_Caucasian_no_variation
+no_variation model romans_scipii, Caucasian data/characters/strat_sm_roman_lesser_general_romans_scipii_Caucasian_no_variation
+no_variation model romans_senate, Caucasian data/characters/strat_sm_roman_lesser_general_romans_senate_Caucasian_no_variation
+model EastAsian data/characters/strat_sm_roman_lesser_general_romans_brutii_EastAsian
+model romans_scipii, EastAsian data/characters/strat_sm_roman_lesser_general_romans_scipii_EastAsian
+no_variation model EastAsian data/characters/strat_sm_roman_lesser_general_romans_brutii_EastAsian_no_variation
+no_variation model romans_scipii, EastAsian data/characters/strat_sm_roman_lesser_general_romans_scipii_EastAsian_no_variation
+model Egyptian data/characters/strat_sm_roman_lesser_general_romans_brutii_Egyptian
+model romans_julii, Egyptian data/characters/strat_sm_roman_lesser_general_romans_julii_Egyptian
+no_variation model Egyptian data/characters/strat_sm_roman_lesser_general_romans_brutii_Egyptian_no_variation
+no_variation model romans_julii, Egyptian data/characters/strat_sm_roman_lesser_general_romans_julii_Egyptian_no_variation
+model Indian data/characters/strat_sm_roman_lesser_general_romans_brutii_Indian
+model romans_julii, Indian data/characters/strat_sm_roman_lesser_general_romans_julii_Indian
+model romans_scipii, Indian data/characters/strat_sm_roman_lesser_general_romans_scipii_Indian
+model romans_senate, Indian data/characters/strat_sm_roman_lesser_general_romans_senate_Indian
+no_variation model Indian data/characters/strat_sm_roman_lesser_general_romans_brutii_Indian_no_variation
+no_variation model romans_julii, Indian data/characters/strat_sm_roman_lesser_general_romans_julii_Indian_no_variation
+no_variation model romans_scipii, Indian data/characters/strat_sm_roman_lesser_general_romans_scipii_Indian_no_variation
+no_variation model romans_senate, Indian data/characters/strat_sm_roman_lesser_general_romans_senate_Indian_no_variation
+model Mediterranean data/characters/strat_sm_roman_lesser_general_romans_brutii_Mediterranean
+model romans_julii, Mediterranean data/characters/strat_sm_roman_lesser_general_romans_julii_Mediterranean
+model romans_scipii, Mediterranean data/characters/strat_sm_roman_lesser_general_romans_scipii_Mediterranean
+no_variation model Mediterranean data/characters/strat_sm_roman_lesser_general_romans_brutii_Mediterranean_no_variation
+no_variation model romans_julii, Mediterranean data/characters/strat_sm_roman_lesser_general_romans_julii_Mediterranean_no_variation
+no_variation model romans_scipii, Mediterranean data/characters/strat_sm_roman_lesser_general_romans_scipii_Mediterranean_no_variation
+
+type spy
+skeleton			strat_spy
+scale				0.7
+male
+body Default
+angry_face no
+medieval_features no
+tired Tired
+aged 0.00
+pbr_texture data/characters/textures/strat_spy_greek_cities_pbr.tga
+#for @Faction in @Get.AllFactions():
+texture @{Faction.Id}, data/characters/textures/spy_@{Faction.TextureCode}.tga
+#end
+model African data/characters/strat_spy_greek_cities_African
+no_variation model African data/characters/strat_spy_greek_cities_African_no_variation
+model Arabic data/characters/strat_spy_greek_cities_Arabic
+no_variation model Arabic data/characters/strat_spy_greek_cities_Arabic_no_variation
+model Caucasian data/characters/strat_spy_greek_cities_Caucasian
+no_variation model Caucasian data/characters/strat_spy_greek_cities_Caucasian_no_variation
+model EastAsian data/characters/strat_spy_greek_cities_EastAsian
+no_variation model EastAsian data/characters/strat_spy_greek_cities_EastAsian_no_variation
+model Egyptian data/characters/strat_spy_greek_cities_Egyptian
+no_variation model Egyptian data/characters/strat_spy_greek_cities_Egyptian
+model Indian data/characters/strat_spy_greek_cities_Mediterranean
+no_variation model Indian data/characters/strat_spy_greek_cities_Mediterranean_no_variation
+model Mediterranean data/characters/strat_spy_greek_cities_Mediterranean
+no_variation model Mediterranean data/characters/strat_spy_greek_cities_Mediterranean_no_variation

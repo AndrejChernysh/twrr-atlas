@@ -1,0 +1,28 @@
+"namelists":
+[
+#for @Culture in @Get.AllCultures():
+"@{Culture.Id}_m":
+{
+    "names":
+    [
+        @Culture.getDescrNamelistsEntries("characters")
+    ],
+},
+
+"@{Culture.Id}_s":
+{
+    "names":
+    [
+        @Culture.getDescrNamelistsEntries("surname")
+    ],
+},
+
+"@{Culture.Id}_w":
+{
+    "names":
+    [
+        @Culture.getDescrNamelistsEntries("women")
+    ],
+},
+#end
+],

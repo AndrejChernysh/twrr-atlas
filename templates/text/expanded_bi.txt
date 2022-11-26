@@ -1,0 +1,61 @@
+
+#for @Faction in @Get.AllFactions():
+{@Faction.Id.upper()}@{Faction.Name}
+{@{Faction.Id.upper()}_TEXT}@{Faction.Name}
+{EMT_@{Faction.Id.upper()}_SPY}Spy (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_ASSASSIN}Assassin (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_DIPLOMAT}Diplomat (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_ADMIRAL}Admiral (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_GENERAL}Army (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_NAMED_CHARACTER}Family Member (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_FACTION_LEADER}Faction Leader (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_HEIR}Heir (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_MERCHANT}Merchant (@{Faction.Name})
+#for @SettlementLevel in @Get.AllSettlementLevels():
+{EMT_@{Faction.Id.upper()}_@{SettlementLevel.Id.upper()}}@SettlementLevel.Name (@{Faction.Name})
+#end
+{EMT_@{Faction.Id.upper()}_CAPITAL}Capital (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_FORT}Fort (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_PORT}Port (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_DOCK}Dock (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_FISHING_VILLAGE}Fishing Village (@{Faction.Name})
+{EMT_@{Faction.Id.upper()}_WATCHTOWER}Watchtower (@{Faction.Name})
+{EMT_YOUR_FORCES_ATTACK_ARMY_@{Faction.Id.upper()}}Your forces attack an enemy army
+{EMT_YOUR_FORCES_ATTACK_NAVY_@{Faction.Id.upper()}}Your forces attack an enemy navy
+{EMT_YOUR_FORCES_AMBUSH_ARMY_@{Faction.Id.upper()}}Your forces ambush an enemy army
+{EMT_YOUR_FORCES_ATTACKED_ARMY_@{Faction.Id.upper()}}Your forces are attacked by an enemy army
+{EMT_YOUR_FORCES_ATTACKED_NAVY_@{Faction.Id.upper()}}Your forces are attacked by an enemy navy
+{EMT_YOUR_FORCES_AMBUSHED_ARMY_@{Faction.Id.upper()}}Your forces are ambushed by an enemy army
+{EMT_VICTORY_@{Faction.Id.upper()}}Victory for @Faction.Name
+{EMT_VICTORY_DESCR_@{Faction.Id.upper()}}TODO
+{EMT_DEFEATED_BY_@{Faction.Id.upper()}}TODO
+{EMT_SHORT_VICTORY_@{Faction.Id.upper()}}TODO
+#end
+#for @Culture in @Get.AllCultures():
+{@Culture.Id.upper()}
+@Culture.Name
+#end
+#for @Religion in @Get.AllReligions():
+{@{Religion.Id.upper()}_LABEL}@{Religion.Name}
+{@{Religion.Id.upper()}_ORDER}@Religion.Name
+{@{Religion.Id.upper()}_UNREST}@Religion.Name
+#end
+{SMT_SENATE_OFFICE_QUAESTOR_TITLE}Quaestor
+{SMT_SENATE_OFFICE_QUAESTOR_DESCRIPTION}The lowest rank of magistrate, usually charged with managing the treasury and the first meaningful appointment of all men looking for a political career in Rome.
+{SMT_SENATE_OFFICE_AEDILE_TITLE}Aedile
+{SMT_SENATE_OFFICE_AEDILE_DESCRIPTION}An administrative official in charge of supervising streets, temples and the quarters of a city and the distribution of the cura annonae, the all-important corn supply.
+{SMT_SENATE_OFFICE_PRAETOR_TITLE}Praetor
+{SMT_SENATE_OFFICE_PRAETOR_DESCRIPTION}A magistrate whose duties are mostly concerned with justice and law, particularly the ius civile (civil, not criminal, law) and ius gentium (laws dealing with foreigners).
+{SMT_SENATE_OFFICE_CONSUL_TITLE}Consul
+{SMT_SENATE_OFFICE_CONSUL_DESCRIPTION}The supreme position of power and honour in the Republic, a consul has authority over magistrates, the army and law-making. He is, in many ways, a king in all but name during his time in office.
+{SMT_SENATE_OFFICE_CENSOR_TITLE}Censor
+{SMT_SENATE_OFFICE_CENSOR_DESCRIPTION}An important office that conducts the census and keeps the lists of Roman citizens and Senators, meaning that it is the censors that decide who is Roman or not, and who is a Senator or not.
+{SMT_SENATE_OFFICE_PONTIFEX_MAXIMUS_TITLE}Pontifex Maximus
+{SMT_SENATE_OFFICE_PONTIFEX_MAXIMUS_DESCRIPTION}The supreme head of the Roman state religion and controller of all religious colleges including the Vestal Virgins. He is in absolute control of doctrine and to a great extent above the jurisdiction of the Senate and People of Rome.
+{SMT_TECH_TREE_THREAD_REQUIRES_TEMPLE_DESTRUCTION}Building this item requires the destruction of an existing religious building
+#for @CustomCapability in @Get.AllCustomCapabilities():
+{@{CustomCapability.Id.upper()}}@CustomCapability.Label
+#end
+#for @Message in @Get.Messages():
+@Message.getEntriesExpandedBITxt()
+#end

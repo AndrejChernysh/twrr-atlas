@@ -1,0 +1,16 @@
+#for @Faction in @Get.AllFactions():
+faction @Faction.Id
+model roman_male_peasant			 8
+model roman_peasant			 8
+model roman_female_peasant   8
+model greek_peasant   8
+model greek_female_peasant   8
+model egyptian_peasant   7
+model egypt_female_peasant   7
+model east_female_peasant   8
+model east_peasant   8
+model barb_female_peasant   8
+model barb_peasant   8
+model wardog		7
+model pig			 7
+#end

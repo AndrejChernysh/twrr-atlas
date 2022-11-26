@@ -1,0 +1,6 @@
+
+#for @Region in @Get.AllRegions():
+{@{Region.IdRegion}}@{Region.NameRegion}
+{@{Region.IdCity}}@{Region.NameCity}
+{Legion_@{Region.IdCity}}@{Region.NameRegion}
+#end

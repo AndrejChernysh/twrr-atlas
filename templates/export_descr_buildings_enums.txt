@@ -1,0 +1,11 @@
+#for @postfix in ['', '_desc', '_desc_short']:
+#for @special in ['generic_repair', 'generic_dismantle']:@{special}@{postfix}
+#end
+settlement_upgrade_fort@{postfix}
+#for @settlementlevel in @Get.AllSettlementLevels():settlement_upgrade_@{settlementlevel.Id}@{postfix}
+#end
+#for @building in @Get.AllBuildings():@{building.Id}@{postfix}
+#end
+#end
+#for @chain in @Get.AllBuildingChains():@{chain.Id}_name
+#end

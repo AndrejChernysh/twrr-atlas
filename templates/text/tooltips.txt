@@ -1,0 +1,226 @@
+
+{TMT_SETTLEMENT_INCOME}Settlement Income
+{TMT_LOYALTY_TOOLTIP_REVOLTING}Loyalty: Revolting
+{TMT_LOYALTY_TOOLTIP_RIOTING}Loyalty: Rioting
+{TMT_LOYALTY_TOOLTIP_DISILLUSIONED}Loyalty: Disillusioned
+{TMT_LOYALTY_TOOLTIP_CONTENT}Loyalty: Content
+{TMT_LOYALTY_TOOLTIP_HAPPY}Loyalty: Happy
+{TMT_GROWTH_TOOLTIP_GROWTH}Population: Increasing
+{TMT_GROWTH_TOOLTIP_STATIC}Population: No Growth
+{TMT_GROWTH_TOOLTIP_DECLINING}Population: Decreasing
+{TMT_SETTLEMENT_STATUS_TRAINING}Currently training units
+{TMT_SETTLEMENT_STATUS_BUILDING}Currently constructing buildings
+{TMT_LCLICK_FOR_BUILD_OPTIONS}Left click to see upgrade options for this building
+{TMT_CONSTRUCTION_HELP}Left click to add to queue, right click for information
+{TMT_CONSTRUCTION_REMOVE_HELP}Left click to remove from queue
+{TMT_COST_OF_CONSTRUCTION}Cost to construct item
+{TMT_TIME_TO_CONSTRUCT}Number of turns required to construct item
+{TMT_COST_OF_RECRUITMENT_UNIT}Cost to recruit unit
+{TMT_TIME_TO_RECRUIT}Number of turns required to train
+{TMT_SEASON_SUMMER}Summer
+{TMT_SEASON_WINTER}Winter
+{TMT_REMAINING_ACTION_POINTS}Movement points\nThe dark blue bar represents points remaining\nLight blue section represents affect\non movement points after current\naction is performed
+{TMT_ACCEPT_FIELD_CONSTRUCTION}Build selected item
+{TMT_CANCEL_FIELD_CONSTRUCTION}Do not build anything
+{TMT_BUILD_FORT_OR_WATCHTOWER}Construct fort or watchtower
+{TMT_CANNOT_BUILD_FORT_OR_WATCHTOWER}Cannot construct fort or watchtower here
+{TMT_CANNOT_ATTACK_FROM_SIEGED_SETTLEMENT}It is only possible to attack sieging armies from a sieged garrison
+{TMT_SHOW_GENERAL_UNIT_DETAILS}Show unit details for this character's bodyguard unit
+{TMT_LCLICK_SELECT}Left click to select
+{TMT_RCLICK_INFO}Right click to get further information
+{TMT_LDBL_CLICK_INFO}Double left click to get further information
+{TMT_CURSOR_ATTACK}Right click to attack
+{TMT_CURSOR_MOVE}Right click to move to position
+{TMT_CURSOR_SELECT}Right click to select
+{TMT_CURSOR_MOVE_MAP}Scroll map
+{TMT_CURSOR_MOUSE_LOOK}Mouse look
+{TMT_CURSOR_CLICK_DOWN}Click down
+{TMT_CURSOR_EXCHANGE}Right click to exchange units and characters
+{TMT_CURSOR_DEFAULT_ACTION}Right click to perform mission
+{TMT_CURSOR_NO_ACTION}No action possible on this target
+{TMT_CURSOR_ENTER_SETTLEMENT}Right Click to enter settlement
+{TMT_CURSOR_DISEMBARK}Right click to disembark
+{TMT_CURSOR_SET_RALLY_POINT}Right click to set settlement's rally point
+{TMT_CURSOR_AUTO_MERGE}Right click to automatically merge units
+{TMT_NO_MULTITURN_MISSIONS}Cannot attack or perform missions over multiple turns
+{TMT_NO_MULTITURN_EXCHANGES}Cannot merge or exchange units over multiple turns
+{TMT_SIEGE_EQUIPMENT_NOT_REQUIRED}Construction of this siege equipment is not required
+{TMT_NO_DIPLOMACY_WITH_REBELS}Diplomacy is not possible with rebels
+{TMT_SILVER_TOOLTIP}Silver Mines can be constructed at the nearby settlement
+{TMT_GOLD_TOOLTIP}Gold Mines can be constructed at the nearby settlement
+{TMT_IRON_TOOLTIP}Iron - a valuable trade resource
+{TMT_GRAIN_TOOLTIP}Grain - a valuable resource\nAdds to population growth at export destination
+{TMT_OLIVE_OIL_TOOLTIP}Olive Oil - a valuable trade resource
+{TMT_WINE_TOOLTIP}Wine - a valuable trade resource
+{TMT_SLAVES_TOOLTIP}Slaves - a valuable resource\nAdds to population growth at export destination
+{TMT_GLASS_TOOLTIP}Glass - a valuable trade resource
+{TMT_POTTERY_TOOLTIP}Pottery - a valuable trade resource
+{TMT_TIMBER_TOOLTIP}Timber - a valuable trade resource
+{TMT_MARBLE_TOOLTIP}Marble  - a valuable trade resource
+{TMT_TEXTILES_TOOLTIP}Textiles  - a valuable trade resource
+{TMT_PURPLE_DYE_TOOLTIP}Purple Dye  - a valuable trade resource
+{TMT_INCENSE_TOOLTIP}Incense - a valuable trade resource
+{TMT_SILK_TOOLTIP}Silk - a valuable trade resource
+{TMT_WILD_ANIMALS_TOOLTIP}Wild Animals - a valuable trade resource
+{TMT_HIDES_TOOLTIP}Hides - a valuable trade resource
+{TMT_FURS_TOOLTIP}Furs - a valuable trade resource
+{TMT_TIN_TOOLTIP}Tin - a valuable trade resource
+{TMT_COPPER_TOOLTIP}Copper - a valuable trade resource
+{TMT_LEAD_TOOLTIP}Lead - a valuable trade resource
+{TMT_AMBER_TOOLTIP}Amber - a valuable trade resource
+{TMT_PIGS_TOOLTIP}Allows the training of incendiary pig units
+{TMT_DOGS_TOOLTIP}Allows the training of war dog units
+{TMT_CAMELS_TOOLTIP}Allows the training of camel-mounted units
+{TMT_ELEPHANTS_TOOLTIP}Allows the training of elephant units
+{TMT_ROADS_TOOLTIP}Allows armies to march further\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_PAVED_ROADS_TOOLTIP}Allows armies to march efficiently at speed\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_HIGHWAYS_TOOLTIP}Allows armies to march long distances\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_SEA_LANES_TOOLTIP}Trade route between settlements with ports
+{TMT_FAMOUS_BATTLE_SITE_TOOLTIP}A famous battle was fought here
+{TMT_INFLUENCE_LEVEL_0}A stuffed olive has more influence than this man - it could choke someone important and change history.
+{TMT_INFLUENCE_LEVEL_1}This man has almost no influence over his dinner menu at home, let alone his life and the fate of the world.
+{TMT_INFLUENCE_LEVEL_2}This man's opinions carry little weight. He is simply regarded as something of a duffer.
+{TMT_INFLUENCE_LEVEL_3}This man is of scant importance. He occasionally says sensible things, but the occasions are few.
+{TMT_INFLUENCE_LEVEL_4}Sometimes this man's counsel carries weight, and his opinion is sought on carefully selected matters.
+{TMT_INFLUENCE_LEVEL_5}This man's word carries weight in the lesser palaces of the world, although the truly mighty largely ignore him.
+{TMT_INFLUENCE_LEVEL_6}More often than not this man's counsel is listened to with respect even if it does not always carry the day.
+{TMT_INFLUENCE_LEVEL_7}This man's good qualities make him someone who can tip the balance of many arguments.
+{TMT_INFLUENCE_LEVEL_8}This man carries enormous political weight, and his words sway the opinions of most lesser men.
+{TMT_INFLUENCE_LEVEL_9}When this man speaks, all stop to listen to his words. Even his opinions have the force of law for many.
+{TMT_INFLUENCE_LEVEL_10}When this man speaks, his words carry the wisdom of the Gods to his listeners.
+{TMT_COMMAND_LEVEL_0}"Leadership" is just a long word to this man, like "inspiration". He posesses neither.
+{TMT_COMMAND_LEVEL_1}Command ability is, at best, a yawning gap in this man's personality.
+{TMT_COMMAND_LEVEL_2}This man knows how to shout orders, but these are often neither timely nor relevant.
+{TMT_COMMAND_LEVEL_3}This man lacks command, but makes up for it with a good loud voice and a small talent for instilling fear.
+{TMT_COMMAND_LEVEL_4}This man has a basic talent for command, although he sometimes lacks of confidence.
+{TMT_COMMAND_LEVEL_5}This man shows skill in battle command, but from time to time he makes tactical errors.
+{TMT_COMMAND_LEVEL_6}On a battlefield this man inspires confidence in his soldiers. Sometimes the facade cracks - but not often.
+{TMT_COMMAND_LEVEL_7}This man's sound grasp of strategy and tactics inspires confidence in all who follow him into battle.
+{TMT_COMMAND_LEVEL_8}This man is a tower of strength on the battlefield. He has the inspiring 'look of eagles' about him.
+{TMT_COMMAND_LEVEL_9}At the sound of this man's voice even clouds change their path across the heavens!
+{TMT_COMMAND_LEVEL_10}At the sound of this man's voice even clouds change their flight across the heavens!
+{TMT_MANAGEMENT_LEVEL_0}An under-achieving oyster would show more signs of being able to manage the day-to-day affairs of an empire.
+{TMT_MANAGEMENT_LEVEL_1}This man should not be entrusted with running a whelk stall, let alone anything important.
+{TMT_MANAGEMENT_LEVEL_2}Administration is not this man's forte. He can manage simple matters, but without skill.
+{TMT_MANAGEMENT_LEVEL_3}This man has dogged determination as a replacement for administrative flare.
+{TMT_MANAGEMENT_LEVEL_4}This man's limited administrative talent produces results that are adequate but far from inspired.
+{TMT_MANAGEMENT_LEVEL_5}This man has talent but becomes flustered when the unexpected spoils his best laid plans
+{TMT_MANAGEMENT_LEVEL_6}More often than not this man solves administrative problems but some crises leave him floundering.
+{TMT_MANAGEMENT_LEVEL_7}This man is an efficient administrator, well able to deal with unexpected crises.
+{TMT_MANAGEMENT_LEVEL_8}This man is a whirlwind of efficiency, cutting through red tape at every turn.
+{TMT_MANAGEMENT_LEVEL_9}This man shapes the business of state to his will, and gets any task done despite any challenge.
+{TMT_MANAGEMENT_LEVEL_10}This man shapes all the affairs of the world to his plans, and lesser men obey in all things.
+{TMT_SUBTERFUGE_LEVEL_0}This man is an innocent, cast adrift in a world of rather cunning weasels.
+{TMT_SUBTERFUGE_LEVEL_1}Cunning and guile are the last words that would be used to describe this transparent, naïve individual.
+{TMT_SUBTERFUGE_LEVEL_2}Subterfuge is not a weapon found in this man's intellectual armoury.
+{TMT_SUBTERFUGE_LEVEL_3}This man is not a natural conspirator, but sometimes he has a flash of insight.
+{TMT_SUBTERFUGE_LEVEL_4}Sometimes this man recognises subterfuge for what it is. Sometimes he even makes use of it himself.
+{TMT_SUBTERFUGE_LEVEL_5}Subterfuge is a tool that this man can use, even though he makes occasional mistakes.
+{TMT_SUBTERFUGE_LEVEL_6}This man can plot and conspire with enthusiasm and sometimes with real skill.
+{TMT_SUBTERFUGE_LEVEL_7}This man has more cunning than a sackful of hungry weasels.
+{TMT_SUBTERFUGE_LEVEL_8}This man has a mind of serpentine complexity, and is able to create and penetrate the most cunning of plots.
+{TMT_SUBTERFUGE_LEVEL_9}This man's plots are all masterpieces of feints within feints, hidden within other conspiracies.
+{TMT_SUBTERFUGE_LEVEL_10}This man's plots are invisible webs, while his keen mind can untangle any foreign conspiracy
+{TMT_TOGGLE_AUTOMANAGEMENT}Toggle automanagement of this settlement
+{TMT_DECREASE_TAXATION}Decrease taxation
+{TMT_INCREASE_TAXATION}Increase taxation
+{TMT_CHANGE_GOVERNOR_POLICY}Change governor policy
+{TMT_DECREASE_GAMES_FREQUENCY}Decrease frequency of games and/or races
+{TMT_INCREASE_GAMES_FREQUENCY}Increase frequency of games and/or races
+{TMT_CURRENTLY_SELECTED_CHARACTER}Character currently selected:
+{TMT_CURRENTLY_SELECTED_SETTLEMENT}Settlement currently selected:
+{TMT_CURRENTLY_SELECTED_FORT}Fort currently selected
+{TMT_CURRENTLY_SELECTED_RALLY_POINT}Rally point currently selected
+{TMT_CURRENTLY_SELECTED_RALLY_POINTS}Rally points currently selected
+{TMT_LCLICK_ZOOM_TO_POS}Left click to locate item on map
+{TMT_SHOW_SELECTED_ITEM}This area shows the currently selected item
+{TMT_FIELD_CONSTRUCTION_TEST_NO_GENERAL}Armies without generals cannot construct forts or watchtowers
+{TMT_FIELD_CONSTRUCTION_TEST_NOT_NAMED_CHARACTER}Only generals can commission forts and watchtowers
+{TMT_FIELD_CONSTRUCTION_TEST_IN_SEA_REGION}Cannot build a fort or watchtower in the sea
+{TMT_FIELD_CONSTRUCTION_TEST_FORT_IN_ENEMY_TERRITORY}Cannot build a fort in enemy territory
+{TMT_FIELD_CONSTRUCTION_TEST_FORT_INVALID_GAME_TILE}This is an invalid position for a fort
+{TMT_FIELD_CONSTRUCTION_TEST_FORT_NOT_ENOUGH_MONEY}You do not have enough money to build a fort
+{TMT_FIELD_CONSTRUCTION_TEST_WATCHTOWER_IN_ENEMY_TERRITORY}Cannot build a watchtower in enemy territory
+{TMT_FIELD_CONSTRUCTION_TEST_WATCHTOWER_INVALID_GAME_TILE}This is an invalid position for a watchtower
+{TMT_FIELD_CONSTRUCTION_TEST_WATCHTOWER_NOT_ENOUGH_MONEY}You do not have enough money to build a watchtower
+{TMT_NOT_ENOUGH_MONEY_FOR_FORT_OR_WATCHTOWER}You do not have enough money to build a fort or watchtower
+{TMT_CANNOT_RECRUIT_UNITS_IN_BATTLE}You cannot recruit units or mercenaries once a battle has been instigated
+{TMT_COMMAND_LEVEL_9}At the sound of this man's voice armies march and mighty nations quake!
+{TMT_ROADS_TOOLTIP}Road: Allows armies to march further\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_PAVED_ROADS_TOOLTIP}Paved road: Allows armies to march efficiently at speed\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_HIGHWAYS_TOOLTIP}Highways: Allows armies to march long distances\nAlso adds to trade income\nThe amount of traffic indicates the amount of trade
+{TMT_MANAGEMENT_LEVEL_1}This man should not be entrusted with running a shrimp stall, let alone anything important.
+{TMT_NO_BODYGUARD_UNIT_TO_VIEW}There is no bodyguard unit to view for this character
+{TMT_NOT_ENOUGH_INFO_FOR_BODYGUARD}Not enough information gathered about this character to view his bodyguard unit
+{TMT_SETTLEMENT_STATUS_AUTOMANAGED}This settlement is automanaged
+{TMT_PIGS_TOOLTIP}Pigs: Allows the training of incendiary pig units
+{TMT_DOGS_TOOLTIP}Dogs: Allows the training of war dog units
+{TMT_CAMELS_TOOLTIP}Camels: Allows the training of camel-mounted units
+{TMT_ELEPHANTS_TOOLTIP}Elephants: Allows the training of elephant units
+{TMT_CANNOT_ATTACK_SIEGED_SETTLEMENT}Cannot lay siege to a settlement that is besieged by a non allied faction
+{TMT_CANNOT_CONSTRUCT_WHILST_SIEGING}Cannot build forts or watchtowers whilst laying siege
+{TMT_FIELD_CONSTRUCTION_TEST_WATCHTOWER_SIEGING}Cannot build a watchtower whilst laying siege
+{TMT_FIELD_CONSTRUCTION_TEST_FORT_SIEGING}Cannot build a fort whilst laying siege
+{TMT_NEGATIVE_COMMAND}This person's command is so poor as to be non existant.
+{TMT_NEGATIVE_INFLUENCE}This man holds no sway over his family, let alone anyone important
+{TMT_NEGATIVE_MANAGEMENT}This man couldn't organise a piss up in a brewery
+{TMT_NEGATIVE_SUBTERFUGE}This man couldn't even spell subterfuge, let alone understand it
+{TMT_SLAVES_TOOLTIP}Slaves - a valuable resource\nDistributed across all settlements with governors. Resource is exhausted after 7 turns
+{TMT_GRAIN_TOOLTIP}Grain - a valuable resource\nIncreases population growth in local settlement
+{TMT_SLAVES_TOOLTIP}Slaves - a valuable resource\nDistributed across all settlements with governors. Resource is exhausted after %d turns
+{TMT_SLAVES_TOOLTIP_SINGLE}Slaves - a valuable resource\nDistributed across all settlements with governors. Resource is exhausted after 1 more turn
+{TMT_SHOW_GENERAL_UNIT_DETAILS_ARMY}Show details of the bodyguard unit for this armies general
+{TMT_CONSTRUCTION_HELP}Left click to add to queue
+{TMT_LCLICK_INFO}Left click to get further information
+{TMT_COMMAND_LEVEL_3}This man lacks a real aura of command, but makes up for it with a good loud voice and a small talent for instilling fear.
+{TMT_COMMAND_LEVEL_4}This man has a basic talent for command, although he sometimes lacks confidence.
+{TMT_CANNOT_MERGE_AGENT}The selected character cannot be received at this location
+{TMT_CANNOT_MERGE_AGENTS}The selected characters cannot be received at this location
+{TMT_AUTO_MERGE_AGENTS}Right click to automatically merge agents
+{TMT_NO_WITHDRAW_NAVY}Cannot withdraw: Navies cannot withdraw from battles
+{TMT_NO_WITHDRAW_AMBUSH}Cannot withdraw: You have been successfully ambushed
+{TMT_NO_WITHDRAW_SIEGE}Cannot withdraw: Your are under siege
+{TMT_NO_WITHDRAW_AP}Cannot withdraw: No movement points remaining
+{TMT_NO_WITHDRAW_RETREAT}Cannot withdraw: Nowhere to withdraw to
+{TMT_ALREADY_CAPITAL}This settlement is already the capital
+{TMT_NO_GENERAL_UNIT_TO_SHOW}No personal bodyguard unit to show
+{TMT_DOCK_BLOCKADED}This dock is currently blockaded
+{TMT_PORT_BLOCKADED}This port is currently blockaded
+{TMT_CANNOT_ATTACK_FROM_SIEGED_SETTLEMENT}When under siege it is only possible to attack the sieging army
+{TMT_CURSOR_AUTO_MERGE}Right click to merge units
+{TMT_SETTLEMENT_AUTOMANAGED_BUILDING}Cannot add this building as construction is being automanaged
+{TMT_SETTLEMENT_AUTOMANAGED_TRAINING}Cannot add this unit as recruitment is being automanaged
+{TMT_CANNOT_RECRUIT_MERCS_IN_BATTLE}Cannot recruit mercenaries once a battle has been instigated
+{TMT_CANNOT_CHANGE_TAX_LEVEL_AS_AUTOMANAGED}Cannot change the tax level of this settlement as the factions taxes are being automanaged.  Go to the faction summary scroll to change this
+{TMT_CANNOT_DESTROY_THIS_BUILDING}This building cannot be destroyed
+{TMT_RECOUP_AMOUNT}%d denarii will be recouped.
+{TMT_CANNOT_LEAVE_ZOC}Cannot move through an enemy's zone of control
+{TMT_CAN_ONLY_SALLY_OUT_ONCE_PER_TURN}Can only sally out once per turn
+{TMT_CANNOT_FLEE}This army cannot flee from the battle.  If it loses, all units will be destroyed
+{TMT_LOYALTY_TOOLTIP_REVOLTING}Loyalty: Potential for revolt
+{TMT_LOYALTY_TOOLTIP_RIOTING}Loyalty: Potential for riots
+{TMT_LOYALTY_TITLE}Loyalty
+{TMT_LOYALTY_LEVEL_0}Loyalty
+{TMT_LOYALTY_LEVEL_1}Loyalty
+{TMT_LOYALTY_LEVEL_2}Loyalty
+{TMT_LOYALTY_LEVEL_3}Loyalty
+{TMT_LOYALTY_LEVEL_4}Loyalty
+{TMT_LOYALTY_LEVEL_5}Loyalty
+{TMT_LOYALTY_LEVEL_6}Loyalty
+{TMT_LOYALTY_LEVEL_7}Loyalty
+{TMT_LOYALTY_LEVEL_8}Loyalty
+{TMT_LOYALTY_LEVEL_9}Loyalty
+{TMT_LOYALTY_LEVEL_10}Loyalty
+{TMT_NEGATIVE_LOYALTY}Loyalty
+{TMT_NEGATIVE_COMMAND}This man actually manages to hinder any chance his subordinates have of achieving military success.
+{TMT_NEGATIVE_INFLUENCE}When this man states an opinion, everyone knows that the opposite must be true.
+{TMT_NEGATIVE_MANAGEMENT}This man can bring chaos out of order. He needs a 'to do' list when visiting a latrine, yet still manages to go horribly wrong!
+{TMT_NEGATIVE_SUBTERFUGE}This man's bumbling naivety helps everyone he deals with become a master of cunning and subterfuge.
+{TMT_HORDE_OCCUPY_SETTLEMENT_TOOLTIP}Take this settlement and the surrounding region as a new homeland for your people. Your hordes will disband.{TMT_HORDE_SACK_SETTLEMENT_TOOLTIP}Steal everything you can from this settlement, destroy buildings in it, and then continue the search for a new homeland for your hordes.
+{TMT_HORDE_SACK_SETTLEMENT_TOOLTIP}Steal everything you can from this settlement.  Wreak havoc, and continue the search for a new homeland for your hordes.
+{TMT_CANNOT_LEAD_NIGHT_BATTLE}The commanding officer in this battle cannot lead night attacks
+{TMT_CANNOT_DISEMBARK_HERE}Cannot disembark here
+{TMT_CANNOT_FLEE_HORDE_PLAYER}This army cannot flee from the battle.  If it loses, the settlement will be lost and all your people will be forced to find another land to call home
+{TMT_CANNOT_FLEE_HORDE_NON_PLAYER}This army cannot flee from the battle.  If it loses, the settlement will be lost and this nations people will be forced to find another land to call home
+{TMT_SIEGE_EQUIPMENT_NOT_POSSIBLE}Construction of this siege equipment is not possible
+{TMT_LOYALTY_LEVEL_4}Loyalty

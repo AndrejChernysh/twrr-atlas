@@ -1,0 +1,113 @@
+; CityCountPlayer
+monitor_event FactionTurnStart FactionType slave
+    set_counter CountPlayerCities 0
+    #for @Faction in @Get.AllFactions():
+        #for @Region in @Get.AllRegions():
+            if I_LocalFaction @Faction.Id
+            and I_SettlementOwner @Region.IdCity = @Faction.Id
+                inc_counter CountPlayerCities 1
+            end_if
+        #end
+    #end
+end_monitor
+
+; LastSelectedArmyHasGeneral
+monitor_event CharacterSelected
+    if I_AgentSelected family
+        set_counter LastSelectedArmyHasGeneral 1
+    end_if
+    if I_AgentSelected general
+        set_counter LastSelectedArmyHasGeneral 0
+    end_if
+end_monitor
+
+; SiegeScrollOpen
+monitor_event ScrollClosed ScrollClosed seige_scroll
+    set_counter SiegeScrollOpen 0
+end_monitor
+
+monitor_event ScrollOpened ScrollOpened seige_scroll
+    set_counter SiegeScrollOpen 1
+end_monitor
+
+; DiplomacyScrollOpen
+monitor_event ScrollClosed ScrollClosed diplomacy_scroll
+    set_counter DiplomacyScrollOpen 0
+end_monitor
+
+monitor_event ScrollOpened ScrollOpened diplomacy_scroll
+    set_counter DiplomacyScrollOpen 1
+end_monitor
+
+#for @Faction in @Get.AllFactions():
+    monitor_event FactionTurnEnd FactionType @Faction.Id
+    #for @OtherFaction in @Get.AllFactionsExceptFaction(@{Faction}):
+        if DiplomaticStanceFromFaction @OtherFaction.Id AtWar
+            set_counter IsWar@{Faction.UID}@{OtherFaction.UID} 1
+            set_counter IsWar@{OtherFaction.UID}@{Faction.UID} 1
+            if I_LocalFaction @{Faction.Id}
+                set_counter IsEnemy@{OtherFaction.UID} 1
+            end_if
+            if I_LocalFaction @{OtherFaction.Id}
+                set_counter IsEnemy@{Faction.UID} 1
+            end_if
+        end_if
+        if not DiplomaticStanceFromFaction @OtherFaction.Id AtWar
+            set_counter IsWar@{Faction.UID}@{OtherFaction.UID} 0
+            set_counter IsWar@{OtherFaction.UID}@{Faction.UID} 0
+            if I_LocalFaction @{Faction.Id}
+                set_counter IsEnemy@{OtherFaction.UID} 0
+            end_if
+            if I_LocalFaction @{OtherFaction.Id}
+                set_counter IsEnemy@{Faction.UID} 0
+            end_if
+        end_if
+    #end
+    end_monitor
+#end
+
+monitor_event FactionTurnEnd FactionType slave
+    #for @Region in @Get.AllRegions():
+        #for @Faction in @Get.AllFactions():
+            if I_SettlementOwner @{Region.IdCity} = @{Faction.Id}
+            and I_CompareCounter IsEnemy@{Faction.UID} = 1
+                set_counter IsEnemy@{Region.UID} 1
+            end_if
+            if I_SettlementOwner @{Region.IdCity} = @{Faction.Id}
+            and I_CompareCounter IsEnemy@{Faction.UID} = 0
+                set_counter IsEnemy@{Region.UID} 0
+            end_if
+            if I_SettlementOwner @{Region.IdCity} = @{Faction.Id}
+            and I_LocalFaction @{Faction.Id}
+                set_counter IsPlayer@{Region.UID} 1
+                set_counter IsEnemy@{Region.UID} 0
+            end_if
+            if not I_SettlementOwner @{Region.IdCity} = @{Faction.Id}
+            and I_LocalFaction @{Faction.Id}
+                set_counter IsPlayer@{Region.UID} 0
+            end_if
+        #end
+    #end
+end_monitor
+
+;HasPortRegionUID
+#for @Region in @Get.AllRegions():
+    monitor_event SettlementTurnEnd SettlementName @{Region.IdCity}
+        if SettlementBuildingExists >= port_0
+            set_counter HasPort@{Region.UID} 1
+        end_if
+        if not SettlementBuildingExists >= port_0
+            set_counter HasPort@{Region.UID} 0
+        end_if
+    end_monitor
+#end
+
+;IsUnderSiegeRegionUID
+#for @Region in @Get.AllRegions():
+    monitor_event CharacterTurnEndInSettlement SettlementName @Region.IdCity
+        set_counter IsUnderSiege@{Region.UID} 0
+        if IsUnderSiege
+            set_counter IsUnderSiege@{Region.UID} 1
+        end_if
+    end_monitor
+#end

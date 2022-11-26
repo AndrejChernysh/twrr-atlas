@@ -1,0 +1,125 @@
+;
+;	This file contains the character profession attributes, the idea being that a
+;	character has a certain set of skills and a current profession. The character
+;	is represented by his profession: if he is acting as a general, he will get
+;	represented as a general of a strat_model dictated by his combat skills.
+;
+;	This file gets parsed on application startup but is not otherwise referred to.
+;	The data format is thus:
+;
+;	;						indicates a comment ;-)
+;
+;	type					indicates a new character type
+;
+;								must be followed by id name string (phrase)
+;
+;	faction					indicates one or more factions which use the following
+;								strat_model descriptions
+;								if a given faction is not present in a given character
+;								type listing, that faction cannot use characters of that
+;								type - so not all factions have access to all character
+;								professions
+;
+;	dictionary				specifies dictionary entry for character type name IS DEPRECTATED AND HAS NO USE!
+;	strat_model				model to represent the character on the strategy map
+;
+;	battle_model			model to represent the character on the battle map (optional)
+;	battle_equip			equipment character has on the battle field must be followed by a  weapon type,
+;							(not missile weapon type) and armour type
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+starting_action_points	@Get.Setting("StartingActionPoints")
+
+type			named character
+actions			moving_normal, moving_quickmarch, garrison, assault, attack, besiege, entrench, ambush, diplomacy, bribe, exchange, building_fort, building_watchtower
+wage_base		@Get.Setting("WageNamedCharacter")
+
+#for @Faction in @Get.AllFactionsNonSlave():
+faction			@Faction.Id
+dictionary      1
+strat_model     @Faction.getCulture().SMNamedCharacter
+battle_model    @Faction.getCulture().BMNamedCharacter
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+#end
+
+faction			slave
+dictionary		2
+strat_model		sm_rebel_general
+battle_model	slave_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
+type			general
+actions	moving_normal, moving_quickmarch, garrison, assault, attack, besiege, entrench, ambush, exchange
+wage_base		@Get.Setting("WageGeneral")
+
+#for @Faction in @Get.AllFactionsNonSlave():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model     @Faction.getCulture().SMGeneral
+battle_model    @Faction.getCulture().BMGeneral
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+#end
+
+faction			slave
+dictionary		2
+strat_card		data/ui/barbarian/agents/card_general_celt.tga
+strat_model		sm_rebel_lesser_general
+battle_model	slave_lesser_general
+battle_equip	gladius, chainmail shirt helmet and rectangular shield
+
+type			spy
+actions			moving_normal, spying
+wage_base		@Get.Setting("WageSpy")
+
+#for @Faction in @Get.AllFactions():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/roman/agents/card_spy.tga
+strat_model		spy
+#end
+
+type			assassin
+actions			moving_normal, assassinate, sabotage
+wage_base		@Get.Setting("WageAssassin")
+
+#for @Faction in @Get.AllFactions():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/roman/agents/card_assassin.tga
+strat_model		assassin
+#end
+
+type			diplomat
+actions			moving_normal, diplomacy, bribe
+wage_base		@Get.Setting("WageDiplomat")
+
+#for @Faction in @Get.AllFactions():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		diplomat
+#end
+
+type			merchant
+actions			moving_normal
+wage_base		@Get.Setting("WageMerchant")
+
+#for @Faction in @Get.AllFactions():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/roman/agents/card_diplo_rome.tga
+strat_model		merchant
+#end
+
+type			admiral
+actions			moving_normal, quick_sail, blockade, disembark, exchange
+wage_base		@Get.Setting("WageAdmiral")
+
+#for @Faction in @Get.AllFactions():
+faction			@Faction.Id
+dictionary      1
+strat_card		data/ui/roman/agents/temp_admiral.tga
+strat_model		slave_admiral
+#end

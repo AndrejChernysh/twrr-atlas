@@ -1,0 +1,160 @@
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and WonBattle
+and BattleSuccess = crushing
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootPlus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter BattleLootPlus = @i
+        console_command add_money @{i}00
+        @Scripter.MessageInfo("@{i}00 denarii looted in battle", "Not only did we defeat our enemies, we also were able to loot their valuable stuff.", "building_captured_battle")
+    end_if
+#end
+set_counter BattleLootPlus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and WonBattle
+and BattleSuccess = clear
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootPlus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+    if I_CompareCounter BattleLootPlus = @i
+        console_command add_money @{i}00
+        @Scripter.MessageInfo("@{i}00 denarii looted in battle", "Not only did we defeat our enemies, we also were able to loot their valuable stuff.", "building_captured_battle")
+    end_if
+#end
+set_counter BattleLootPlus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and WonBattle
+and BattleSuccess = average
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootPlus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6"]:
+    if I_CompareCounter BattleLootPlus = @i
+        console_command add_money @{i}00
+        @Scripter.MessageInfo("@{i}00 denarii looted in battle", "Not only did we defeat our enemies, we also were able to loot their valuable stuff.", "building_captured_battle")
+    end_if
+#end
+set_counter BattleLootPlus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and WonBattle
+and BattleSuccess = close
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootPlus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4"]:
+    if I_CompareCounter BattleLootPlus = @i
+        console_command add_money @{i}00
+        @Scripter.MessageInfo("@{i}00 denarii looted in battle", "Not only did we defeat our enemies, we also were able to loot their valuable stuff.", "building_captured_battle")
+    end_if
+#end
+set_counter BattleLootPlus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and not WonBattle
+and BattleSuccess = crushing
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootMinus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter BattleLootMinus = @i
+        console_command add_money -@{i}00
+        @Scripter.MessageInfo("Lost @{i}00 denarii in battle", "Not only did we lose our men to our enemies, we also were looted off of our valuable stuff.", "building_lost_battle")
+    end_if
+#end
+set_counter BattleLootMinus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and not WonBattle
+and BattleSuccess = clear
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootMinus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter BattleLootMinus = @i
+        console_command add_money -@{i}00
+        @Scripter.MessageInfo("Lost @{i}00 denarii in battle", "Not only did we lose our men to our enemies, we also were looted off of our valuable stuff.", "building_lost_battle")
+    end_if
+#end
+set_counter BattleLootMinus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and not WonBattle
+and BattleSuccess = average
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootMinus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter BattleLootMinus = @i
+        console_command add_money -@{i}00
+        @Scripter.MessageInfo("Lost @{i}00 denarii in battle", "Not only did we lose our men to our enemies, we also were looted off of our valuable stuff.", "building_lost_battle")
+    end_if
+#end
+set_counter BattleLootMinus 0
+end_monitor
+
+monitor_event PostBattle TrueCondition
+and FactionIsLocal
+and not WonBattle
+and BattleSuccess = close
+and not I_ConflictType Naval
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if RandomPercent < @Get.Setting("BattleLootProbability")
+        inc_counter BattleLootMinus 1
+        console_command reseed_random
+    end_if
+#end
+#for @i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+    if I_CompareCounter BattleLootMinus = @i
+        console_command add_money -@{i}00
+        @Scripter.MessageInfo("Lost @{i}00 denarii in battle", "Not only did we lose our men to our enemies, we also were looted off of our valuable stuff.", "building_lost_battle")
+    end_if
+#end
+set_counter BattleLootMinus 0
+end_monitor

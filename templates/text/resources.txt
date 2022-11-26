@@ -1,0 +1,9 @@
+
+#for @Resource in @Get.ResourcesNonHidden():
+{SMT_RESOURCE_@{Resource.Id.upper()}}@{Resource.Name}
+{TMT_@{Resource.Id.upper()}_TOOLTIP}@{Resource.Name} - @{Resource.Tooltip}
+{TMT_@{Resource.Id.upper()}_MINE_TOOLTIP}@{Resource.TooltipMining}
+#end
+
+{TMT_SLAVES_TOOLTIP}Slaves - a valuable resource\nDistributed across all settlements with governors. Resource is exhausted after %d turns
+{TMT_SLAVES_TOOLTIP_SINGLE}Slaves - a valuable resource\nDistributed across all settlements with governors. Resource is exhausted after 1 more turn

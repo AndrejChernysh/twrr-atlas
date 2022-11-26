@@ -1,0 +1,18 @@
+;
+;	this file describes the appearance of the strategy map banners
+;
+
+file_scale			0.185f
+file_army_banner	data/banners/strat_flag.cas				; can't have spaces
+file_scale			1.0f
+file_navy_banner	data/banners/navy_banner.cas
+
+banner_star			0,       0.67969, 0.19141, 0.86719
+banner_button		0.19922, 0.67969, 0.38281, 0.86719
+banner_flag			0.58813, 0.01,    0.99,    0.99
+banner_sail			0.01,    0.01,    0.42,    0.41
+
+factions
+#for @Filename in @OStools.ListFilenamesModFolder("banners"):
+symbols				banners/@{Filename.replace(".dds", "")}
+#end

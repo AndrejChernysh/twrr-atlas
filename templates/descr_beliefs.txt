@@ -1,0 +1,27 @@
+;; JNF 2021-07-27 - Okay, I TRIED to make this compatable with the old definition style, but there's absolutely no way to verify the format so if things were wrong you'd get a
+;;                  whole bunch of "settlement '' not found in stringtable" errors because the region DB also has zero verification and since the last line of the settlement has
+;;                  "pagan" in it instead of "data/ui/pips/pip_religion_pagan_positive.tga", which would be the name of the religion because you're missing a line so it overflows,
+;;                  and so the format, stupidly, just assumes because the line isn't a valid religion it must, in fact, be the start of another settlement definition. Idiotic.
+;;                  Anyway, that's why you have to rewrite this, modders. Have fun!
+
+"religions":
+[
+#for @Religion in @Get.AllReligions():
+    "@{Religion.Id}":
+    {
+        "trait": "@{Religion.Id}",
+		"unrest icon": "data/pips/@{Religion.Id}_unrest.tga",
+		"religion icon":  "data/pips/@{Religion.Id}.tga",
+		"info button": "data/pips/settlementdetails.tga",
+		"name": "@{Religion.Id.upper()}_LABEL",
+		"unrest tooltip": "@{Religion.Id.upper()}_UNREST",
+		"group": "@{Religion.Group}",
+		"unrest multipliers":
+		{
+			"heretics": 0.8,
+			"heathens": 1,
+		},
+		"hide at zero": true,
+    },
+#end
+],

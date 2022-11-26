@@ -1,0 +1,5 @@
+#for @Region in @Get.AllRegions():
+    monitor_event ExterminatePopulation SettlementName @Region.IdCity
+        @Region.scriptFireInCity()
+    end_monitor
+#end

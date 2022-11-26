@@ -1,0 +1,54 @@
+"factions":
+[
+#for @Faction in @Get.AllFactionsSortByIndex():
+    "@{Faction.Id}":
+    {
+        "string":       "@{Faction.Id.upper()}",
+        "description":  "@{Faction.Id.upper()}_TEXT",
+        "culture":      "@{Faction.Culture}",
+        "ethnicity":    "@{Get.CultureById(@Faction.Culture).Ethnicity}",
+        "tags":         [ ],
+        "namelists":
+        {
+            "men":      "@{Get.CultureById(@Faction.Culture).Id}_m",
+            "women":    "@{Get.CultureById(@Faction.Culture).Id}_w",
+            "surnames": "@{Get.CultureById(@Faction.Culture).Id}_s",
+        },
+        @Faction.getDescrSMFactionsShadowSection()
+        @Faction.getDescrSMFactionsHordeSection()
+		"logos":
+		{
+		    "loading screen icon":      "data/ui/faction_icons/@{Faction.Id}.tga",
+            "standard index":           @Faction.IndexBannerlogo,
+			"rebel standard index":     20,
+            "logo index":               @Faction.IndexIcon,
+			"rebel logo index":         20,
+            "strat symbol model":       "data/models_strat/symbol_julii.CAS",
+			"strat rebel symbol model": "data/models_strat/symbol_julii.CAS",
+		},
+        "colours":
+		{
+			"primary":   [  @Faction.Color1.R,  @Faction.Color1.G,  @Faction.Color1.B,  ],
+			"secondary": [  @Faction.Color2.R,  @Faction.Color2.G,  @Faction.Color2.B,  ],
+			"family tree":
+			{
+                "background":      [  96,  17,  15,  ],
+                "font":            [  255, 255, 255, ],
+                "selected line":   [  255, 255, 255, ],
+                "unselected line": [  200, 187, 187, ],
+			},
+		},
+		"movies":
+		{
+			"intro":    "data/fmv/intros/julii_intro_1080p.wmv",
+			"victory":  "data/fmv/victory/julii_outro.wmv",
+			"defeat":   "data/fmv/lose/julii_eliminated.wmv",
+		},
+		"available in custom battles":      @{Faction.getCanCustomBattleJSONString()},
+		"prefer naval invasions":           false,
+		"default religion":                 "@{Faction.Religion}",
+		"default battle ai personality":    "default_personality",
+		"allow reproduction":               @{Faction.HasFamilyTreeJSONString},
+    },
+#end
+],

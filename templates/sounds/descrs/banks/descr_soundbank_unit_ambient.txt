@@ -1,0 +1,2095 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": true,					;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 40.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 79.998,		;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,
+	"Priority": 60,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,
+	"Looped": false,			;;should the sound loop?
+	"Random volume": -15,		;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "SFX",			;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Min dist": 1.0,			;;attenuation parameters (n.b. Kraken uses a modified attenuation curve such that V will always equal 0 at the maxdist)
+	"Max dist": -1.0,			;;setting max dist to -1 will mean the sound will autocalculate the max dist
+	"Dist priority": -1.0,		;;how much should the priority be reduced per meter of distance
+	"Prob radius": 0.0,			;;the range within which the probability will be overridden to be 100%
+	"Effect level": 0.25,		;;??? I think this has something to do with the EAX parameters?
+},
+
+"soundbank_unit_ambient":
+{
+	"entries":
+	[
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  ALL UNITS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						@{OStools.ListFilesInModfolder("sounds/idle/*.wav")},
+						{
+							"Probability": 1.0,
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						@{OStools.ListFilesInModfolder("sounds/idle/*.wav")},
+						{
+							"Probability": 1.0,
+						},
+					],
+				},
+			],
+		},
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  LIGHT UNITS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		;;grass
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;forest
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "forest_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+					],
+				},
+			],
+		},
+
+		;;scrub
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;rock
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "rock", "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;sand
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "sand", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 4,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 9.804,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 8,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 14.902,		;;the chance the sound will play when triggered
+							"Volume": 65,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;generic fallback
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", "-heavy", "-spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", "-grass_short", "-grass_long", "-sand", "-rock", "-forest_dense", "-scrub_dense", "-stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_12.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_11.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_10.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_09.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_08.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_07.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_06.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_05.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_04.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_03.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_02.wav",
+						"data/sounds/SFX/individual/Movement/Marching_Ambient_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 95,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  HEAVY UNITS
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		;;grass
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "grass_short", "grass_long", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_10.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_09.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_08.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_07.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_06.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_05.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_04.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_03.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_02.wav",
+						"data/sounds/SFX/individual/Movement/Long_Grass_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;forest and scrub
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "forest_dense", "scrub_dense", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Leafs_17.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_16.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_15.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_14.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_13.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_12.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_11.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_10.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_09.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_08.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_07.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_06.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_05.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_04.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_03.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_02.wav",
+						"data/sounds/SFX/individual/Movement/Leafs_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_08.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_07.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_06.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_05.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_04.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_03.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_02.wav",
+						"data/sounds/SFX/individual/Movement/Bush_Rustle_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;rock
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "rock", "stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 90,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_17.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_16.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_15.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_14.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_13.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_12.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_11.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_10.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_09.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Rock_Ambience_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;sand
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "sand", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 4.706,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 9.804,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_08.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_07.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_06.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_05.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_04.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_03.wav",
+						"data/sounds/SFX/individual/Movement/Sand_Ambience_02.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 75,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;generic fallback
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "heavy", "spearmen", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "all", "-water", "-grass_short", "-grass_long", "-sand", "-rock", "-forest_dense", "-scrub_dense", "-stone_road", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 20.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 10,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 30,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Squeak_01.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_13.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_12.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_11.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_10.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_09.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_08.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_07.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_06.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_05.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_04.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_03.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_02.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_01.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+						},
+						"data/sounds/SFX/individual/Movement/Armour_Clink_33.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_32.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_31.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_30.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_29.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_28.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_27.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_26.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_25.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_24.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_23.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_22.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_21.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_20.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_19.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_18.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_17.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_16.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_15.wav",
+						"data/sounds/SFX/individual/Movement/Armour_Clink_14.wav",
+						{
+							"Probability": 60.0,		;;the chance the sound will play when triggered
+							"Volume": 80,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+		;;  WATER (SHARED)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+		{
+			"unit":
+			{
+				;;the categories, classes and specific units this sound applies to
+				"categories":
+					[ "all", ],
+				"classes":
+					[ "all", ],
+
+				"IDs":
+				[
+				],
+
+				;;if the category is handler or cavalry, check for these animals
+				"animals":
+					[ "all", ],
+			},
+			"terrain":
+			{
+				"seasons":
+					[ "all", ],
+				"climates":
+					[ "all", ],
+				"ground types":
+					[ "water", ],
+			},
+			"sounds":
+			[
+				"lod":
+				{
+					;; number of soldiers in the unit
+					"switch": 1,
+
+					"sounds":
+					[
+						"data/sounds/SFX/individual/Movement/Water_Splash_12.wav",
+						"data/sounds/SFX/individual/Movement/Water_Splash_10.wav",
+						"data/sounds/SFX/individual/Movement/Water_Splash_09.wav",
+						"data/sounds/SFX/individual/Movement/Water_Splash_08.wav",
+						"data/sounds/SFX/individual/Movement/Water_Splash_01.wav",
+						{
+							"Probability": 7.843,		;;the chance the sound will play when triggered
+							"Volume": 85,				;;the volume of the sample as a percentage of the base file's
+						},
+					],
+				},
+			],
+		},
+	],
+}, ;;soundbank_unit_ambient

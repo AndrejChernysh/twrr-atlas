@@ -1,0 +1,15 @@
+"resources":
+[
+#for @Resource in @Get.ResourcesNonHidden():
+    "@{Resource.Id}":
+    {
+        @{Resource.getDescrSMResourceEntries()}
+    },
+#end
+#for @Resource in @Get.ResourcesHidden():
+    "@{Resource.Id}":
+    {
+        "subtype": "hidden",
+    },
+#end
+],

@@ -1,0 +1,7 @@
+CAESER_IN_GAUL_TITLE
+SONS_OF_MARS_TITLE
+IMPERIAL_CAMPAIGN_TITLE
+#for @Faction in @Get.AllFactions():
+IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_TITLE
+IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_TEXT
+#end

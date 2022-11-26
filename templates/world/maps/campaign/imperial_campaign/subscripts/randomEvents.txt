@@ -1,0 +1,30 @@
+
+monitor_event FactionTurnStart FactionType slave
+    set_counter oneRandomEventPerTurn 0
+    #for @Region in @Get.AllRegions():
+        if RandomPercent < 1
+        and I_CompareCounter oneRandomEventPerTurn = 0
+            if RandomPercent < 1
+            and I_CompareCounter oneRandomEventPerTurn = 0
+                @Region.scriptFloodInCity()
+                set_counter oneRandomEventPerTurn 1
+            end_if
+            if RandomPercent < 1
+            and I_CompareCounter oneRandomEventPerTurn = 0
+                @Region.scriptEarthquakeInCity()
+                set_counter oneRandomEventPerTurn 1
+            end_if
+            if RandomPercent < 1
+            and I_CompareCounter oneRandomEventPerTurn = 0
+                @Region.scriptFireInRegion()
+                @Region.scriptRevoltInCity()
+                set_counter oneRandomEventPerTurn 1
+            end_if
+            if RandomPercent < 1
+            and I_CompareCounter oneRandomEventPerTurn = 0
+                @Region.scriptPlagueInCity()
+                set_counter oneRandomEventPerTurn 1
+            end_if
+        end_if
+    #end
+end_monitor

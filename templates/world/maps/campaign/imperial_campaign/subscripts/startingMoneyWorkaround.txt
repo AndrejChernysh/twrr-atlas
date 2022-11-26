@@ -1,0 +1,9 @@
+
+; Hence all factions are re_emergent their starting denari is always set to 0
+
+if I_CompareCounter justOnceStartingMoney = 0 ;persistent
+#for @Faction in @Get.AllFactions():
+    console_command add_money @{Faction.Id} @Faction.Money
+#end
+set_counter justOnceStartingMoney 1
+end_if

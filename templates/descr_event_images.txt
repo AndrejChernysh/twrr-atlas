@@ -1,0 +1,3011 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Description file for the event image paths
+;;
+;;  Syntax was simple:  choose an event from the following list and follow it with:
+;;		icon  {icon type}
+;;		heading_items	{no of items}		(optional)
+;;		footer_items	{no of items}		(optional)
+;;		importance		{high/normal}		(optional)
+;;		format <see below>
+;;
+;;
+;; Where {icon type} is one of: agent, military, diplomacy, battle, historic, settlement, faction, senate or disaster
+;;
+;; Heading items is the number of items that constitute the non scrolling heading part of the message.  If this isn't specified, it will default
+;; to 2.  Heading items, must be single items on thier own row, otherwise the effects are undefined
+;;
+;; Footer items works as per heading_items, but specifies the number of non-scrolling items at the bottom of the message
+;; The default is 0
+;;
+;; importance - messages marked as high importance will open immeadieately they appear on screen, unless more messages
+;; of high importance are displayed, in which case they will open as soon as the others are closed down
+
+;; Message formating: (not so simple)
+;;
+;; format <table padding>
+;; {
+;;	 <object type> <object_parameters>
+;; }
+;;
+;; where <table padding> is: center, left, right, ends, all.  This affects what happens to the extra pixels on each row of the table:
+;; center adds extra space to middle cell, left and right add extra to first and last cell respectively, ends adds to first and last, and all
+;; divides space equally between all cells in that row.  If no table padding is specified 'all' is used by default
+;; <object type> is : title, string, image, title_image, multistring (multiline_string), ui_element, group, condition, switch, columns, accept/decline, spacer
+;; and <object_paramters> (per_object) are:
+;;
+;;		title		: row justification, font size, colour
+;;		string		: row justification, font size, colour, <lookup table identifier (optional)>
+;;		image		: row justification, <image name (optional)>
+;;		title_image : row justification
+;;		multistring : row justification, font size, colour, justification, <lookup table identifier (optional)>
+;;      bodystring  : row justification, font size, colour, justification    ;; Inserts the culturally specific text retrieved from event_strings.txt
+;;		ui_element  : row justification
+;;		group		: spacing (distance between items in group)
+;;                    {
+;;						<object type> <object parameters>
+;;						...
+;;					  }
+;;		condition   : {
+;;					  true (optional)
+;;					  {
+;;						<object_type> <object parameters>
+;;						...
+;;					  }
+;;					  false (optional)
+;;					  {
+;;						<object_type> <object parameters>
+;;						...
+;;					  }
+;;		switch		: {
+;;							case
+;;							{
+;;								<object_type> <object_parameters>
+;;								...
+;;							}
+;;							case ...
+;;					  }
+;;		columns		: <number of columns>	font size, colour
+;;		spacer		: <height>										;; insert an empty row of height <height> into the table
+;;		accept		: row justification <"text">					;; Creates an "accept" button - if "text" is specified, then the button will be a text button
+;;	    decline		: row justification <"text">					;; Creates an "decline" button - if "text" is specified, then the button will be a text button
+;;
+;;  row justification (and justification) is : center, left, right
+;;	colour            : black, khaki, dark_brown or rgb values
+;;	font              : tnr, tnr_med, tnr_sml, verdana, cinzel_med, verdana_sml (or se descr_font_db.txt) incase any new ones have been added
+;;	image name        : filename of image (not in ""s, and excluding .tga extenstion)
+;;	lookup identifier : id tag from message_text_lookup.txt
+;;
+;;
+;;
+;;	Specifying an optional parameter (excepting true/false in the condition object) will create a static instance of the object, i.e. it will
+;;  need no further initialisation
+;;
+;;	The filenames will be prefixed with the path "data/ui/<culture>/eventpics", and postfixed with ".tga" so no need to worry about that.
+;;	Icon type is one of: agent, military, diplomacy, battle, historic, settlement, faction, senate or disaster.  If no icon type is specified then 'faction' is used
+;;
+;;  If both image and icon are specified then they should be specified in order image, icon, not icon, image.
+;;
+;;
+;;  Message formats can be cloned by using the 'use' keyword after the format i.e.
+;;
+;;  settlement_taken_copy
+;;		icon	settlement
+;;		format  use settlement_taken
+;;
+;;  Unfortunately, cloned specifications will share the same title and image if the 'title', and 'title_image' message objects is used.  As 'bodystring' obejcts are reset
+;;  before each use, they will be different to the version cloned
+;;
+
+settlement_taken
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel_med	dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+settlement_besieged
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel		dark_brown center
+		multistring  center verdana_sml dark_brown center
+		title_image	 center
+		multistring  center verdana_sml dark_brown center
+		multistring		 center verdana_sml_bold	dark_brown center
+		ui_element   center
+	}
+
+settlement_destroyed
+	icon	settlement
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel_med	dark_brown center
+		multistring		 center cinzel_med	dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+naval_blockade
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel		dark_brown center
+		title_image	 center
+		multistring  center verdana_sml dark_brown center
+		multistring		 center verdana_sml_bold	dark_brown center
+		ui_element   center
+	}
+
+wonder_captured
+	icon	historic
+	heading_items	2
+	format
+	{
+		title        center cinzel_med		dark_brown
+		image  		 center
+		multistring		 center verdana_sml_bold		dark_brown center
+		multistring  center verdana_sml	dark_brown center
+		bodystring   center verdana_sml dark_brown center
+		spacer		 8
+		multistring  center   verdana_sml dark_brown center
+		spacer		 8
+		multistring  center   verdana_sml dark_brown center
+	}
+
+wonder_lost
+	icon	historic
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring  center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_leader_dies
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_leader_killed
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_leader_imperator
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown	center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_richest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_largest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_strongest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_advanced
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+army_revolt
+	icon	military
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel_med	dark_brown center
+		multistring		 center cinzel_med	dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+		multistring	 center   verdana_sml dark_brown center
+	}
+
+settlement_unrest
+	icon	settlement
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown	center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+settlement_revolts
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+building_completed
+	icon	settlement
+	heading_items	6
+	format
+	{
+		title		center cinzel		dark_brown
+		multistring		center cinzel_med	dark_brown center
+		bodystring	center   verdana_sml  dark_brown	center
+		image		center
+		spacer		 8
+		multistring		center cinzel_med	dark_brown center
+		multistring left verdana_sml  dark_brown	left
+	}
+
+unit_completed
+	icon	military
+	heading_items	5
+	format
+	{
+		title		center cinzel		dark_brown
+		multistring		center cinzel_med	dark_brown center
+		image		center
+		spacer		8
+		multistring		center cinzel_med	dark_brown center
+		bodystring	center   verdana_sml  dark_brown	center
+		spacer		8
+		multistring left   verdana_sml  dark_brown	left
+	}
+
+retraining_complete
+	icon	military
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel		dark_brown
+		multistring		center cinzel_med	dark_brown center
+		image		center
+		spacer		8
+		multistring		center cinzel_med	dark_brown center
+		bodystring	center   verdana_sml  dark_brown	center
+		spacer		8
+		multistring left verdana_sml  dark_brown	left
+	}
+
+agent_recruited
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel		dark_brown
+		multistring		center cinzel_med	dark_brown center
+		image		center
+		multistring		center cinzel_med	dark_brown center
+		bodystring	center   verdana_sml  dark_brown	center
+	}
+
+character_dies_natural
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown center
+		multistring		 center cinzel	dark_brown  center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+character_dies_heroic
+	icon	battle
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+settlement_surrender
+	icon	settlement
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		multistring		 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+general_appointed
+	icon	military
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown center
+		multistring		 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+general_promoted
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+general_dies
+	icon	military
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		multistring		 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+new_faction_leader
+	icon	faction
+	heading_items 1 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		;;title_image	 center
+		bodystring  center verdana_sml dark_brown center
+		spacer      4
+		ui_element  left
+	}
+
+new_faction_heir
+	icon	faction
+	heading_items 1 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		condition
+		{
+			false
+			{
+				title_image	 center
+				multistring	 center cinzel_med	dark_brown center
+				spacer       8
+			}
+		}
+		bodystring  center verdana_sml dark_brown center
+		condition
+		{
+			true
+			{
+				spacer      4
+				ui_element  left      8
+			}
+		}
+	}
+
+new_bouncing_baby
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		multistring	 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+coming_of_age
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+marriage
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+adoption
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_defeated
+	icon	diplomacy
+	heading_items	3
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring		 center cinzel	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+faction_defeated_by_player
+	icon	diplomacy
+	format use faction_defeated
+
+
+mission_spy_character
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+mission_spy_settlement
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+mission_assassinate
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+mission_sabotage
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+hidden_agent_detected_in_settlement
+	icon agent
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		condition
+		{
+			true
+			{
+				multistring		 center cinzel_med	dark_brown center
+			}
+		}
+		title_image	 center
+		multistring	 center cinzel_med	dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+reinforcements_arrived
+	icon	military
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med	dark_brown
+		multistring  center cinzel	dark_brown center
+		title_image	 center
+		bodystring   center verdana_sml dark_brown center
+		multistring  center verdana_sml_bold dark_brown center
+		ui_element   center
+	}
+
+year_end_report
+	icon	faction
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		ui_element   center
+		table
+	}
+
+chat_message
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med	dark_brown
+		multistring  center cinzel_med	dark_brown center
+		title_image	 center
+		spacer		 8
+		multistring  left verdana_sml dark_brown left
+	}
+
+disaster_earthquake
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_volcano
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_flood
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_storm
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_disorder
+	icon			disaster
+	heading_items	3
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+	}
+
+disaster_riot
+	icon			settlement
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_plague
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+disaster_famine
+	icon			disaster
+	heading_items	3
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		string left	verdana_sml dark_brown   effects
+		group left  4
+		{
+			string left verdana_sml dark_brown your_citizens_killed
+			integer		 left verdana_sml dark_brown
+		}
+		group left  4
+		{
+			string left verdana_sml dark_brown your_soldiers_killed
+			integer		 left verdana_sml dark_brown
+		}
+	}
+
+disaster_mutiny
+	icon			disaster
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		multistring	 center   verdana_sml dark_brown center
+	}
+
+disaster_barbarian_horde
+	icon	disaster
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+	}
+
+disaster_pirates
+	icon	disaster
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+	}
+
+disaster_brigands
+	icon	disaster
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		multistring  center cinzel_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+	}
+
+disaster_fire
+	icon			disaster
+	heading_items	2
+	importance high
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	 center   verdana_sml dark_brown center
+		spacer		 4
+		table
+	}
+
+building_repair_complete
+	icon	settlement
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel		dark_brown
+		multistring	center cinzel_med	dark_brown center
+		bodystring	center   verdana_sml  dark_brown	center
+		image		center
+		spacer		8
+		multistring	center cinzel_med	dark_brown center
+		multistring left verdana_sml  dark_brown	left
+	}
+
+construction_complete_many
+	icon			settlement
+	heading_items	1
+	format right
+	{
+		title		center cinzel_med dark_brown
+		spacer		8
+		collated_queue_display verdana_sml 4
+	}
+
+recruitment_complete_many
+	icon			military
+	heading_items	1
+	format right
+	{
+		title		center cinzel_med dark_brown
+		spacer		8
+		collated_queue_display verdana_sml 4
+	}
+
+character_trait_gained
+	icon faction
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 4
+		multistring  center verdana_sml dark_brown center
+		spacer		 4
+		ui_element	 left
+		multistring  left verdana_sml dark_brown left
+		ui_element	 left
+	}
+
+character_trait_lost
+	icon faction
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		spacer		 4
+		multistring  center verdana_sml dark_brown center
+		spacer		 4
+		ui_element	 left
+		multistring  left verdana_sml dark_brown left
+		ui_element	 left
+	}
+
+senate_message
+	icon senate
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image	center
+		spacer		8
+		multistring	center cinzel_med dark_brown center
+		multistring center cinzel_med dark_brown center
+		multistring center   verdana_sml dark_brown center
+	}
+
+
+senate_mission_issued
+	icon	senate
+	heading_items 3
+	importance high
+	format
+	{
+		title		 center cinzel dark_brown
+		spacer		 4
+		title_image	 center
+		multistring	 center cinzel_med dark_brown center
+		multistring	 center cinzel dark_brown center
+		condition								;; Do we have a time limit
+		{
+			true
+			{
+				group left   8
+				{
+					string		left	verdana_sml_bold	dark_brown	time_limit
+					string		left	verdana_sml dark_brown
+				}
+			}
+		}
+		multistring		left	verdana_sml dark_brown	left
+		spacer 			8
+		string			left	verdana_sml_bold	dark_brown
+		multistring		left	verdana_sml dark_brown	left
+		condition								;; Do we want accept/decline buttons
+		{
+			true
+			{
+				group center 8
+				{
+					accept	right
+					decline	left
+				}
+			}
+		}
+	}
+
+senate_mission_failed
+	icon	senate
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image center
+		multistring	center cinzel_med dark_brown center
+		multistring		center cinzel dark_brown center
+		spacer		 4
+		multistring center   verdana_sml dark_brown center
+		condition
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center
+				multistring	center verdana_sml dark_brown center
+			}
+		}
+
+	}
+
+senate_mission_success
+	icon	senate
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image center
+		multistring	center cinzel_med dark_brown center
+		multistring		center cinzel dark_brown center
+		multistring center   verdana_sml dark_brown center
+		spacer		 4
+		condition
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center
+				spacer		 4
+				multistring	center verdana_sml_bold dark_brown center
+			}
+		}
+	}
+
+unit_routs_in_battle
+	icon military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image center
+		multistring	center cinzel_med dark_brown center
+		spacer		8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+building_captured_battle
+	icon settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image center
+		multistring	center cinzel_med dark_brown center
+		spacer		8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+building_lost_battle
+	icon settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center cinzel_med dark_brown
+		title_image center
+		multistring	center cinzel_med dark_brown center
+		spacer		8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+general_killed_ally
+	icon	battle
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		image		 center	faction_defeated
+		multistring		 center cinzel_med	dark_brown center
+		multistring		 center cinzel dark_brown center
+		spacer		8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+general_killed_enemy
+	icon	battle
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		image		 center	faction_defeated
+		multistring	 center cinzel_med	dark_brown center
+		multistring	 center cinzel dark_brown center
+		spacer		8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+settlement_surrenders_own
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+settlement_surrenders_enemy
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer		 8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+advisor_dummy_msg
+	icon	faction
+	format
+	{
+		multistring	center verdana_sml dark_brown center
+		multistring	center verdana_sml dark_brown center
+;		condition								;; Do we want accept/decline buttons
+;		{
+;			true
+;			{
+;				group center	8	;; spacing for the text buttons
+;				{
+;					accept	right white
+;					decline	left  white
+;				}
+;			}
+;		}
+	}
+
+new_ancillary_character
+	icon	faction
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel dark_brown center
+		spacer  4
+		bodystring	center verdana_sml dark_brown center
+		spacer  4
+		ui_element center
+	}
+
+female_dies
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	center cinzel dark_brown center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+games_held
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+races_held
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+character_dies_suspicious
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel	dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+character_dies_disaster
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center character_dies_natural
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel	dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+
+family_report
+	icon			faction
+	heading_items	1
+	format right
+	{
+		title	center cinzel_med dark_brown
+		spacer	4
+		condition ;; any character deaths
+		{
+			true
+			{
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_natural	title: character_dies_natural	subtitle: death_by_natural_causes
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_natural	title: character_dies_natural	subtitle: death_by_natural_disaster
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_heroic	title: character_dies_heroic	subtitle: death_in_battle
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_suspicious	title: character_dies_suspicious	subtitle: death_by_assassination
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_suspicious	title: character_dies_suspicious	subtitle: death_by_execution
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_natural	title: character_dies_natural	subtitle: death_by_poisoning
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_natural	title: character_dies_natural	subtitle: death_by_plague
+					}
+				}
+				condition
+				{
+					true
+					{
+						collated_msg_display	verdana_sml	4	event	image: character_dies_natural	title: character_dies_natural	subtitle: death_by_starvation
+					}
+				}
+			}
+		}
+		condition ;; new faction leader
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: new_faction_leader	title: new_faction_leader
+			}
+		}
+		condition ;; new faction heir
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: new_faction_heir		title: new_faction_heir
+			}
+		}
+		condition ;; any births
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: new_bouncing_baby	title: new_bouncing_baby
+			}
+		}
+		condition ;; any character coming of age
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: coming_of_age		title: coming_of_age
+			}
+		}
+		condition ;; any women die
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: female_dies	title: female_dies
+			}
+		}
+		condition ;; any marriages
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: marriage  title: marriage
+			}
+		}
+		condition ;; any traits gained
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: character_trait_gained	title: character_trait_gained
+			}
+		}
+		condition ;; any traits lost
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: character_trait_lost		title: character_trait_lost
+			}
+		}
+		condition ;; any retainers gained
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: new_ancillary_character	title: new_ancillary_character
+			}
+		}
+		condition ;; any games held
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: games_held	title: games_held
+			}
+		}
+		condition ;; any races_held
+		{
+			true
+			{
+				collated_msg_display	verdana_sml	4	event	image: races_held	title: races_held
+			}
+		}
+	}
+
+diplomacy_report
+	icon	diplomacy
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		condition  ;; anyone declaring war
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  war_declared_multi
+				faction_war_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; any betrayals
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  betrayal_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; any alliances broken
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  alliance_broken_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; anyone declaring an alliance
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  alliance_declared_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; anyone signing peace treaty
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  treaty_declared_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; anyone declaring a ceasefire
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  ceasefire_declared_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+		condition ;; any protectorates established
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  protectorates_established_multi
+				faction_pair_list verdana_sml_bold dark_brown
+			}
+		}
+	}
+
+war_declared
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med dark_brown
+		title_image	 center
+		spacer	8
+		bodystring  center verdana_sml dark_brown center
+		spacer	8
+		faction_war_pair_list verdana_sml_bold dark_brown
+	}
+
+alliance_declared
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		faction_pair_list verdana_sml_bold dark_brown
+	}
+
+ceasefire_declared
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		faction_pair_list verdana_sml_bold dark_brown
+	}
+
+peacy_treaty_signed
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		faction_pair_list verdana_sml_bold dark_brown
+	}
+
+alliance_broken
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer		8
+		faction_pair_list verdana_sml_bold dark_brown
+	}
+
+protectorate_established
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		faction_pair_list verdana_sml_bold dark_brown
+	}
+
+ally_declared_alliance_with_enemy
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	footer_items	1
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		faction_pair_list verdana_sml_bold dark_brown
+		group right 8
+		{
+			accept   right
+			decline  left
+		}
+	}
+
+war_declared_on_ally
+	icon			diplomacy
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	footer_items	1
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		multistring  center verdana_sml dark_brown center
+                ;;bodystring   center verdana_sml dark_brown center
+		spacer	8
+		faction_war_pair_list verdana_sml_bold dark_brown
+		group right 8
+		{
+			accept    right
+			decline   left
+		}
+	}
+
+suitor_available_for_daughter
+	icon	faction
+	heading_items	2
+	footer_items	1
+	format
+	{
+		title	center cinzel_med dark_brown
+		group  center 8
+		{
+			string  left  cinzel_med dark_brown betrothed
+			string  right  cinzel_med dark_brown
+		}
+		bodystring	center verdana_sml dark_brown center
+		ui_element	left						;; Character info panel
+		group right 8
+		{
+			accept    right
+			decline   left
+		}
+
+	}
+
+adopta_general_offer
+	icon			faction
+	heading_items	1
+	footer_items	1
+	format
+	{
+		title	center cinzel_med dark_brown
+		bodystring	center verdana_sml dark_brown center
+		ui_element	left						;; Character info panel
+		group right 8
+		{
+			accept    right
+			decline   left
+		}
+	}
+
+
+character_available_for_adoption
+	icon			faction
+	heading_items   2
+	footer_items	1
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring  center  cinzel_med dark_brown center
+		bodystring	center verdana_sml dark_brown center
+
+		ui_element	left						;; Character info panel
+		group right 8
+		{
+			accept    right
+			decline   left
+		}
+	}
+
+
+adoption_failed
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_spy_fail_and_killed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		image	center thief_caught
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_spy_fail
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		image	center senate_mission_demand_suicide
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_assassinate_fail_and_killed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center thief_caught
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_assassinate_fail
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center  senate_mission_demand_suicide
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_sabotage_fail_and_killed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center  thief_caught
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+mission_sabotage_fail
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center  senate_mission_demand_suicide
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+settlement_occupied
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		condition
+		{
+			true
+			{
+				spacer 8
+				multistring center verdana_sml dark_brown center siege_ended
+			}
+		}
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+settlement_enslaved
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		condition
+		{
+			true
+			{
+				spacer 8
+				multistring center verdana_sml dark_brown center siege_ended
+			}
+		}
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+settlement_exterminated
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		condition
+		{
+			true
+			{
+				spacer 8
+				multistring center verdana_sml dark_brown center siege_ended
+			}
+		}
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+banner_lost_warning
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+banner_lost_final
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer  8
+		multistring	center verdana_sml dark_brown center  eagle_is_located
+		multistring	center cinzel dark_brown center
+	}
+
+
+banner_captured
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+		spacer	8
+		multistring	center verdana_sml dark_brown center  eagle_is_located
+		multistring	center cinzel dark_brown center
+	}
+
+historic_event
+	icon	historic
+	format
+	{
+		multistring	center cinzel dark_brown center
+		image	center
+		spacer	8
+		multistring	center verdana_sml dark_brown center
+		;; begin FERAL_ROMEHD // FB 13-Dec-2019 - Added optional damage report since some historical events can cause damage.
+		condition    ;; If anyone was hurt
+		{
+			true
+			{
+				spacer		 8
+				condition  ;; If any settlements are affected
+				{
+					true
+					{
+						string left	verdana_sml dark_brown   settlements_affected
+						list   1		verdana_sml dark_brown
+					}
+				}
+				condition ;; If any characters are affected
+				{
+					true
+					{
+						string left	verdana_sml dark_brown   characters_affected
+						list   1		verdana_sml dark_brown
+					}
+				}
+				condition ;; If any buildings are affected
+				{
+					true
+					{
+						string left	verdana_sml dark_brown   buildings_affected
+						list   1		verdana_sml dark_brown
+					}
+				}
+				spacer		 8
+				group left  4
+				{
+					string left verdana_sml dark_brown your_citizens_killed
+					integer		 left verdana_sml dark_brown
+				}
+				group left  4
+				{
+					string left verdana_sml dark_brown your_soldiers_killed
+					integer		 left verdana_sml dark_brown
+				}
+			}
+		}
+		;; end FERAL_ROMEHD // FB 13-Dec-2019 - Added optional damage report since some historical events can cause damage.
+	}
+
+player_faction_richest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	center cinzel_med dark_brown center
+		spacer
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+player_faction_strongest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	center cinzel_med dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+player_faction_advanced
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	center cinzel_med dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+
+player_faction_largest
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring	center cinzel_med dark_brown center
+		spacer		 4
+		bodystring  center verdana_sml dark_brown center
+	}
+
+building_sabotaged
+	icon	settlement
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+players_army_destroyed
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center unit_routs_in_battle
+		spacer		8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+
+exterminate_populace
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+upgrade_settlement_to_town
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+upgrade_settlement_to_large_town
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+upgrade_settlement_to_city
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+upgrade_settlement_to_large_city
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+upgrade_settlement_to_huge_city
+	icon	settlement
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+multiturn_path_blocked
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+senate_office_gained
+	icon	senate
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		title_image	center
+		spacer	8
+		multistring  center   verdana_sml dark_brown center
+		spacer  8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+senate_office_lost
+	icon	senate
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+war_declared_non_player
+	icon	diplomacy
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+		spacer		8
+		faction_war_pair_list verdana_sml_bold dark_brown
+	}
+
+
+agent_detected_and_expelled
+	icon	agent
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		condition
+		{
+			true
+			{
+				multistring		 center cinzel_med	dark_brown center
+			}
+		}
+		image		 center	hidden_agent_detected_in_settlement
+		multistring		 center cinzel_med	dark_brown center
+		spacer       8
+		bodystring   center verdana_sml dark_brown center
+	}
+
+
+building_captured_by_allies
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		image	center building_captured_battle
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+marian_reform
+	icon	historic
+	importance high
+	format
+	{
+		multistring	center cinzel_med dark_brown center
+		image	center
+		spacer	8
+		multistring	center verdana_sml dark_brown center
+	}
+
+
+settlement_bribed
+	icon	settlement
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+army_bribed
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+character_bribed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+betrayed
+	icon	diplomacy
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+fort_bribed
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+outlawed
+	icon	   senate
+;;	importance high
+	format
+	{
+		condition		;; Is the local player the one that is outlawed
+		{
+			true
+			{
+				string	center cinzel dark_brown  you_have_been_outlawed
+			}
+			false
+			{
+				condition  ;; Is the local player part of the superfaction
+				{
+					true
+					{
+						;; JNF 2021-09-17 - this now uses the faction type of the outlawed faction, obviously doesn't matter because
+						;; that conveniently lined up but still, important to note
+						switch   ;; Which faction has been outlawed
+						{
+							case 0
+							{
+								string	center cinzel dark_brown  rome_outlaws_julii_notify_roman_title
+							}
+							case 2
+							{
+								string	center cinzel dark_brown  rome_outlaws_scipii_notify_roman_title
+							}
+							case default ;;make brutii default in case a superfaction member isn't in the first 3 faction slots
+							{
+								string	center cinzel dark_brown  rome_outlaws_brutii_notify_roman_title
+							}
+						}
+					}
+					false		;; Otherwise it must be foreign
+					{
+						switch
+						{
+							case 0
+							{
+								string	center cinzel dark_brown  rome_outlaws_julii_notify_foreign_title
+							}
+							case 2
+							{
+								string	center cinzel dark_brown  rome_outlaws_scipii_notify_foreign_title
+							}
+							case default ;;make brutii default in case a superfaction member isn't in the first 3 faction slots
+							{
+								string	center cinzel dark_brown  rome_outlaws_brutii_notify_foreign_title
+							}
+						}
+					}
+				}
+			}
+		}
+
+		title_image	center
+		spacer	8
+
+		condition		;; Is the local player the one that is outlawed
+		{
+			true
+			{
+				multistring	center verdana_sml dark_brown center  rome_outlaws_you_notify_all_factions
+			}
+			false
+			{
+				condition  ;; Is the local player roman?
+				{
+					true
+					{
+						switch   ;; Which faction has been outlawed
+						{
+							case 0
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_julii_notify_roman
+							}
+							case 2
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_scipii_notify_roman
+							}
+							case default ;;make brutii default in case a superfaction member isn't in the first 3 faction slots
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_brutii_notify_roman
+							}
+						}
+					}
+					false		;; Otherwise it must be foreign
+					{
+						switch
+						{
+							case 0
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_julii_notify_foreign
+							}
+							case 2
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_scipii_notify_foreign
+							}
+							case default ;;make brutii default in case a superfaction member isn't in the first 3 faction slots
+							{
+								multistring	center verdana_sml dark_brown center  rome_outlaws_brutii_notify_foreign
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+civil_war_possible
+	icon	   military
+;;	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+civil_war
+	icon		diplomacy
+;;	importance	high
+	format
+	{
+		condition	;; Are we sending this to a roman faction
+		{
+			true
+			{
+				switch  ;; Who started the civil war?
+				{
+					;; JNF 2021-09-17 - same thing as outlaw, now using the faction type rather than a hardcode name translation
+					case 0
+					{
+						string	center cinzel_med dark_brown	roman_civil_war_julii_start_notify_title
+					}
+					case 2
+					{
+						string	center cinzel_med dark_brown	roman_civil_war_scipii_start_notify_title
+					}
+					;;make scipii the default, in case a superfaction member isn't one of the first three factions
+					case default
+					{
+						string	center cinzel_med dark_brown	roman_civil_war_brutii_start_notify_title
+					}
+				}
+			}
+			false
+			{
+				switch  ;; Who started the civil war?
+				{
+					case default
+					{
+						string	center cinzel_med dark_brown	roman_civil_war_notify_foreigners_title
+					}
+				}
+			}
+		}
+
+		title_image	center
+		spacer	8
+
+		condition	;; Are we sending this to a roman faction
+		{
+			true
+			{
+				switch  ;; Who started the civil war?
+				{
+					case 0
+					{
+						multistring	center verdana_sml dark_brown center 	roman_civil_war_julii_start_notify
+					}
+					case 1
+					{
+						multistring	center verdana_sml dark_brown center 	roman_civil_war_brutii_start_notify
+					}
+					;;make scipii the default, in case a superfaction member isn't one of the first three factions
+					case default
+					{
+						multistring	center verdana_sml dark_brown center 	roman_civil_war_scipii_start_notify
+					}
+				}
+			}
+			false
+			{
+				switch  ;; Who started the civil war?
+				{
+					case default
+					{
+						multistring	center verdana_sml dark_brown center roman_civil_war_notify_foreigners
+					}
+				}
+			}
+		}
+	}
+
+
+player_lose_warning
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+senate_election_results
+	icon	senate
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		condition	;; Did the player get any offices?
+		{
+			true
+			{
+				bodystring	center verdana_sml dark_brown center
+				spacer 8
+				senate_office_list
+			}
+			false
+			{
+				multistring	center verdana_sml dark_brown center 	senate_election_results_no_offices
+			}
+		}
+	}
+
+
+transgression
+	icon	diplomacy
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+senate_standing_transition
+	icon	senate
+	format
+	{
+		condition
+		{
+			true ;; Senate popularity
+			{
+				condition
+				{
+					true	;; On the rise
+					{
+						multistring	center cinzel dark_brown center senate_popularity_rises
+					}
+					false	;; On the decline
+					{
+						multistring	center cinzel dark_brown center senate_popularity_falls
+					}
+				}
+			}
+			false	;; Peoples support
+			{
+				condition
+				{
+					true	;; On the rise
+					{
+						multistring	center cinzel dark_brown center people_popularity_rises
+					}
+					false	;; On the decline
+					{
+						multistring	center cinzel dark_brown center people_popularity_falls
+					}
+				}
+			}
+		}
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		multistring	center verdana_sml dark_brown center
+	}
+
+
+senate_congratulation_message
+	icon	senate
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		switch ;; Current senate standing category
+		{
+			case 0  ;; Low
+			{
+				multistring	center verdana_sml dark_brown center senate_congratulations_for_great_victory_standing_low
+			}
+			case 1  ;; Med
+			{
+				multistring	center verdana_sml dark_brown center senate_congratulations_for_great_victory_standing_mid
+			}
+			case 2  ;; High
+			{
+				multistring	center verdana_sml dark_brown center senate_congratulations_for_great_victory_standing_high
+			}
+		}
+	}
+
+
+your_machine_needs_upgrading
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+your_machine_needs_upgrading_ai_to_reinforce
+	icon	military
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+small_army_disbands
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		condition		;; Can we find a general for this army
+		{
+			true
+			{
+				multistring	center cinzel_med dark_brown center
+			}
+		}
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+small_army_disbands_loser
+	icon	military
+	icon	military
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		condition		;; Can we find a general for this army
+		{
+			true
+			{
+				multistring	center cinzel_med dark_brown center
+			}
+		}
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+new_eastern_emperor
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+new_western_emperor
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+new_eastern_ceasar
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+new_western_ceasar
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+shadow_faction_appears
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+eastern_shadow_faction
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+western_shadow_faction
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+shadow_faction_destroyed
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+emergent_faction_appears
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+
+		;;switch image based on faction type
+		switch
+		{
+			case default
+			{
+				title_image	center
+			}
+		}
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+
+		;;switch body based on faction type
+		switch
+		{
+			case default
+			{
+				bodystring	center verdana_sml dark_brown center
+			}
+		}
+	}
+
+
+new_barbarian_horde
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+horde_settles
+	icon	faction
+	heading_items 4 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+horde_in_your_region
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+city_sacked
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+dominant_religion
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+
+		;;use the index of the religion to switch content here
+		switch
+		{
+			;;by default just use whatever image is assigned here
+			case default
+			{
+				title_image	center
+			}
+		}
+
+		;;multistring for the religion name
+		multistring	center cinzel_med dark_brown center
+		spacer	8
+
+		;;use the index of the religion to switch content here
+		switch
+		{
+			;;by default just use the default message body
+			case default
+			{
+				bodystring	center verdana_sml dark_brown center
+			}
+		}
+	}
+
+
+roman_empire_reunited
+	icon	faction
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+new_merchant_acquired
+	icon			faction
+	heading_items	2
+	format
+	{
+		title	center cinzel_med dark_brown
+		multistring	center cinzel_sml dark_brown center
+		bodystring	center verdana_sml dark_brown center
+		ui_element	left						;; Character info panel
+	}
+
+merchant_mission_buyout
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown	center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+merchant_mission_buyout_failed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center  messenger
+		multistring	center cinzel_med	dark_brown	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+merchant_mission_buyout_failed_acquired
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center messenger
+		multistring	center cinzel_med	dark_brown	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+enemy_merchant_mission_buyout
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title        center cinzel_med		dark_brown
+		title_image	 center
+		multistring		 center cinzel_med	dark_brown	center
+		spacer		 8
+		bodystring  center verdana_sml dark_brown center
+	}
+
+enemy_merchant_mission_buyout_failed
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center  messenger
+		multistring	center cinzel_med	dark_brown	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+enemy_merchant_mission_buyout_failed_acquired
+	icon	agent
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center cinzel_med dark_brown
+		image	center messenger
+		multistring	center cinzel_med	dark_brown	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+;; YHZ 05-Feb-2021 Fix fbug://RHD-8744, Add player admits defeat alert
+army_retreating_ally
+	icon	battle
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center verdana_med_bold dark_brown
+		image		center unit_routs_in_battle
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+;; YHZ 05-Feb-2021 Fix fbug://RHD-8744, Add unstable currency news event
+army_retreating_enemy
+	icon	battle
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title		center verdana_med_bold dark_brown
+		image		center unit_routs_in_battle
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+;; JNF 2021-07-15 - fbug://RHD-11551, Add some messages here related to loyalty and hordes, which modders might add to the base game
+settlement_razed
+	icon			disaster
+	heading_items	3
+	format
+	{
+		title        center verdana_med_bold		dark_brown
+		multistring		 center verdana_med dark_brown center
+		title_image	 center
+		spacer		 8
+		bodystring	 center    verdana_sml dark_brown center
+		spacer		 8
+		condition    ;; was anyone hurt
+		{
+			true
+			{
+				condition  ;; If any settlements are affected
+				{
+					true
+					{
+						string left	verdana_sml dark_brown   characters_affected
+						list   1		verdana_sml dark_brown
+					}
+				}
+				condition ;; If any characters are affected
+				{
+					true
+					{
+						string left	verdana_sml dark_brown   buildings_affected
+						list   1		verdana_sml dark_brown
+					}
+				}
+				spacer		 8
+				group left 4
+				{
+					string left verdana_sml dark_brown your_citizens_killed
+					integer		 left verdana_sml dark_brown
+				}
+				group left 4
+				{
+					string left verdana_sml dark_brown your_soldiers_killed
+					integer		 left verdana_sml dark_brown
+				}
+			}
+		}
+	}
+
+rebels_victorious
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		multistring	center verdana_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+huns_hording
+	icon	faction
+	heading_items 2 ;; FERAL Fix Phone Scrolling
+	importance high
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		image	center new_barbarian_horde
+		spacer	8
+		multistring	center verdana_sml dark_brown center hun_hording
+	}
+
+
+disaster_report
+	icon	disaster
+	heading_items 2
+	importance high
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		image	center	disaster_riot
+		spacer	4
+		bodystring	center verdana_sml dark_brown center
+		damage_report
+	}
+
+city_gained_through_revolt
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		multistring	center verdana_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+
+
+rebel_revolt_surpressed
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		multistring	center verdana_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+character_rebels
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		multistring	center verdana_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+
+character_joins_through_rebellion
+	icon	faction
+	heading_items 3 ;; FERAL Fix Phone Scrolling
+	format
+	{
+		title	center verdana_med_bold dark_brown
+		multistring	center verdana_med dark_brown center
+		title_image	center
+		spacer	8
+		bodystring	center verdana_sml dark_brown center
+	}
+
+script_prompt
+	icon faction
+	heading_items 2
+	format
+	{
+		string	center cinzel dark_brown					;;title
+		image	centre										;;image
+		spacer	8
+		multistring  center verdana_sml	dark_brown	center	;;body
+		group right 8										;;yes/no buttons
+		{
+			accept    right
+			decline   left
+		}
+	}

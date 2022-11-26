@@ -1,0 +1,95 @@
+
+#for @Region in @Get.AllRegions():
+    monitor_event SettlementTurnStart SettlementName @{Region.IdCity}
+    and SettlementIsLocal
+    and I_CompareCounter popPlus@{Region.UID} = 0
+    and I_CompareCounter popMinus@{Region.UID} = 0
+        if SettlementTaxLevel = tax_low
+        and RandomPercent < @Get.Setting("MigrationChanceTaxLow")
+            console_command reseed_random
+            set_counter popPlus@{Region.UID} 1
+        end_if
+        if IsCapital
+        and RandomPercent < @Get.Setting("MigrationChanceCapital")
+        and I_CompareCounter CountPlayerCities > 1
+            console_command reseed_random
+            set_counter popPlus@{Region.UID} 1
+        end_if
+        if SettlementTaxLevel = tax_high
+        and RandomPercent < @Get.Setting("MigrationChanceTaxHigh")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+        end_if
+        if SettlementTaxLevel = tax_extortionate
+        and RandomPercent < @Get.Setting("MigrationChanceTaxVeryHigh")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+        end_if
+        if SettlementHasPlague
+        and RandomPercent < @Get.Setting("MigrationChancePlague")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+            @Region.scriptFireInCity()
+        end_if
+        if IsSettlementRioting
+        and RandomPercent < @Get.Setting("MigrationChanceRiots")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+            @Region.scriptFireInCity()
+        end_if
+        if I_CompareCounter IsUnderSiege@{Region.UID} = 1
+        and RandomPercent < @Get.Setting("MigrationChanceSieges")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+        end_if
+        if IsSettlementRioting
+        and RandomPercent < @Get.Setting("MigrationChanceRiots")
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+            @Region.scriptFireInCity()
+        end_if
+        if not IsCapital
+        and RandomPercent < @Get.Setting("MigrationChanceCapital")
+        and I_CompareCounter CountPlayerCities > 1
+            console_command reseed_random
+            set_counter popMinus@{Region.UID} 1
+        end_if
+    end_monitor
+#end
+
+monitor_event FactionTurnStart TrueCondition
+and FactionIsLocal
+    #for @Region in @Get.AllRegions():
+        monitor_conditions I_CompareCounter popPlus@{Region.UID} = 1
+        #for @a in [2, 3, 4, 5, 6, 7, 8, 9, 10]:
+            if RandomPercent < 10
+                inc_counter popPlus@{Region.UID} 1
+                console_command reseed_random
+            end_if
+        #end
+        #for @a in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+            if I_CompareCounter popPlus@{Region.UID} = @{a}
+                console_command add_population @Region.IdCity @{a}00
+                @Scripter.MessageInfo("Immigration to @{Region.NameCity}", "The region of @{Region.NameRegion} and especially the settlement of @{Region.NameCity} are currently experiencing a wave of immigration. @{a}00 new citizen have arrived. Migration is caused by low taxes and war.", "wonder_captured")
+            end_if
+        #end
+        set_counter popPlus@{Region.UID} 0
+        end_monitor
+
+        monitor_conditions I_CompareCounter popMinus@{Region.UID} = 1
+        #for @a in [2, 3, 4, 5, 6, 7, 8, 9, 10]:
+            if RandomPercent < 10
+                inc_counter popMinus@{Region.UID} 1
+                console_command reseed_random
+            end_if
+        #end
+        #for @a in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+            if I_CompareCounter popMinus@{Region.UID} = @{a}
+                console_command add_population @Region.IdCity -@{a}00
+                @Scripter.MessageInfo("Emigration from @{Region.NameCity}", "The region of @{Region.NameRegion} and especially the settlement of @{Region.NameCity} are currently experiencing a wave of emigration. @{a}00 citizen have left into foreign lands. Migration is caused by low taxes and war.", "wonder_captured")
+            end_if
+        #end
+        set_counter popMinus@{Region.UID} 0
+        end_monitor
+    #end
+end_monitor

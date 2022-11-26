@@ -1,0 +1,8 @@
+{
+  "order_income_bonus_start": @{Get.Setting("OrderBonusIncomeThreshold")},
+  "order_income_bonus_multiplier": @{Get.Setting("OrderBonusIncomeMultiplier")},
+  "order_construction_bonus_threshold": @{Get.Setting("OrderBonusConstructionThreshold")},
+  "order_recruitment_bonus_threshold": @{Get.Setting("OrderBonusRecruitmentThreshold")},
+  "torches_min_sun_angle": 76.666,
+  "torches_max_sun_angle": 273.333
+}

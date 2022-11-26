@@ -1,0 +1,3220 @@
+
+{Indifferent_Commander}    Indifferent Commander
+{Indifferent_Commander_desc}
+This man is definitely not developing his skills as a general. If anything, he seems less competent than before his first fight!
+{Incompetent_Commander}    Incompetent Commander
+{Incompetent_Commander_desc}
+This man shows signs of real uselessness when commanding armies in the field.
+{Poor_Commander}   Poor Commander
+{Poor_Commander_desc}
+This man has an inferior grasp of the tactics needed to fight any kind of battle, and this worries his men.
+{Pathetic_Commander}   Pathetic Commander
+{Pathetic_Commander_desc}
+This man has an almost unsurpassed ability to mess up when in command and this instills despair in his troops.
+{Confident_Attacker}   Confident Attacker
+{Confident_Attacker_desc}
+This man shows signs of greatness when commanding attacks.
+{Good_Attacker}    Good Attacker
+{Good_Attacker_desc}
+This man is definitely developing his skills as an aggressive general.
+{Superior_Attacker}    Superior Attacker
+{Superior_Attacker_desc}
+This man has a superior grasp of the tactics needed to mount a successful attack which inspires his men.
+{Great_Attacker}   Great Attacker
+{Great_Attacker_desc}
+This man has an almost unsurpassed ability to attack in battle and this confidence is passed down to his troops.
+{Indifferent_Attacker} Indifferent Attacker
+{Indifferent_Attacker_desc}
+This man lacks confidence when leading an attack.
+{Incompetent_Attacker} Incompetent Attacker
+{Incompetent_Attacker_desc}
+When leading an attack this man has some problems organising his forces.
+{Poor_Attacker}    Poor Attacker
+{Poor_Attacker_desc}
+This man shows little ability to attack and his troops are disheartened.
+{Pathetic_Attacker}    Pathetic Attacker
+{Pathetic_Attacker_desc}
+This man has a talent for turning even a moderate chance of victory, when attacking, into an almost-certain defeat!
+{Pathetic_Attacker_epithet_desc}   the Foolhardy
+{Confident_in_Defence} Confident in Defence
+{Confident_in_Defence_desc}
+This man has learnt that a clear head and a calm hand can be assets beyond price when defending.
+{Good_Defender}    Good Defender
+{Good_Defender_desc}
+This man's defensive experience gives his men confidence in their eventual victory.
+{Superior_Defender}    Superior Defender
+{Superior_Defender_desc}
+The superior skill this man displays, when fighting in a defensive situation, can often get the better of aggressive enemies.
+{Great_Defender}   Great Defender
+{Great_Defender_desc}
+Few are better than this man when defending. The morale of his men shows their confidence in his skill.
+{Indifferent_Defender} Indifferent Defender
+{Indifferent_Defender_desc}
+This man lacks confidence when he is in a strategically defensive position.
+{Incompetent_Defender} Incompetent Defender
+{Incompetent_Defender_desc}
+This man is starting to look like a loser when he defends, even before the enemy attacks!
+{Poor_Defender}    Poor Defender
+{Poor_Defender_desc}
+Defence is not part of the art of war for this man, but a mystery the Gods have not revealed!
+{Pathetic_Defender}    Pathetic Defender
+{Pathetic_Defender_desc}
+This man shows no talent for commanding a defence at all, and this has disheartened his soldiers.
+{Drunkard} Drunkard
+{Drunkard_desc}
+Often drunk by noon, this man's duties are secondary to his thirst.
+{Drunken_Lout} Drunken Lout
+{Drunken_Lout_desc}
+This man's drinking makes him an abusive drunkard who gesticulates wildly at everyone he meets.
+{Sot}  Sot
+{Sot_desc}
+This man's habit of drinking until he soils himself provokes disgust and pity in all who are unfortunate enough to know him.
+{Strong_Language}  Strong Language
+{Strong_Language_desc}
+Colourful swearing and strong oaths pepper this man's conversation, making him something of a 'character'.
+{Foul_Mouthed} Foul Mouthed
+{Foul_Mouthed_desc}
+The colourful language of the rank-and-file endears this man to his troops, but causes vague disquiet amongst his peers.
+{Swears_Like_A_Trooper}    Swears Like A Trooper
+{Swears_Like_A_Trooper_desc}
+Unable to utter a single sentence that isn't laced with the foulest curses, even this man's friends avoid long conversations where possible.
+{Irredeemably_Foul-mouthed}    Irredeemably Foul-mouthed
+{Irredeemably_Foul-mouthed_desc}
+Foulness constantly spills from this man's lips. This is a serious handicap in a political career, or in any situation where some decorum is needed.
+{Irredeemably_Foul-mouthed_gain_desc}
+This man's swearing is so profuse that it has become the stuff of legend!
+{Irredeemably_Foul-mouthed_epithet_desc}   the Profane
+{Whimsical_Nature} Whimsical Nature
+{Whimsical_Nature_desc}
+This man is developing an unsavoury reputation as a servile cur, as he has been willing to submit to the amorous advances of other men.
+{Prone_to_Folly}   Prone to Folly
+{Prone_to_Folly_desc}
+This man's desires have turned along dark paths, much to the unease of his underlings.
+{Notorious_Prankster}  Aggressively Perverse
+{Notorious_Prankster_desc}
+Consent is no longer something that this man considers when slaking his lusts for other men.
+{Casual_Adulterer} Casual Adulterer
+{Casual_Adulterer_desc}
+Fidelity in marriage is not a concept that this man considers important. He has already committed adultery with the wife of a so-called friend.
+{Blatant_Adulterer}    Blatant Adulterer
+{Blatant_Adulterer_desc}
+Faithfulness means nothing to this man. He regularly commits adultery with the wives of his close associates and underlings.
+{Notorious_Adulterer}  Womaniser
+{Notorious_Adulterer_desc}
+This man's lecherous habits are well known. The unfortunate female slaves of his household are only the first targets for his lusts.
+{Exposed_Lech} Won't Take No For An Answer
+{Exposed_Lech_desc}
+Women have become mere objects to this man. The possibility of rejection never crosses his resolutely one-track mind.
+{Sober}    Sober
+{Sober_desc}
+This man realises that all things are best in moderation, never allowing wine to get in the way of work.
+{Abstemious}   Abstemious
+{Abstemious_desc}
+Choosing not to indulge in even the smallest of alcoholic pleasures, every move this man makes is sober and considered.
+{Teetotal} Teetotal
+{Teetotal_desc}
+This man disapproves of both strong drink and drinkers, making him conscientious, tedious and dull, as well as something of a party-pooper.
+{Good_Ambusher}    Good Ambusher
+{Good_Ambusher_desc}
+This man has a natural gift for the surprise attack. His men strike hard and fast leaving few to tell of the defeat.
+{Sneaky_Ambusher}  Sneaky Ambusher
+{Sneaky_Ambusher_desc}
+This man is a cunning attacker. The first (and last) thing his enemies know of his plans is that they are dead!
+{Poor_Ambusher}    Poor Ambusher
+{Poor_Ambusher_desc}
+The element of surprise tends to come as a bit of a surprise to this man when it really counts, such as when setting up an ambush.
+{Rotten_Ambusher}  Rotten Ambusher
+{Rotten_Ambusher_desc}
+Seldom has this man triumphed during an ambush. His hamfisted attempts at cunning plans rarely come to fruition.
+{Pathetic_Ambusher}    Pathetic Ambusher
+{Pathetic_Ambusher_desc}
+This man couldn't organise the proverbial "nosh-up in a vomitorium", let alone a surprise attack under cover of darkness.
+{Obsessional_Trainer}  Obsessional Trainer
+{Obsessional_Trainer_desc}
+This man knows that hard training means easier battles for his men. His strictness is seen as an unwelcome necessity.
+{Drillmaster}  Drillmaster
+{Drillmaster_desc}
+This man likes to drill his troops incessantly. This drive for efficiency is not entirely popular.
+{Martinet} Martinet
+{Martinet_desc}
+Iron discipline is the measure of this man. His men may hate his guts, but they do exactly what he tells them!
+{Poor_Disciplinarian}  Poor Disciplinarian
+{Poor_Disciplinarian_desc}
+A kind word and a smile do not win battles. This man would do well to learn this simple fact.
+{Too_Considerate}  Too Considerate
+{Too_Considerate_desc}
+This man puts his personal popularity with the rank and file above getting the job done properly. Discipline suffers.
+{Kills_With_Kindness}  Kills With Kindness
+{Kills_With_Kindness_desc}
+Too concerned for the comfort of his soldiers, this man is a popular but ineffectual leader.
+{Gate_Breaker} Gate Breaker
+{Gate_Breaker_desc}
+This man has an eye for weakness when he looks at an enemy city wall, and a talent for exploiting it.
+{Wall_Breaker} Wall Breaker
+{Wall_Breaker_desc}
+His remarkable skills when judging how and where to assault a city, make this man an expert in siege warfare.
+{Into_The_Breach!} Into The Breach!
+{Into_The_Breach!_desc}
+This man's skills in the art of siege warfare are exceptional, and inspire confidence in his troops.
+{Dislikes_Attacking_Walls} Dislikes Attacking Walls
+{Dislikes_Attacking_Walls_desc}
+Preferring an open field of combat, this man is not at his best when in command of a siege.
+{Useless_Besieger} Useless Besieger
+{Useless_Besieger_desc}
+This man's generally incompetent performance when trying to take a town disheartens all his men.
+{Pathetic_Besieger}    Pathetic Besieger
+{Pathetic_Besieger_desc}
+This man is not skilled when it comes to siege warfare. As a result his battles often end in ignomy rather than glory.
+{Gate_Keeper}  Gate Keeper
+{Gate_Keeper_desc}
+This man has an elementary grasp of how to hold a town against an enemy.
+{Strong_As_Stone}  Strong As Stone
+{Strong_As_Stone_desc}
+This man has a good understanding of how to defend a settlement.
+{None_Shall_Pass!} None Shall Pass!
+{None_Shall_Pass!_desc}
+This man's defensive skills when commanding a garrison is worth an epic poem or two!
+{Cowers_Behind_Walls}  Cowers Behind Walls
+{Cowers_Behind_Walls_desc}
+There are few signs this man understands how to defend even a small settlement.
+{Pathetic_Defender_of_Cities}  Pathetic Defender of Cities
+{Pathetic_Defender_of_Cities_desc}
+Woe betide any settlement left in this man's care! His defensive skills are sadly lacking.
+{Liability_In_Defence} Liability In Defence
+{Liability_In_Defence_desc}
+This man's incompetence when defending a town is well known, and disheartens the whole garrison.
+{Untouched_By_Fear}    Untouched By Fear
+{Untouched_By_Fear_desc}
+This man never feels uneasy when going into battle. Battle is an old friend to be greeted and enjoyed!
+{Brave}    Brave
+{Brave_desc}
+This man is developing a reputation for performing heroic deeds on the battlefield.
+{Famously_Courageous}  Famously Courageous
+{Famously_Courageous_desc}
+Tales of this man's courage have spread to all corners of the world and his brave deeds inspire many to similar feats of arms.
+{Utterly_Fearless} Utterly Fearless
+{Utterly_Fearless_desc}
+This man is a fearless warrior, and his men will often follow him into any situation, no matter how great the risk.
+{Utterly_Fearless_epithet_desc}    the Brave
+{Doubtful_Courage} Doubtful Courage
+{Doubtful_Courage_desc}
+A concern for personal safety has given this man the habit of running from battle before it is strictly necessary.
+{Doubtful_Courage_gain_desc}
+This man has finally - and accurately - been accused of running away from the enemy!
+{Doubtful_Courage_lose_desc}
+Although this man has run from battle, his courage is now no longer doubted.
+{Morbidly_Fearful} Morbidly Fearful
+{Morbidly_Fearful_desc}
+The fear of physical hurt hinders this man's performance in battle.
+{Craven_Coward}    Craven Coward
+{Craven_Coward_desc}
+This man's timidity in combat is well known. He has lost the respect of most men.
+{Craven_Coward_epithet_desc}   the Lily-livered
+{Ruled_By_Fear}    Ruled By Fear
+{Ruled_By_Fear_desc}
+This man's girlish screeching in the face of an enemy provokes amused horror and utter contempt in equal measure.
+{Ruled_By_Fear_epithet_desc}   the Coward
+{Rather_Lazy}  Rather Lazy
+{Rather_Lazy_desc}
+Inactivity would be this man's favourite pastime, if he could find the energy.
+{Lazy} Lazy
+{Lazy_desc}
+Why lift a finger when you have slaves standing idle who could do it for you?
+{Indolent} Indolent
+{Indolent_desc}
+Bodily exertion is for slaves and plebeians, a leader must preserve himself only for the rigours of battle.
+{Lively}   Lively
+{Lively_desc}
+This man is not one to rest on his laurels, or rest at all.
+{Very_Lively}  Very Lively
+{Very_Lively_desc}
+This man detests laziness amongst his staff, and cannot abide sloth.
+{Energetic}    Energetic
+{Energetic_desc}
+This man rarely stops working, even taking his meals on the move!
+{Blessed_With_Vitality}    Blessed With Vitality
+{Blessed_With_Vitality_desc}
+This man's "get-up-and-go" can only be a gift from the capricious Gods!
+{Axebitten}    Axebitten
+{Axebitten_desc}
+This man is best pointed towards the enemy and unleashed. His untamed axe-rage will do the rest!
+{Axebitten_gain_desc}
+This man is beginning to frighten people just by his menacing presence.
+{Shieldbiter}  Shieldbiter
+{Shieldbiter_desc}
+This man can always be found where the enemies' screams are loudest! Their pleas for mercy drive him to a higher pitch of frothing anger!
+{Berserker}    Berserker
+{Berserker_desc}
+This man's berserk rages are the stuff of legend! His almost-suicidal savagery is unmatched and fearsome!
+{Berserker_gain_desc}
+This man's berserk rages are now talked about with amazement and fear!
+{Berserker_epithet_desc}   the Bloodyhanded
+{Distrusts_Outsiders}  Distrusts Outsiders
+{Distrusts_Outsiders_desc}
+This man is suspicious of outsiders. After all, he simply doesn't know where they've been or what they might be up to!
+{Hates_Strangers}  Hates Strangers
+{Hates_Strangers_desc}
+This man insists that his servants and slaves keep outsiders far away, for outsiders are not to be trusted under any circumstances.
+{Loathes_Foreigners}   Loathes Foreigners
+{Loathes_Foreigners_desc}
+Anything foreign or that smacks of outsider influences is hated by this man to an almost irrational level.
+{Welcoming_To_Foreigners}  Welcoming To Foreigners
+{Welcoming_To_Foreigners_desc}
+Friendly and open to all that is new, this man welcomes strangers to his home with open arms.
+{Likes_Strangers}  Likes Strangers
+{Likes_Strangers_desc}
+This man loves to be regaled with tales of foreign lands and strange customers. Outlanders are warmly welcomed at his table.
+{Fascinated_By_Outsiders}  Fascinated By Outsiders
+{Fascinated_By_Outsiders_desc}
+This man is fascinated by the strange and exotic ways of other lands and people, sometimes to the detriment of his duties and true loyalties!
+{Faithless}    Faithless
+{Faithless_desc}
+Unlike many, this man holds the rather odd opinion that he is the master of his own destiny, not the Gods.
+{Atheist}  Atheist
+{Atheist_desc}
+This man openly doubts the Gods as not being real, perhaps a dangerous position to adopt.
+{Despises_The_Gods}    Despises The Gods
+{Despises_The_Gods_desc}
+This man is openly scornful of religious urges in others, and priests of all kinds. Perhaps the Gods feel the same way about him.
+{Religious}    Religious
+{Religious_desc}
+As an overtly religious man, this individual believes that the will of the Gods influences every aspect of his life.
+{Honours_The_Gods} Honours The Gods
+{Honours_The_Gods_desc}
+This man reveres the Gods and makes a point of honouring them daily, never making a move without first considering what they would want.
+{War_Chief}    War Chief
+{War_Chief_desc}
+Beyond brave, this man has the ability to inspire similar virtue in his followers.
+{Mighty_War_Chief} Mighty War Chief
+{Mighty_War_Chief_desc}
+A formidable warrior and leader, this man is respected by his people and feared by his enemies.
+{Warlord}  Warlord
+{Warlord_desc}
+A fearsome enemy, this man can lead others to their deaths, to glory, and to victory!
+{Bureaucrat}   Bureaucrat
+{Bureaucrat_desc}
+The day to day running of a settlement is food and drink to this man. He can be trusted not to slip up over matters of state.
+{Skilled_Bureaucrat}   Skilled Bureaucrat
+{Skilled_Bureaucrat_desc}
+This man shows great skill at managing settlements, and is not easily fazed by administrative hiccups.
+{Superb_Administrator} Superb Administrator
+{Superb_Administrator_desc}
+This man has an effortless talent for government. His inferiors are aware of this, and strive to do their best as well.
+{Jobsworth}    Jobsworth
+{Jobsworth_desc}
+This man is a stickler for the rules, having little imagination where paperwork is concerned.
+{Administratively_Inept}   Administratively Inept
+{Administratively_Inept_desc}
+This man lacks skill in every possible area of government. His lack of talent doesn't trouble him in the slightest, even though others find it frustrating.
+{Stunningly_Incompetent}   Stunningly Incompetent
+{Stunningly_Incompetent_desc}
+This man's assistants don't even pretend to involve him in administrative work anymore. His inability to grasp simple ideas is an embarrassment.
+{Outstanding_Speaker}  Outstanding Speaker
+{Outstanding_Speaker_desc}
+When this fellow speaks those around are mesmerised, rallying about his chosen cause.
+{Famous_Orator}    Famous Orator
+{Famous_Orator_desc}
+This man's talent for public speaking can hold many people spellbound, even if they don't always agree with his arguments.
+{Tedious_Speaker}  Tedious Speaker
+{Tedious_Speaker_desc}
+Dull doesn't even begin to describe this man's speaking skills.
+{Boring_Speaker}   Boring Speaker
+{Boring_Speaker_desc}
+Some people should not be allowed to speak in public. This is just such a man.
+{Boring_Beyond_Belief} Boring Beyond Belief
+{Boring_Beyond_Belief_desc}
+No matter how superb his logic, this man's tedious speechifying puts all his listeners into a coma!
+{Boring_Little_Tit}    Boring Little Tit
+{Boring_Little_Tit_desc}
+This man's speeches are so boring that his audiences would probably prefer death to more hours of torture!
+{Fluent_Speaker}   Fluent Speaker
+{Fluent_Speaker_desc}
+This man speaks well, influencing many of his listeners with his well-reasoned arguments.
+{Skilled_Debater}  Skilled Debater
+{Skilled_Debater_desc}
+Skilled in the arts of debate and rhetoric, this man is rarely bested when arguing the important issues of the day.
+{Rhetorical_Expert}    Rhetorical Expert
+{Rhetorical_Expert_desc}
+Although skilled in public debate, this man's arguments are often abstract and over-blown for common tastes.
+{Fond_of_Ribald_Rhymes}    Fond of Ribald Rhymes
+{Fond_of_Ribald_Rhymes_desc}
+This man's poetic education produces rhymes and quips that enliven his conversation and show a ready wit and keen intelligence.
+{Poet} Poet
+{Poet_desc}
+A poet of some standing, this man can regale his friends with his own great epics on almost any subject.
+{Epic_Poet}    Epic Poet
+{Epic_Poet_desc}
+This man cannot resist quoting his own extravagant verses at every opportunity. As far as his listeners are concerned this is a mixed blessing.
+{Understanding_of_Strategy}    Understanding of Strategy
+{Understanding_of_Strategy_desc}
+This man has a basic grasp of strategy but his studies have only just begun.
+{Strategic_Expert} Strategic Expert
+{Strategic_Expert_desc}
+This man can claim some expertise in strategy, thanks to his extensive studies of the many histories of warfare.
+{Understanding_of_Tactics} Understanding of Tactics
+{Understanding_of_Tactics_desc}
+This man has read widely, and has an intellectual understanding of the theory behind battlefield command.
+{Tactical_Expert}  Tactical Expert
+{Tactical_Expert_desc}
+This man has read widely on tactical theory, argued long and hard with experts and developed a good technical grasp of his subject.
+{Understanding_of_Mathematics} Understanding of Mathematics
+{Understanding_of_Mathematics_desc}
+Education has given this man a good understanding of numbers and their uses.
+{Mathematics_Expert}   Mathematics Expert
+{Mathematics_Expert_desc}
+This man's use of numbers is more than an abstract pursuit. He is also able to apply his arithmetical skills to the business of government.
+{Mathematician}    Mathematician
+{Mathematician_desc}
+The world of numbers and geometry is an open book to this man. His intelligence makes him slightly intimidating to some.
+{Understanding_of_Natural_Philosophy}  Understanding of Natural Philosophy
+{Understanding_of_Natural_Philosophy_desc}
+This man has a good understanding of the natural world, giving him the intellectual tools for many tasks.
+{Expert_on_Natural_Philosophy} Expert on Natural Philosophy
+{Expert_on_Natural_Philosophy_desc}
+This man is widely read and well educated, giving him the ability to apply his learning skills to administrative tasks.
+{Political_Animal} Political Animal
+{Political_Animal_desc}
+This man is an aspiring politician, although his education in the art of politics has only just begun.
+{Politician}   Politician
+{Politician_desc}
+This man has studied the skills needed to be a politician and has developed the proper ruthless manner for the job.
+{Consummate_Politician}    Consummate Politician
+{Consummate_Politician_desc}
+This man has complete command of the political arts, and has mastered the sincerity needed to use them to full effect.
+{Understanding_of_Logistics}   Understanding of Logistics
+{Understanding_of_Logistics_desc}
+This man has a basic grasp of the detailed administration needed to keep an army in the field.
+{Logistics_Expert} Logistics Expert
+{Logistics_Expert_desc}
+Few can match this man's superior ability to keep troops supplied and in the field.
+{Agitator} Agitator
+{Agitator_desc}
+This man has a taste for public speaking, as he has a way of saying things that make people listen.
+{Tub-Thumper}  Tub-Thumper
+{Tub-Thumper_desc}
+Many are roused to action by his words, even if his speeches are coarse and unpolished to some ears.
+{Rabblerouser} Rabblerouser
+{Rabblerouser_desc}
+This man has a true talent for argument and debate, but done in such a way that common folk can understand his speeches.
+{Demagogue}    Demagogue
+{Demagogue_desc}
+His 'feel' for the audience and use of words can whip any crowd into a frenzy, if it suits his whim.
+{Draughtsman}  Draughtsman
+{Draughtsman_desc}
+This man's interest in architecture stands him in good stead when construction work is needed.
+{Architect}    Architect
+{Architect_desc}
+This man is an enviable authority on architectural matters.
+{Conqueror}    Conqueror
+{Conqueror_desc}
+If you kill a man you're a murderer. Kill many and you're a hero. Kill them all and you're favoured by the Gods - or dangerously unbalanced!
+{Conqueror_epithet_desc}   Victor
+{Victor}   Victor
+{Victor_desc}
+This man's many victories have made him popular among the masses.
+{Famous_Victor}    Famous Victor
+{Famous_Victor_desc}
+This man is adored by the people for his many victories.
+{Conquering_Hero}  Conquering Hero
+{Conquering_Hero_desc}
+If you kill a man you're a murderer. Kill many and you're a hero. Kill them all and you're a conqueror!
+{Conquering_Hero_epithet_desc} the Conqueror
+{Gourmet_of_Life}  Gourmet of Life
+{Gourmet_of_Life_desc}
+This man appreciates the better things in life.
+{Refined_Tastes}   Refined Tastes
+{Refined_Tastes_desc}
+This man's tastes are honed to a fine pitch and often very expensive to satisfy.
+{Rarified_Tastes}  Rarified Tastes
+{Rarified_Tastes_desc}
+Good taste in all things has become an end in itself for this man.
+{Restrained}   Restrained
+{Restrained_desc}
+A person who seldom allows his emotions to surface, making him seem aloof and distant.
+{Cold_Manner}  Cold Manner
+{Cold_Manner_desc}
+This man's cold manner can be an asset to a leader, as he allows little to disturb his composure.
+{Stoic}    Stoic
+{Stoic_desc}
+Although usually unruffled in a crisis, no matter what the nature of the problem, this can often make this man appear uncaring.
+{Spartan}  Spartan
+{Spartan_desc}
+This man has chosen to live without any luxuries, save the luxury of self-restraint.
+{Austere}  Austere
+{Austere_desc}
+This man has taken self-restraint and frugality to new heights, something that many find admirable and off-putting at the same time.
+{Lover_of_Beauty}  Lover of Beauty
+{Lover_of_Beauty_desc}
+This man surrounds himself with beautiful possessions - and hang the expense!
+{Connoisseur}  Connoisseur
+{Connoisseur_desc}
+This man only enjoys the finest things in life regardless of the expense, for beauty has no price, only value!
+{Aesthete} Aesthete
+{Aesthete_desc}
+Ugliness is something that this man cannot abide in any part of his life - something of a problem when it can be part of his work!
+{Gourmand} Gourmand
+{Gourmand_desc}
+When the question is asked, "Who ate all the pies?", this man has just enough decency left to look guilty.
+{Ignorant} Ignorant
+{Ignorant_desc}
+This man's ignorance is largely forgivable, if a little annoying for those around him.
+{Pig_Ignorant} Pig Ignorant
+{Pig_Ignorant_desc}
+While ignorance is usually the absence of learning, this man has made it a point of pride.
+{Willfully_Ignorant}   Willfully Ignorant
+{Willfully_Ignorant_desc}
+This man has spent many years cultivating his ignorant ways and he takes a positive pride in knowing less than nothing.
+{Likes_a_Flutter}  Likes a Flutter
+{Likes_a_Flutter_desc}
+A battle, a race, the fall of a leaf is nothing to this man unless he can spice things up with a small wager!
+{Gambler}  Gambler
+{Gambler_desc}
+The thrill of uncertainty is a drug for this man. If he loses, he'll win back his money and more on the next bet!
+{Inveterate_Gambler}   Inveterate Gambler
+{Inveterate_Gambler_desc}
+Luck has not smiled upon this man, save to provide him with access to the money he needs for his gambling.
+{Self_Publicist}   Self Publicist
+{Self_Publicist_desc}
+This man has proven willing to tart himself about in return for modest financial reward.
+{Spin_Doctor}  Spin Doctor
+{Spin_Doctor_desc}
+There are no shallows to which this man will not sink in his attempts at attracting the public's attention.
+{Narcissist}   Narcissist
+{Narcissist_desc}
+Always ready for some column inches, there is nothing that this man will not take on for cheap publicity.
+{Espionage}    Espionage
+{Espionage_desc}
+This man understands the need for spies, having sent them against his enemies many times.
+{Espionage_Expert} Espionage Expert
+{Espionage_Expert_desc}
+This man has a superior understanding of the power of facts, of half-truths and of lies, and is able to see through them.
+{Spy_Master}   Spy Master
+{Spy_Master_desc}
+This man is an artist with information, able to sift the whole truth from convincing falsehoods with the merest scraps of evidence.
+{Spy_Master_epithet_desc}  the Cunning
+{Clean_Hands}  Clean Hands
+{Clean_Hands_desc}
+This man understands the need to keep his own hands clean, even as he sends out assassins to do his killing.
+{Killer_From_Necessity}    Killer From Necessity
+{Killer_From_Necessity_desc}
+This man understands that a certain amount of killing is always necessary in politics.
+{Master_of_Assassins}  Master of Assassins
+{Master_of_Assassins_desc}
+This man has the skills and inclination to use assassins without compunction to achieve his ends.
+{Master_of_Assassins_gain_desc}
+This man's reputation as an employer of killers now strikes fear into many.
+{Master_of_Assassins_epithet_desc} the Killer
+{Counter-Spy}  Counter-Spy
+{Counter-Spy_desc}
+This man has had some success in unmasking spies and ending their nefarious networks.
+{Counter-Espionage}    Counter-Espionage
+{Counter-Espionage_desc}
+This man is adept at spotting enemy agents and terminating their activities.
+{Spycatcher}   Spycatcher
+{Spycatcher_desc}
+This man is an expert at spotting the small details that betray the true loyalties of an enemy spy.
+{Survivor} Survivor
+{Survivor_desc}
+This man has seen his survival of assassination attempts as a 'learning experience'!
+{Expert_Survivor}  Expert Survivor
+{Expert_Survivor_desc}
+Failed assassination attempts on this man have given him a sixth sense, warning him of impending dangers.
+{Poor_Spy} Poor Spy
+{Poor_Spy_desc}
+It's all part of a quest for knowledge, not actual spying, as such, honest…
+{Inferior_Spy} Inferior Spy
+{Inferior_Spy_desc}
+The arts of spying are far from being this man's forte. He might as well carry a big sign with "I'm a Spy!" written on it.
+{Useless_Spy}  Useless Spy
+{Useless_Spy_desc}
+The attempts of this man to be a spy are pathetic, almost embarrassing, which may be the only thing that saves him from death at the hands of his 'victims'.
+{Inept_Poisoner}   Inept Poisoner
+{Inept_Poisoner_desc}
+This man shows little appetite for the business of assassination as his victims show little inclination to die!
+{Ham-fisted_Murderer}  Ham-fisted Murderer
+{Ham-fisted_Murderer_desc}
+This man would like to think he helps people into the afterlife. He's lying to himself.
+{Useless_Assassin} Useless Assassin
+{Useless_Assassin_desc}
+A greater danger to himself than any target, this man shouldn't be allowed to play with sharp objects.
+{Careless} Careless
+{Careless_desc}
+This man pays little attention to his personal security.
+{Careless_of_Security} Careless of Security
+{Careless_of_Security_desc}
+Personal security is not a high priority for this man.
+{Trusting_Fool}    Trusting Fool
+{Trusting_Fool_desc}
+This man puts his trust in his own loveliness to protect him from an assassin's knife.
+{Watchful} Watchful
+{Watchful_desc}
+An innate watchfulness makes this man a difficult target for an assassin's blade.
+{Security_Conscious}   Security Conscious
+{Security_Conscious_desc}
+Near death experiences have made this man very careful of his personal safety.
+{Obsessed_by_Security} Obsessed by Security
+{Obsessed_by_Security_desc}
+This man has had enough nasty experiences to be obsessed by a need for security at all times.
+{No_Enemies}   No Enemies
+{No_Enemies_desc}
+This man holds the belief that he has few enemies. Perhaps he is right.
+{Ingenuous}    Ingenuous
+{Ingenuous_desc}
+This man has an inherently trusting nature that makes him both endearing and worryingly vulnerable.
+{Trusting} Trusting
+{Trusting_desc}
+This man cannot conceive that anyone would ever have any malice towards him.
+{Scant_Trust}  Scant Trust
+{Scant_Trust_desc}
+This man finds it difficult to trust strangers and, for that matter, his friends.
+{Suspicious}   Suspicious
+{Suspicious_desc}
+This man suspects that there are people who dream of his downfall. He may be right.
+{A_Bit_Paranoid}   A Bit Paranoid
+{A_Bit_Paranoid_desc}
+Trust is not a word in this man's vocabulary. He likes the word "fruitbasket", mostly.
+{Paranoid} Paranoid
+{Paranoid_desc}
+This man has no doubts that "they" are out to get him, and that most of "us" aren't his friends either.
+{Tactful}  Tactful
+{Tactful_desc}
+Diplomacy is a strength of this man's character.
+{Courteous}    Courteous
+{Courteous_desc}
+This man shows every sign of maturing into a shrewd and competent diplomatic negotiator.
+{Diplomatic}   Diplomatic
+{Diplomatic_desc}
+There are few diplomatic niceties that elude this man.
+{Polished_Diplomat}    Polished Diplomat
+{Polished_Diplomat_desc}
+This man is the consummate diplomat, urbane and assured in all circumstances.
+{Tactless} Tactless
+{Tactless_desc}
+This man has an unfortunate manner when dealing with foreigners.
+{Discourteous} Discourteous
+{Discourteous_desc}
+Foreign manners and customs are not to this man's taste, and he lets foreigners know this in no uncertain terms.
+{Undiplomatic} Undiplomatic
+{Undiplomatic_desc}
+This man has a talent for saying exactly the wrong thing when negotiating even the most delicate of treaties.
+{Untruthful}   Untruthful
+{Untruthful_desc}
+While the small-minded agree truth is a good thing, this man sees the bigger picture.
+{Economical_with_the_Truth}    Economical with the Truth
+{Economical_with_the_Truth_desc}
+To this man truth is merely a wrapper for more palatable 'facts'.
+{Liar} Liar
+{Liar_desc}
+Some people say the truth is out there. Not if this man has anything to do with it!
+{Financially_Irregular}    Financially Irregular
+{Financially_Irregular_desc}
+When cash flows through this man's hands, some sticks to his fingers.
+{Fiscally_Flexible}    Fiscally Flexible
+{Fiscally_Flexible_desc}
+This man has a flexible attitude towards the issue of ownership, especially where money is concerned.
+{Embezzler}    Embezzler
+{Embezzler_desc}
+When cash goes anywhere near this man very little of it ever reaches the proper treasury.
+{Sly}  Sly
+{Sly_desc}
+Falsehood is part of this man's stock in trade, although sometimes his lies are spotted as such.
+{Deceiver} Deceiver
+{Deceiver_desc}
+This man uses lies to achieve his ends, skillfully weaving them into the truth to create a new fabric of reality.
+{Great_Deceiver}   Great Deceiver
+{Great_Deceiver_desc}
+Falsehood is a weapon in this man's armoury, one that he deploys with consummate skill to baffle enemies and rivals.
+{Great_Deceiver_epithet_desc}  the Cunning
+{Trusty}   Trusty
+{Trusty_desc}
+This man is regarded as trustworthy and fair by all who know him.
+{Honest}   Honest
+{Honest_desc}
+This man is blessed with a reputation for honesty and straightforwardness in all his dealings.
+{Flexible} Flexible
+{Flexible_desc}
+This man is regarded as morally flexible. Somehow, doing the right thing does not come naturally to him.
+{Dubious}  Dubious
+{Dubious_desc}
+This man has a growing reputation for dishonesty and suspect dealings.
+{Corrupt}  Corrupt
+{Corrupt_desc}
+Conscience means nothing to this man; no act that enriches him is unworthy.
+{Strict_Governor}  Strict Governor
+{Strict_Governor_desc}
+This man believes in the smack of firm government.
+{Harsh_Governor}   Harsh Governor
+{Harsh_Governor_desc}
+Law and order are words that this man lives and commands by. He will brook no dissent.
+{Considerate_Governor} Considerate Governor
+{Considerate_Governor_desc}
+This man has little belief in firm government for its own sake.
+{Benevolent_Governor}  Benevolent Governor
+{Benevolent_Governor_desc}
+This man believes that kindness is the road to good government.
+{Doubtful_Loyalties}   Doubtful Loyalties
+{Doubtful_Loyalties_desc}
+Doubts as to this man's true loyalties are sometimes voiced.
+{Disloyal} Disloyal
+{Disloyal_desc}
+This man understands the concept of loyalty - he just doesn't believe it should influence him.
+{Publicly_Loyal}   Publicly Loyal
+{Publicly_Loyal_desc}
+This man's loyalty is quietly admired, mostly by others.
+{Proven_Loyalties} Proven Loyalties
+{Proven_Loyalties_desc}
+There are no real doubts as to this man's loyalties.
+{Loyal}    Loyal
+{Loyal_desc}
+This man instinctively understands the concept of loyalty.
+{Fanatically_Loyal}    Fanatically Loyal
+{Fanatically_Loyal_desc}
+This man's watchword is loyalty.
+{Plausible}    Plausible
+{Plausible_desc}
+This man can make many outrageous proposals seem perfectly reasonable.
+{Slick}    Slick
+{Slick_desc}
+This man could talk the hind legs off a wild ass and make it believe he was the beast's best friend.
+{Smooth_Talker}    Smooth Talker
+{Smooth_Talker_desc}
+This man could talk the hind legs off a wild ass, and then convince the poor legless beast to slither another ten miles.
+{Subject_of_Rumours}   Subject of Rumours
+{Subject_of_Rumours_desc}
+Rumours are circulating about this man and his wife, particularly his wife and her supposed lovers…
+{Cuckold}  Cuckold
+{Cuckold_desc}
+There are stories told about this man's wife, stories that reflect no credit on his abilities as a man…
+{Cuckold's_Cuckold}    Cuckold's Cuckold
+{Cuckold's_Cuckold_desc}
+This man has become a laughing stock thanks to his wife's numerous and very public infidelities.
+{Wife_Above_Reproach}  Wife Above Reproach
+{Wife_Above_Reproach_desc}
+This man is blessed with a wife who is an ornament to his family and home.
+{Grower}   Grower
+{Grower_desc}
+This man has a fondness for the simple life of a gentleman farmer.
+{Farmer}   Farmer
+{Farmer_desc}
+This man takes an active interest in farming and rural matters.
+{Agriculturalist}  Agriculturalist
+{Agriculturalist_desc}
+This man spends many hours happily engaged in matters to do with farming, even at cost to his other duties.
+{Poor_Farmer}  Poor Farmer
+{Poor_Farmer_desc}
+The countryside and farming have no appeal for this man.
+{Dislikes_Farming} Dislikes Farming
+{Dislikes_Farming_desc}
+To this man farming and the countryside are not important - it all smells rather horrid, after all!
+{Loathes_Farmers}  Loathes Farmers
+{Loathes_Farmers_desc}
+As far as this man is concerned, farmers are no better than the pigs and goats they tend, and need be given no consideration.
+{Miner}    Miner
+{Miner_desc}
+This man takes an active interest in mining operations, and has a 'feel' for the business.
+{Superior_Miner}   Superior Miner
+{Superior_Miner_desc}
+This man has a natural aptitude for mining works, and can increase the profits made as a result.
+{Indifferent_Miner}    Indifferent Miner
+{Indifferent_Miner_desc}
+This man simply cannot see the point of mining: a horrible, dirty business at best.
+{Poor_Miner}   Poor Miner
+{Poor_Miner_desc}
+This man has little interest in mining, and cannot be bothered with the business of digging muddy little holes.
+{Bad_Mine_Manager} Bad Mine Manager
+{Bad_Mine_Manager_desc}
+This man has an active aversion to the business of mining, and such works suffer under his mismanagement.
+{Engineer} Engineer
+{Engineer_desc}
+This man has demonstrated a good grasp of the tactics of military engineering.
+{Superior_Engineer}    Superior Engineer
+{Superior_Engineer_desc}
+This man has an eye for engineering and the tactical sense to apply his skills during sieges.
+{Inferior_Engineer}    Inferior Engineer
+{Inferior_Engineer_desc}
+This man's name is a joke among competent military engineers.
+{Bad_Engineer} Bad Engineer
+{Bad_Engineer_desc}
+This man's military engineering skills lack a certain something - ability, perhaps.
+{Appalling_Engineer}   Appalling Engineer
+{Appalling_Engineer_desc}
+This man is supremely incompetent when it comes to the field of military engineering.
+{Trader}   Trader
+{Trader_desc}
+This man shows every sign of having been swapped at birth with a merchant's son. Nothing pleases him more than discussing prices in the market.
+{Superior_Trader}  Superior Trader
+{Superior_Trader_desc}
+There's nothing this man enjoys more than haggling over the price of goods. His interest helps trade to flourish.
+{Master_Trader}    Master Trader
+{Master_Trader_desc}
+This man has a keen interest in mercantile matters and actively encourages trade.
+{Poor_Trader}  Poor Trader
+{Poor_Trader_desc}
+This man has no real interest in trade, and the creation of wealth suffers as a result.
+{Inferior_Trader}  Inferior Trader
+{Inferior_Trader_desc}
+To this man trade is a matter for the lower classes, and he cannot be bothered to sully his hands with it.
+{Appalling_Trader} Appalling Trader
+{Appalling_Trader_desc}
+This man has an aversion to the filthy matter of trade, and does much to discourage merchants.
+{Even-handed}  Even-handed
+{Even-handed_desc}
+This man has a fine legal mind, and a good sense of what constitutes a just decision.
+{Just} Just
+{Just_desc}
+This man has a talent for finding a just answer in a legal quagmire, satisfying most people in the process.
+{Absolutely_Just}  Absolutely Just
+{Absolutely_Just_desc}
+This man's name has become a byword for justice and fairness in legal matters.
+{Absolutely_Just_epithet_desc} the Just
+{Judgemental}  Judgemental
+{Judgemental_desc}
+Decisions made by this man do not always seem entirely fair to the people.
+{Wrong-headed} Wrong-headed
+{Wrong-headed_desc}
+This man makes decisions that are neither fair nor just, and yet he has no shame as a result.
+{Unjust}   Unjust
+{Unjust_desc}
+This man's name has become a byword for injustice, and he almost revels in his ability to be wrong-headed.
+{Punisher} Punisher
+{Punisher_desc}
+In this man's opinion true justice is about proper punishment of all the guilty.
+{Severe}   Severe
+{Severe_desc}
+Justice and mercy are mutually exclusive in this man's eyes, regardless of the facts.
+{Harsh_Judge}  Harsh Judge
+{Harsh_Judge_desc}
+True justice is blind, in this man's opinion. Seeing any mitigating facts that interfere with punishment is not justice.
+{Lenient}  Lenient
+{Lenient_desc}
+This man tends to be a touch too reasonable in reaching a judgement.
+{Merciful_Judge}   Merciful Judge
+{Merciful_Judge_desc}
+This man believes that justice is best tempered by mercy to perpetrators as well as victims.
+{Kind_Judge}   Kind Judge
+{Kind_Judge_desc}
+Justice and mercy are finely balanced qualities in this man, although somehow mercy always seems the weightier.
+{Heartless_Ruler}  Heartless Ruler
+{Heartless_Ruler_desc}
+This man uses his power to keep those below in their proper stations in life.
+{Harsh_Ruler}  Harsh Ruler
+{Harsh_Ruler_desc}
+This man delights in using his power for his own ends, and to humiliate those beneath him.
+{Cruel_Ruler}  Cruel Ruler
+{Cruel_Ruler_desc}
+This man not only enjoys using his power, he enjoys seeing others suffer as a result.
+{Cruel_Ruler_epithet_desc} the Cruel
+{Benevolent_Ruler} Benevolent Ruler
+{Benevolent_Ruler_desc}
+This man likes to see himself as being well-meaning and considerate of his social inferiors.
+{Benign_Ruler} Benign Ruler
+{Benign_Ruler_desc}
+This man has a reputation as a kind and reasonable leader and governor.
+{Humane_Ruler} Humane Ruler
+{Humane_Ruler_desc}
+This man sees power as a means of improving the lot of others, almost regardless of the final consequences.
+{Humane_Ruler_epithet_desc}    the Good
+{Superior_Builder} Superior Builder
+{Superior_Builder_desc}
+This man enjoys the planning and building of settlements almost for their own sake.
+{Excellent_Builder}    Excellent Builder
+{Excellent_Builder_desc}
+The chance to create a new building is something that this man relishes, enthusing the workforce in the process.
+{Indifferent_Builder}  Indifferent Builder
+{Indifferent_Builder_desc}
+A building is just a pile of timber, bricks and stone to this man, not something worthy of thought.
+{Inferior_Builder} Inferior Builder
+{Inferior_Builder_desc}
+This man manages to depress his building workforce with his cack-handed interference in any construction project.
+{Appalling_Builder}    Appalling Builder
+{Appalling_Builder_desc}
+Few things bore this man more than discussing detailed plans for new buildings. Construction suffers greatly under his management.
+{Positive} Positive
+{Positive_desc}
+This man has a positive attitude that makes him a pleasure to work under.
+{Optimistic}   Optimistic
+{Optimistic_desc}
+This man exudes confidence that things will turn out for the best, making others feel the same.
+{Sanguine} Sanguine
+{Sanguine_desc}
+This man's easy air and apparent lack of concern when faced with crises makes some people uneasy.
+{Calm} Calm
+{Calm_desc}
+This man seldom allows emotion to influence his decisions or his pursuit of duty.
+{Composed} Composed
+{Composed_desc}
+This man rarely lets his heart rule his head, making him seem cold and distant.
+{Gloomy}   Gloomy
+{Gloomy_desc}
+This man has never had a joyous outburst in his life. A smile would hurt his face.
+{Morose}   Morose
+{Morose_desc}
+This man's main thought on waking each morning is: what is the point?
+{Testy}    Testy
+{Testy_desc}
+This man suffers from irrational bouts of irritation at the shortcomings of his underlings. They suffer as a result.
+{Cantankerous} Cantankerous
+{Cantankerous_desc}
+Age is not a sufficient excuse for this man's niggling aggressiveness.
+{Gladiatorial_Fan} Gladiatorial Fan
+{Gladiatorial_Fan_desc}
+This man's fondness for the Games makes him a popular figure among the plebs.
+{Gladiator_Obsessed}   Gladiator Obsessed
+{Gladiator_Obsessed_desc}
+This man's love of the Games and Gladiators makes him a well-loved figure among the common folk.
+{Gladiator_Obsessed_gain_desc}
+This man is famed for his love of the Games.
+{Gladiator_Obsessed_epithet_desc}  the "Editor"
+{Hero-Worships_Gladiators} Hero-Worships Gladiators
+{Hero-Worships_Gladiators_desc}
+This man's excessive interest in gladiators and bloodsports is widely regarded as unhealthy, as is his habit of dressing as a gladiator.
+{Hero-Worships_Gladiators_gain_desc}
+This man is now seen as tasteless and gauche for his undue obsession with the Games.
+{Hero-Worships_Gladiators_epithet_desc}    the "Editor"
+{No_Taste_for_Blood}   No Taste for Blood
+{No_Taste_for_Blood_desc}
+This man apparently has little interest in proper Roman traditions, like the Games.
+{Quietly_Dislikes_the_Games}   Quietly Dislikes the Games
+{Quietly_Dislikes_the_Games_desc}
+This man has shown a marked aversion to wasting his time at the Games - hardly the behaviour of a true Roman!
+{Publicly_Despises_the_Games}  Publicly Despises the Games
+{Publicly_Despises_the_Games_desc}
+This man has publicly condemned the Games as wasteful and unnecessary, earning him the contempt of the plebs!
+{Race_Goer}    Race Goer
+{Race_Goer_desc}
+This man enjoys racing and all the events of a race day, making him a popular figure with the masses.
+{Charioteer}   Charioteer
+{Charioteer_desc}
+This man is fanatical in his support for his chariot racing faction, which makes him popular in some quarters and hated in others.
+{Bored_by_Races}   Bored by Races
+{Bored_by_Races_desc}
+This man has made no secret of the fact that he finds chariot racing a crashing bore.
+{Reads_During_Races}   Reads During Races
+{Reads_During_Races_desc}
+This man's boredom with the spectacle of chariot racing can no longer be concealed.
+{Works_During_Races}   Works During Races
+{Works_During_Races_desc}
+This man's contempt for the sport of chariot racing is such that he answers letters instead of watching. This has earned him the disfavour of the crowd.
+{Open-handed}  Open-handed
+{Open-handed_desc}
+This man is generous with his wealth, seeing it as a tool to help others.
+{Unstinting}   Unstinting
+{Unstinting_desc}
+This man has no hesitation in giving out money to help people, making him popular, or a soft touch.
+{Generous} Generous
+{Generous_desc}
+This man has a reputation for being almost too generous with his money.
+{Careful_With_Money}   Careful With Money
+{Careful_With_Money_desc}
+Money rarely goes astray in this man's keeping. Indeed, it rarely leaves this man's keeping!
+{Tight-fisted} Tight-fisted
+{Tight-fisted_desc}
+Daylight rarely lights up the inside of this man's purse.
+{True_Roman}   True Roman
+{True_Roman_desc}
+This man is widely seen as having some of the best qualities of an ideal Roman, including a healthy scepticism about foreigners!
+{Good_Honest_Roman}    Good Honest Roman
+{Good_Honest_Roman_desc}
+This man is a good representative of Roman rectitude and moral superiority.
+{Alone_in_the_Dark}    Alone in the Dark
+{Alone_in_the_Dark_desc}
+In the dark, there were always strange noises, and as a child this man heard them.
+{Night_Terrors}    Night Terrors
+{Night_Terrors_desc}
+Darkness is not a friend. Darkness is where bad things happen.
+{Noctophobic}  Noctophobic
+{Noctophobic_desc}
+Whatever his reasons, this man is terrified by darkness and the long, long hours of the lonely night.
+{Likes_the_Dark}   Likes the Dark
+{Likes_the_Dark_desc}
+In the dark people get scared. But not this man.
+{Night_Owl}    Night Owl
+{Night_Owl_desc}
+The cloak of night is a friend to this man. He uses the dark, he is strong in the dark.
+{Immoral}  Immoral
+{Immoral_desc}
+Rumours are beginning to circulate of this man's unpleasant practices.
+{Degenerate}   Degenerate
+{Degenerate_desc}
+This man's degenerate tastes are now a matter of public knowledge, and few approve of them.
+{Foul_Practices}   Foul Practices
+{Foul_Practices_desc}
+The pleasures found in the depths of depravity have left unpleasant stains on this man's character.
+{Debauched}    Debauched
+{Debauched_desc}
+There are no depths to which this man will not sink in his quest for physical satisfaction.
+{Perverse} Perverse
+{Perverse_desc}
+This man allows nothing to stand in the way when he wishes to slake his foul and unnatural appetites.
+{Scout}    Scout
+{Scout_desc}
+This man is adept at 'reading the ground' and finding the enemy.
+{Expert_Scout} Expert Scout
+{Expert_Scout_desc}
+Few enemies can hide from the keen gaze and expertise of this man.
+{Reconnaissance_Specialist}    Reconnaissance Specialist
+{Reconnaissance_Specialist_desc}
+This man has a true talent for organising military scouts and finding the enemy.
+{Good_Sailor}  Good Sailor
+{Good_Sailor_desc}
+This man has a taste for the salt air and the wind at his back, making him a natural sailor.
+{Nautical_Expert}  Nautical Expert
+{Nautical_Expert_desc}
+This man has a good grasp of naval tactics and ship-handling, making him a superior naval commander.
+{Old_Sea_Dog}  Old Sea Dog
+{Old_Sea_Dog_desc}
+This man has many years experience at sea and a firm grasp of sailing and sea tactics.
+{Seasickness}  Seasickness
+{Seasickness_desc}
+This man is not a natural sailor, and prefers good solid land beneath his feet.
+{Poor_Sailor}  Poor Sailor
+{Poor_Sailor_desc}
+Water is something to drink or for washing. It is not right that people would want to float about on it!
+{Wretched_Landlubber}  Wretched Landlubber
+{Wretched_Landlubber_desc}
+Battles at sea - or even looking out at the sea - can give this man severe nausea.
+{Been_in_the_Wars} Been in the Wars
+{Been_in_the_Wars_desc}
+This man carries the scars of his battles with pride.
+{Scarred}  Scarred
+{Scarred_desc}
+This man carries many great scars, all honourably earned in battle.
+{Horribly_Scarred} Horribly Scarred
+{Horribly_Scarred_desc}
+This man has so many battle scars that children and pets shy away from him in horror.
+{Plotter}  Plotter
+{Plotter_desc}
+Plots and schemes come naturally to this man.
+{Schemer}  Schemer
+{Schemer_desc}
+This man indulges his conspiratorial urges, even when there is no need!
+{Conspirator}  Conspirator
+{Conspirator_desc}
+This man's right hand would scheme against his left - if he ever let either hand know that it had an opposing twin!
+{Foolish_Conspirator}  Foolish Conspirator
+{Foolish_Conspirator_desc}
+This man believes that he has a talent for plotting. He deceives even himself!
+{Inept_Plotter}    Inept Plotter
+{Inept_Plotter_desc}
+This man readily indulges his conspiratorial urges, although his scheming is completely incompetent.
+{Pathetic_Schemer} Pathetic Schemer
+{Pathetic_Schemer_desc}
+This man's left hand would readily plot against his right, but would he notice? His skills as a conspirator are worthless.
+{Loose-lipped} Loose-lipped
+{Loose-lipped_desc}
+Careless talk is something that this man enjoys, regardless of the cost to his reputation.
+{Talkative}    Talkative
+{Talkative_desc}
+This man finds it almost impossible to keep a confidence, and inspires little trust as a result.
+{Discreet} Discreet
+{Discreet_desc}
+Secrets known to this man have a habit of staying secret. He hoards secrets, and keeps his tongue locked behind his teeth.
+{Close-mouthed}    Close-mouthed
+{Close-mouthed_desc}
+This man is well-known for saying little about the less he claims to know.
+{Secretive}    Secretive
+{Secretive_desc}
+This man would shave his head if his hair had even an inkling about his thoughts.
+{Expert_Infantry_Commander}    Expert Infantry Commander
+{Expert_Infantry_Commander_desc}
+This man has a superior understanding of infantry deployments and tactics, and this gives his men confidence.
+{Poor_Infantry_Commander}  Poor Infantry Commander
+{Poor_Infantry_Commander_desc}
+This man shows little aptitude when placed in command of infantry.
+{Inferior_Infantry_Commander}  Inferior Infantry Commander
+{Inferior_Infantry_Commander_desc}
+This man has avoided gaining even rudimentary knowledge about the tactical deployment of infantry.
+{Useless_Infantry_Commander}   Useless Infantry Commander
+{Useless_Infantry_Commander_desc}
+This man's lack of talent when given command of foot soldiers is scary and disheartening.
+{Expert_Cavalry_Commander} Expert Cavalry Commander
+{Expert_Cavalry_Commander_desc}
+This man has a superior grasp of cavalry tactics, and his skills inspire confidence in all his followers.
+{Poor_Cavalry_Commander}   Poor Cavalry Commander
+{Poor_Cavalry_Commander_desc}
+This man shows little skill when placed in command of cavalry.
+{Inferior_Cavalry_Commander}   Inferior Cavalry Commander
+{Inferior_Cavalry_Commander_desc}
+This man lacks even rudimentary knowledge about cavalry tactics, making him a risk to all.
+{Useless_Cavalry_Commander}    Useless Cavalry Commander
+{Useless_Cavalry_Commander_desc}
+This man's lack of talent when given command of cavalry soldiers is disheartening and potentially lethal!
+{Uncomfortable_Near_Romans}    Uncomfortable Near Romans
+{Uncomfortable_Near_Romans_desc}
+Although the truth is unknown to his friends, this man fears Rome and all its works, and he is unwilling to face the cause of his fear.
+{Fears_Romans} Fears Romans
+{Fears_Romans_desc}
+This man's fear of Romans is now public knowledge, and makes soldiers under his command uneasy.
+{Despises_Roman_Ways}  Despises Roman Ways
+{Despises_Roman_Ways_desc}
+Romans, with their straight roads and aqueducts and nasty lawmaking ways and big bent noses, really annoy this man.  And have you ever noticed that they all smell of fish?
+{Hates_Romans} Hates Romans
+{Hates_Romans_desc}
+This man finds Romans to be despicable creatures, except for the dead ones. The dead ones are disgusting, but acceptable.
+{Loathes_Vile_Romans}  Loathes Vile Romans
+{Loathes_Vile_Romans_desc}
+The only good Roman is a dead Roman. Would that all Romans could be good…
+{Uncomfortable_Near_Barbarians}    Uncomfortable Near Barbarians
+{Uncomfortable_Near_Barbarians_desc}
+This man is deeply uneasy whenever barbarians are near - what might they do?
+{Fears_Barbarians} Fears Barbarians
+{Fears_Barbarians_desc}
+Barbarians and their fearsome ways scare this man, and his fears are obvious to his men!
+{Despises_Trouser-wearers} Despises Trouser-wearers
+{Despises_Trouser-wearers_desc}
+Barbaric, trouser-wearing, ignorant, thugs who reek of the pig-pen bring out the worst in this man.
+{Hates_Smelly_Barbarians}  Hates Smelly Barbarians
+{Hates_Smelly_Barbarians_desc}
+Barbarians are good for three things: being killed, slavery and being killed.
+{Loathes_Disgusting_Barbarians}    Loathes Disgusting Barbarians
+{Loathes_Disgusting_Barbarians_desc}
+A barbarian can be civilized. He's very civilized when he's dead, and being eaten by crows.
+{Uncomfortable_Near_Carthaginians} Uncomfortable Near Carthaginians
+{Uncomfortable_Near_Carthaginians_desc}
+As far as this man is concerned there's something not quite right about Carthaginians and other desert-dwellers.
+{Fears_Carthaginians}  Fears Carthaginians
+{Fears_Carthaginians_desc}
+This man has a morbid dread of Carthaginians and other folk from their lands. This is not rational.
+{Despises_Carthaginians}   Despises Carthaginians
+{Despises_Carthaginians_desc}
+Carthaginians and the like are not worthy of consideration in this man's eyes.
+{Hates_Grasping_Carthaginians} Hates Grasping Carthaginians
+{Hates_Grasping_Carthaginians_desc}
+The only good thing to come out of Carthage is the road to somewhere else.
+{Loathes_Avaricious_Carthaginians} Loathes Avaricious Carthaginians
+{Loathes_Avaricious_Carthaginians_desc}
+Carthaginians and their ilk are greedy, rapacious, miserly, cheating, baby-murdering scum. And that's just the nice ones.
+{Uncomfortable_Around_Greeks}  Uncomfortable Around Greeks
+{Uncomfortable_Around_Greeks_desc}
+Greeks and all their works prey on this man's mind. He fears them, although he tries to hide the fact.
+{Fears_Greeks} Fears Greeks
+{Fears_Greeks_desc}
+All that knowledge! All that power! Those Greeks are up to something! Something unpleasant and very, very wrong…
+{Despises_Greeks}  Despises Greeks
+{Despises_Greeks_desc}
+Greeks are effeminate fops of the worst kind! True, their soldiers are quite tough…
+{Hates_Clever-clever_Greeks}   Hates Clever-clever Greeks
+{Hates_Clever-clever_Greeks_desc}
+If only there was enough hemlock to go round…!
+{Loathes_Conniving_Greeks} Loathes Conniving Greeks
+{Loathes_Conniving_Greeks_desc}
+Greeks? Gifts!? There's only one worthwhile gift for a Greek and that's a spearpoint up the - !
+{Nervous_About_Egyptians}  Nervous About Egyptians
+{Nervous_About_Egyptians_desc}
+Egyptians and their unhealthy obsession with the dead give this man the willies.
+{Fears_Egyptians}  Fears Egyptians
+{Fears_Egyptians_desc}
+This man has an unhealthy fear of Egyptians and what he sees as their morbid and disturbing rites.
+{Despises_Egyptians}   Despises Egyptians
+{Despises_Egyptians_desc}
+Egyptians are too fond of death to be worthy opponents, but they should be given the chance to experience death!
+{Hates_Egyptians}  Hates Egyptians
+{Hates_Egyptians_desc}
+This man has a deep and abiding loathing of Egyptians and their death-worshipping ways!
+{Loathes_Egyptians}    Loathes Egyptians
+{Loathes_Egyptians_desc}
+Even the perfumed, putrefied smell of an Egyptian is enough to send this man into a towering rage!
+{Uncomfortable_Near_Easterners}    Uncomfortable Near Easterners
+{Uncomfortable_Near_Easterners_desc}
+Easterners and their mysterious plotting worry this man to the point where he doesn't quite think rationally about the subject.
+{Fears_Easterners} Fears Easterners
+{Fears_Easterners_desc}
+This man is scared of the base cunning shown by Easterners and this worries his followers.
+{Despises_Easterners}  Despises Easterners
+{Despises_Easterners_desc}
+Easterners? The sword's edge is the only gift this man would give them.
+{Hates_Easterners} Hates Easterners
+{Hates_Easterners_desc}
+Eastern treachery is too much for this man, and he can think of nothing finer than seeing his enemies dead on the field.
+{Loathes_Easterners}   Loathes Easterners
+{Loathes_Easterners_desc}
+Easterners and their foul ways drive this man into a controlled, focused rage.
+{Nervous_Near_Slaves}  Nervous Near Slaves
+{Nervous_Near_Slaves_desc}
+Rebellious slaves cause this man deep unease. If slaves can turn on their masters, then no-one is safe!
+{Fears_Slaves} Fears Slaves
+{Fears_Slaves_desc}
+Slaves are everywhere - and when they revolt, what's to stop them from doing almost anything?
+{Despises_Slaves}  Despises Slaves
+{Despises_Slaves_desc}
+Slaves are weaklings and inferior, otherwise they wouldn't be slaves. They die easily, too.
+{Hates_Revolting_Slaves}   Hates Revolting Slaves
+{Hates_Revolting_Slaves_desc}
+Any slaves who dare rise against their masters must be slaughtered. Rivers should run red with rebel blood!
+{Loathes_Rebellious_Slaves}    Loathes Rebellious Slaves
+{Loathes_Rebellious_Slaves_desc}
+Rebellious slaves are pestilential scum that must be punished without mercy! This man's hatred will make it happen!
+{Swivel-Eyed}  Swivel-Eyed
+{Swivel-Eyed_desc}
+This man's eyes are given to random twitching and sometimes wander in different directions. Many find this disturbing.
+{Feeble_of_Brain}  Feeble of Brain
+{Feeble_of_Brain_desc}
+This man is cursed with an inherited weakness of the intellect that goes beyond simple stupidity.
+{Thin-Skulled} Thin-Skulled
+{Thin-Skulled_desc}
+The Gods have looked upon this man's ancestors and found them wanting... and too closely related.
+{Bad_Bloodline}    Bad Bloodline
+{Bad_Bloodline_desc}
+Cursed by the Gods and the seed of his feeble ancestors, this man is walking proof that exposure at birth is a good idea.
+{Good_Looking} Good Looking
+{Good_Looking_desc}
+This man is blessed by the Gods with good looks.
+{Handsome} Handsome
+{Handsome_desc}
+This man's good looks and easy manner are a tool he is ready to exploit.
+{Noble_Aspect} Noble Aspect
+{Noble_Aspect_desc}
+This man's good looks are enough to turn the heads of many he meets, and win him instant approval.
+{Plain}    Plain
+{Plain_desc}
+This man's looks are not his greatest asset, but he has personality.
+{Homely}   Homely
+{Homely_desc}
+While many would regard this man as ugly, he prefers to think of himself as "rugged."
+{Ugly} Ugly
+{Ugly_desc}
+This man would like to think of himself as "rugged", but "as ugly as the north end of a pig going south" would be closer to the truth.
+{Repellent}    Repellent
+{Repellent_desc}
+There are some physical defects that even a winning personality cannot hope to rescue!
+{Fruitful} Fruitful
+{Fruitful_desc}
+A discreet silence about this matter is in order.
+{Fertile}  Fertile
+{Fertile_desc}
+A discreet silence about this matter is in order.
+{Prolific} Prolific
+{Prolific_desc}
+A discreet silence about this matter is in order.
+{Flaccid}  Flaccid
+{Flaccid_desc}
+A discreet silence about this matter is in order.
+{Infertile}    Infertile
+{Infertile_desc}
+A discreet silence about this matter is in order.
+{Barren}   Barren
+{Barren_desc}
+A discreet silence about this matter is in order.
+{Astute_Wife}  Astute Wife
+{Astute_Wife_desc}
+This man's wife can use her influence to his benefit, thanks to her family and education.
+{Well_Mannered_Wife}   Well Mannered Wife
+{Well_Mannered_Wife_desc}
+This man's wife makes full use of her influence, but does so with a winning smile.
+{Sophisticated_Wife}   Sophisticated Wife
+{Sophisticated_Wife_desc}
+This man's wife actively uses her influence and ready wit for his benefit, but she is clever and never appears 'pushy'.
+{Tax_Assessor} Tax Assessor
+{Tax_Assessor_desc}
+This man has a talent for collecting taxes, and is honest enough to make sure that the money reaches the treasury.
+{Efficient_Taxman} Efficient Taxman
+{Efficient_Taxman_desc}
+This man can accurately weigh a merchant's purse with a glance. He then ruthlessly takes it to pay taxes!
+{Cruelly_Efficient_Taxman} Cruelly Efficient Taxman
+{Cruelly_Efficient_Taxman_desc}
+This man has an ability to sniff out every spare coin in a city and put it in his treasury. He is far from popular as a result.
+{Useless_Assessor} Useless Assessor
+{Useless_Assessor_desc}
+This man is sadly lacking when it comes to collecting taxes, preferring to believe every sob story of hardship rather than just take the money…
+{Inefficient_Taxman}   Inefficient Taxman
+{Inefficient_Taxman_desc}
+Whether it's simple incompetence or diversion of funds to his own purse, this man lacks the talent to gather taxes.
+{Tax_Farmer}   Tax Farmer
+{Tax_Farmer_desc}
+This man has no talent for collecting taxes, and those he does collect have a nasty habit of ending up in the wrong (well, his) strongbox!
+{Divorced} Divorced
+{Divorced_desc}
+Hidden VnV to turn off marriage effects.
+{Intelligent_Risk_Taker}   Intelligent Risk Taker
+{Intelligent_Risk_Taker_desc}
+This man is a skilled or very lucky attacker - either way, he can produce a victory even when the odds are against him.
+{Risk_Taker}   Risk Taker
+{Risk_Taker_desc}
+This man has a habit of taking risks when attacking. Unfortunately, he rarely makes an accurate risk assessment.
+{Stupid_Risk_Taker}    Stupid Risk Taker
+{Stupid_Risk_Taker_desc}
+This man's taste for launching risky attacks has not paid off in the past, and shows little signs of starting to now…
+{Over-Optimistic}  Over-Optimistic
+{Over-Optimistic_desc}
+This man can turn almost suicidal attacks into certain mass suicides. His men, or the survivors, are certain that he lacks any real ability to lead.
+{Poor_When_Outnumbered}    Poor When Outnumbered
+{Poor_When_Outnumbered_desc}
+This man has no grasp of defensive tactics, and when outnumbered he would do better to stick his head in a sack rather than exercise command.
+{To_the_Last_Gasp} To the Last Gasp
+{To_the_Last_Gasp_desc}
+This man has a self-belief in his defensive talents that could not be further removed from reality. When facing overwhelming odds he would be less dangerous fighting for the enemy!
+{Rational_Concerns}    Rational Concerns
+{Rational_Concerns_desc}
+This rational man takes sensible precautions against the unseen and unknown, the things that natural philosophers dismiss.
+{Superstitious}    Superstitious
+{Superstitious_desc}
+Unless the heavens are right and the signs propitious, this man will do little of significance.
+{Hugely_Superstitious} Hugely Superstitious
+{Hugely_Superstitious_desc}
+This man cannot rise from his bed without checking his horoscope, consulting a soothsayer, taking an augury, and seeing that the wild birds are flying in a propitious direction…
+{Rational_Beliefs} Rational Beliefs
+{Rational_Beliefs_desc}
+The stars are just lights in the sky for this man. They do not rule his destiny.
+{Pragmatic}    Pragmatic
+{Pragmatic_desc}
+This man has a severely practical turn of mind, and brooks no superstitious maunderings in his followers.
+{Utterly_Pragmatic}    Utterly Pragmatic
+{Utterly_Pragmatic_desc}
+This man's world holds no mysteries, and there is no room for magic or superstition. Some believe that he is tempting the Gods with his beliefs…
+{Mildly_Extravagant}   Mildly Extravagant
+{Mildly_Extravagant_desc}
+Money is only as much use as the things it is spent on, in this man's opinion.
+{Extravagant}  Extravagant
+{Extravagant_desc}
+Money flows through this man's treasury like water, but his acquaintances are willing to grant that you can at least see where he spent it…
+{Wildly_Extravagant}   Wildly Extravagant
+{Wildly_Extravagant_desc}
+Nice things cost money according to this man's philosophy, and where that money comes from matters not a jot!
+{Frugal}   Frugal
+{Frugal_desc}
+Money is best not wasted, in this man's opinion. And his definition of waste is wide ranging…
+{Downright_Miserly}    Downright Miserly
+{Downright_Miserly_desc}
+Once in this man's strongbox money rarely sees the light of day again.
+{Cheapskate}   Cheapskate
+{Cheapskate_desc}
+Spending money causes this man terrible pain. Every coin that leaves his strongbox twists his guts like the stabbing of a thousand knives…
+{Feeling_Poorly}   Feeling Poorly
+{Feeling_Poorly_desc}
+Good health always seems beyond the grasp of this man, although he spends many hours and much treasure in cures and elixirs.
+{Given_to_Ill-Health}  Given to Ill-Health
+{Given_to_Ill-Health_desc}
+This man is a martyr to his illnesses. He suffers terribly with a variety of life-threatening conditions, none of which have yet managed to kill him.
+{Hypochondriac}    Hypochondriac
+{Hypochondriac_desc}
+Pain is a constant companion to this man. Disease stalks him at every moment, waiting for a chance to bring further misery, or the release of death.
+{In_The_Pink}  In The Pink
+{In_The_Pink_desc}
+This man has a resilient constitution; illness and injury rarely seem to trouble him for long.
+{In_Rude_Health}   In Rude Health
+{In_Rude_Health_desc}
+This man is in the rudest of health and is a fount of vitality. Few lesser men can match the pace he sets in his daily life.
+{Hale_and_Hearty}  Hale and Hearty
+{Hale_and_Hearty_desc}
+This man's name is almost a byword for vigour and good health. No one can remember a time when he complained of as much as a toothache, for example.
+{Pawn_of_the_Gods} Pawn of the Gods
+{Pawn_of_the_Gods_desc}
+This man's life is no longer his own. The Gods themselves have plans for him, although these have yet to be fully revealed.
+{Falling_Sickness} Falling Sickness
+{Falling_Sickness_desc}
+The Gods have chosen this man for some greatness or other. This explains his trances or raptures when he falls to the ground.
+{Touched_by_the_Gods}  Touched by the Gods
+{Touched_by_the_Gods_desc}
+This man has a destiny that is marked by the favour of the Gods. Greatness will be his, in great success or great failure…
+{Sane} Sane
+{Sane_desc}
+Hidden VnV to protect from and turn off assorted varieties of bonkers in the nut!
+{Dysfunctional}    Hooting
+{Dysfunctional_desc}
+Wisdom wears many guises, but hooting in the manner of a starving owl may not be one of them.
+{Quite_Mad}    Hiding From the World
+{Quite_Mad_desc}
+This man has taken to living inside a giant amphora. He now lives in terror of the coming of the 'Great Wine Pressing'. He is convinced that this will strike in the hours of darkness.
+{Unusual}  Unusual
+{Unusual_desc}
+Convinced that all spiders are in cahoots with his enemies, this man spends many hours drowning the treacherous little beggars in vinegar.
+{Deranged} Deranged
+{Deranged_desc}
+There are those who say that this man gibbers like a deranged rock ape. The rock apes will take offence at this slur.
+{Favour_of_the_Gods}   Favour of the Gods
+{Favour_of_the_Gods_desc}
+This man has the favour of the Gods. They watch over his every move, shielding him from harm. Oh yes, they do this.
+{Love_of_the_Gods} Love of the Gods
+{Love_of_the_Gods_desc}
+The Gods love this man, and provide for his every whim. They do so subtly, however, through unwitting mortals, mortals who had better mind their manners…
+{One_of_the_Gods}  One of the Gods
+{One_of_the_Gods_desc}
+This man's certainty that he is a god in mortal form is disturbing to some. But then they are in need of the careful attentions of a skilled executioner!
+{Bloody}   Bloody
+{Bloody_desc}
+This man enjoys the sight of blood, particularly that of his enemies.
+{Sanguinary}   Sanguinary
+{Sanguinary_desc}
+This man's obvious relish for bloodshed is beginning to worry his associates and underlings.
+{Bloodthirsty} Bloodthirsty
+{Bloodthirsty_desc}
+This man has an open delight in bloodshed for its own sake. Some find this unbecoming and disturbing.
+{Lily-Livered} Lily-Livered
+{Lily-Livered_desc}
+The sight of blood makes this man go pale, an unfortunate trait in one who is expected to command.
+{Hates_Blood}  Hates Blood
+{Hates_Blood_desc}
+This man hates the sight of blood, and runs from it - screaming - like a frightened child.
+{Terrified_by_Blood}   Terrified by Blood
+{Terrified_by_Blood_desc}
+The sight of spilled blood is enough to make this man swoon. His followers are usually unimpressed by this behaviour.
+{Unlucky_Leader}   Unlucky Leader
+{Unlucky_Leader_desc}
+This man has the ability to inspire his followers in battle. His setbacks seem more the result of bad luck than a lack of talent.
+{Glory_Hunter} Glory Hunter
+{Glory_Hunter_desc}
+As a general this man can inspire his troops with dreams of glory and honour even as he leads them towards disaster.
+{Anger}    Anger
+{Anger_desc}
+The vein that constantly throbs in this man's forehead is a visible marker of his seething temper.
+{Unquenched_Anger} Unquenched Anger
+{Unquenched_Anger_desc}
+This man has been known to beat slaves to death in murderous rages. Even his friends tremble when the madness comes upon him.
+{Reverent} Reverent
+{Reverent_desc}
+This man is openly religious and respectful of the Gods.
+{Respectful_of_the_Gods}   Respectful of the Gods
+{Respectful_of_the_Gods_desc}
+This man is respectful of the Gods and seeks the advice of priests before making major decisions.
+{Irreverent}   Irreverent
+{Irreverent_desc}
+Religion is not important to this man, except as the object of tasteless jokes about priests and sacrificial goats…
+{Contemptuous_of_the_Gods} Contemptuous of the Gods
+{Contemptuous_of_the_Gods_desc}
+This man shows no respect for any religion, or for the sincere feelings of others who do obey the Gods. This makes many uneasy.
+{Filthy_Minded}    Filthy Minded
+{Filthy_Minded_desc}
+This man has a leering manner which does little to disguise the prurient turn of his mind.
+{Licentious}   Licentious
+{Licentious_desc}
+This man's smutty inclinations lead him to take liberties that others would think twice about.
+{Firm_Personal_Morality}   Firm Personal Morality
+{Firm_Personal_Morality_desc}
+This man behaves at all times in a correct fashion, and insists on doing what is right rather than what is convenient.
+{Prim} Prim
+{Prim_desc}
+Correctness in all things make this man a little humourless. His fussy standards are almost impossible to meet.
+{Prim_and_Proper}  Prim and Proper
+{Prim_and_Proper_desc}
+Nothing is quite good enough for this man, added to which nothing is ever quite clean or morally pure enough either. Many people find him to be an utter pain.
+{Hesitant_Attacker}    Hesitant Attacker
+{Hesitant_Attacker_desc}
+Hesitation rather than aggression seems to be this man's watchword.
+{Over-Cautious_Attacker}   Over-Cautious Attacker
+{Over-Cautious_Attacker_desc}
+This man's caution in the face of the enemy is disheartening to his troops.
+{Indecisive_Attacker}  Indecisive Attacker
+{Indecisive_Attacker_desc}
+This man has a reputation for avoiding attack, even when the path to victory seems clear cut.
+{Office_of_Aedile} Office of Aedile
+{Office_of_Aedile_desc}
+This man holds the Senatorial office of aedile. He is responsible for maintenance and public order.
+{Office_of_Censor} Office of Censor
+{Office_of_Censor_desc}
+The censor is responsible for drawing up the census and overseeing public works and finances. \nHe is also the guardian of public morality.
+{Office_of_Consul} Office of Consul
+{Office_of_Consul_desc}
+This man holds the Senatorial office of consul, the chief officer of the state. \nThe two consuls lead the armies in defence of Rome, and propose new legislation in the senate.
+{Office_of_Praetor}    Office of Praetor
+{Office_of_Praetor_desc}
+This man holds the Senatorial office of praetor. \nThe praetors are judges and law officers.
+{Office_of_Quaestor}   Office of Quaestor
+{Office_of_Quaestor_desc}
+This man holds the Senatorial office of quaestor, the lowest Senatorial office. \n He is in charge of the treasury, and record keeping.
+{Ex_Aedile}    Ex Aedile
+{Ex_Aedile_desc}
+This man used to hold the office of aedile.
+{Ex_Censor}    Ex Censor
+{Ex_Censor_desc}
+This man used to hold the office of censor.
+{Ex_Consul}    Ex Consul
+{Ex_Consul_desc}
+This man used to hold the office of consul.
+{Ex_Praetor}   Ex Praetor
+{Ex_Praetor_desc}
+This man used to hold the office of praetor.
+{Ex_Quaestor}  Ex Quaestor
+{Ex_Quaestor_desc}
+This man used to hold the office of quaestor.
+{Confident_Commander_effects_desc}
++1 Command
+{Good_Commander_effects_desc}
++2 Command
+{Superior_Commander_effects_desc}
++3 Command
+{Great_Commander_effects_desc}
++4 Command
+{Legendary_Commander_effects_desc}
++5 Command
+{Indifferent_Commander_effects_desc}
+-1 Command
+{Incompetent_Commander_effects_desc}
+-2 Command
+{Poor_Commander_effects_desc}
+-3 Command
+{Pathetic_Commander_effects_desc}
+-5 Command
+{Confident_Attacker_effects_desc}
++1 Command when attacking
+{Good_Attacker_effects_desc}
++2 Command when attacking
+{Superior_Attacker_effects_desc}
++3 Command when attacking
+{Great_Attacker_effects_desc}
++4 Command when attacking
+{Heroic_Attacker_effects_desc}
++5 Command when attacking
+{Indifferent_Attacker_effects_desc}
+-1 Command when attacking
+{Incompetent_Attacker_effects_desc}
+-2 Command when attacking
+{Poor_Attacker_effects_desc}
+-3 Command when attacking
+{Pathetic_Attacker_effects_desc}
+-4 Command when attacking
+{Confident_in_Defence_effects_desc}
++1 Command when defending
+{Good_Defender_effects_desc}
++2 Command when defending
+{Superior_Defender_effects_desc}
++3 Command when defending
+{Great_Defender_effects_desc}
++4 Command when defending
+{Heroic_Defender_effects_desc}
++5 Command when defending
+{Indifferent_Defender_effects_desc}
+-1 Command when defending
+{Incompetent_Defender_effects_desc}
+-2 Command when defending
+{Poor_Defender_effects_desc}
+-3 Command when defending
+{Pathetic_Defender_effects_desc}
+-4 Command when defending
+{Social_Drinker}   Social Drinker
+{Social_Drinker_desc}
+Always first to celebrate after a hard day of conquest, this man spends time drinking with his men. It has some benefits.
+{Social_Drinker_lose_desc}
+This man has renounced the pleasures of wine.
+{Social_Drinker_effects_desc}
++1 Command
+{Likes_a_Drink}    Likes a Drink
+{Likes_a_Drink_desc}
+This man is a dedicated drinker, and any benefits to his working relationships are outweighed by the constant hangovers.
+{Likes_a_Drink_effects_desc}
+-1 Management
+{Drunkard_effects_desc}
+-1 Influence, -1 Command, -1 Management
+{Drunken_Lout_effects_desc}
+-1 Influence, -2 Command, -2 Management
+{Sot_effects_desc}
+-2 Influence, -3 Command, -3 Management
+{Paralytic}    Paralytic
+{Paralytic_desc}
+Even the God of wine would find this man's drinking habits disturbing. His capacity is bottomless; his drunken cravings dominate his few waking moments.
+{Paralytic_gain_desc}
+This man is incapacitated by his drinking.
+{Paralytic_epithet_desc}   the Drunkard
+{Paralytic_effects_desc}
+-4 Influence, -5 Command, -5 Management
+{Strong_Language_effects_desc}
++1 Morale for all troops on the battlefield, 5% penalty to your popularity with the Senate, 5% bonus to your popularity with the People
+{Foul_Mouthed_effects_desc}
++2 Morale for all troops on the battlefield, 10% penalty to your popularity with the Senate, 10% bonus to your popularity with the People
+{Swears_Like_A_Trooper_effects_desc}
++4 Morale for all troops on the battlefield, 15% penalty to your popularity with the Senate, 15% bonus to your popularity with the People
+{Irredeemably_Foul-mouthed_effects_desc}
++6 Morale for all troops on the battlefield, 20% penalty to your popularity with the Senate, 20% bonus to your popularity with the People
+{Whimsical_Nature_effects_desc}
+-1 Influence
+{Prone_To_Folly_effects_desc}
+-2 Influence
+{Notorious_Prankster_effects_desc}
+-3 Influence
+{Intransigent_Clown_effects_desc}
+-4 Influence
+{Casual_Adulterer_effects_desc}
++2 Morale for all troops on the battlefield
+{Blatant_Adulterer_effects_desc}
+-1 Influence, +1 Morale for all troops on the battlefield
+{Notorious_Adulterer_effects_desc}
+-1 Influence
+{Exposed_Lech_effects_desc}
+-1 Influence, -1 Morale for all troops on the battlefield
+{Humiliated_Homewrecker_effects_desc}
+-2 Influence, -2 Morale for all troops on the battlefield
+{Sober_effects_desc}
++1 Management, 5% penalty to your popularity with the People
+{Abstemious_effects_desc}
++2 Management, 10% penalty to your popularity with the People
+{Teetotal_effects_desc}
++3 Management, 15% penalty to your popularity with the People
+{Good_Ambusher_effects_desc}
++1 Command when ambushing
+{Sneaky_Ambusher_effects_desc}
++2 Command when ambushing
+{Exceptional_Ambusher_effects_desc}
++3 Command when ambushing
+{Poor_Ambusher_effects_desc}
+-1 Command when ambushing
+{Rotten_Ambusher_effects_desc}
+-2 Command when ambushing
+{Pathetic_Ambusher_effects_desc}
+-3 Command when ambushing
+{Obsessional_Trainer_effects_desc}
++1 Morale for all troops on the battlefield, +10% to Movement Points (gives armies the ability to forced march)
+{Drillmaster_effects_desc}
+-2 Morale for all troops on the battlefield, +15% to Movement Points (gives armies the ability to forced march), +1 to law (improves public order)
+{Martinet_effects_desc}
++1 Command, -3 Morale for all troops on the battlefield, +20% to Movement Points (gives armies the ability to forced march), +2 to law (improves public order)
+{Poor_Disciplinarian_effects_desc}
++1 Morale for all troops on the battlefield, -10% to Movement Points (reduces the distance armies can march)
+{Too_Considerate_effects_desc}
++3 Morale for all troops on the battlefield, -15% to Movement Points (reduces the distance armies can march)
+{Kills_With_Kindness_effects_desc}
+-1 Command, +2 Morale for all troops on the battlefield, -20% to Movement Points (reduces the distance armies can march)
+{Gate_Breaker_effects_desc}
++1 Command when assaulting walls
+{Wall_Breaker_effects_desc}
++2 Command when assaulting walls
+{Into_The_Breach!_effects_desc}
++3 Command when assaulting walls
+{Legendary_Siege_Expert_effects_desc}
++4 Command when assaulting walls
+{Dislikes_Attacking_Walls_effects_desc}
+-1 Command when assaulting walls
+{Useless_Besieger_effects_desc}
+-2 Command when assaulting walls
+{Pathetic_Besieger_effects_desc}
+-3 Command when assaulting walls
+{Gate_Keeper_effects_desc}
++1 Command when defending walls
+{Strong_As_Stone_effects_desc}
++2 Command when defending walls
+{None_Shall_Pass!_effects_desc}
++3 Command when defending walls
+{Legendary_City_Defender_effects_desc}
++4 Command when defending walls
+{Cowers_Behind_Walls_effects_desc}
+-1 Command when defending walls
+{Pathetic_Defender_of_Cities_effects_desc}
+-2 Command when defending walls
+{Liability_In_Defence_effects_desc}
+-3 Command when defending walls
+{Untouched_By_Fear_effects_desc}
++1 Morale for all troops on the battlefield
+{Brave_effects_desc}
++2 Morale for all troops on the battlefield, 5% bonus to your popularity with the People
+{Famously_Courageous_effects_desc}
++3 Morale for all troops on the battlefield, 5% bonus to your popularity with the People
+{Utterly_Fearless_effects_desc}
++4 Morale for all troops on the battlefield, 10% bonus to your popularity with the People
+{Insanely_Brave_effects_desc}
++2 Morale for all troops on the battlefield, 10% bonus to your popularity with the People
+{Doubtful_Courage_effects_desc}
+-1 Morale for all troops on the battlefield, 5% penalty to your popularity with the People
+{Morbidly_Fearful_effects_desc}
+-2 Morale for all troops on the battlefield, 10% penalty to your popularity with the People
+{Craven_Coward_effects_desc}
+-3 Morale for all troops on the battlefield, 15% penalty to your popularity with the People
+{Ruled_By_Fear_effects_desc}
+-4 Morale for all troops on the battlefield, 20% penalty to your popularity with the People
+{Rather_Lazy_effects_desc}
+-1 Management
+{Lazy_effects_desc}
+-2 Management
+{Indolent_effects_desc}
+-3 Management
+{Indolent_Lardy_Joker_effects_desc}
+-4 Management
+{Lively_effects_desc}
++1 Management, +10% to Movement Points (gives armies the ability to forced march), 5% discount on construction costs
+{Very_Lively_effects_desc}
++2 Management, +15% to Movement Points (gives armies the ability to forced march), 10% discount on construction costs
+{Energetic_effects_desc}
++3 Management, +20% to Movement Points (gives armies the ability to forced march), 15% discount on construction costs
+{Blessed_With_Vitality_effects_desc}
++3 Management, +25% to Movement Points (gives armies the ability to forced march), 20% discount on construction costs
+{Axebitten_effects_desc}
++1 Morale for all troops on the battlefield, +1 Command when attacking, -1 Command when defending
+{Shieldbiter_effects_desc}
++2 Morale for all troops on the battlefield, +2 Command when attacking, -2 Command when defending
+{Berserker_effects_desc}
+-4 Morale for all troops on the battlefield, +3 Command when attacking, -3 Command when defending
+{Distrusts_Outsiders_effects_desc}
++1 to public security (improves the chances of detecting and capturing enemy agents)
+{Hates_Strangers_effects_desc}
++2 to public security (improves the chances of detecting and capturing enemy agents)
+{Loathes_Foreigners_effects_desc}
++3 to public security (improves the chances of detecting and capturing enemy agents)
+{Welcoming_To_Foreigners_effects_desc}
+-1 from public security (reduces the chances of detecting and capturing enemy agents)
+{Likes_Strangers_effects_desc}
+-2 from public security (reduces the chances of detecting and capturing enemy agents)
+{Fascinated_By_Outsiders_effects_desc}
+-3 from public security (reduces the chances of detecting and capturing enemy agents)
+{Faithless_effects_desc}
++1 to unrest (has a negative effect on public order)
+{Atheist_effects_desc}
++2 to unrest (has a negative effect on public order)
+{Despises_The_Gods_effects_desc}
++3 to unrest (has a negative effect on public order)
+{Hates_The_Gods_effects_desc}
++4 to unrest (has a negative effect on public order)
+{Devout}   Devout
+{Devout_desc}
+This man has sincere religious beliefs, and respects those of others.
+{Devout_effects_desc}
++1 Influence
+{Religious_effects_desc}
++2 Influence
+{Honours_The_Gods_effects_desc}
++3 Influence
+{Venerates_The_Gods_effects_desc}
++4 Influence, -2 from line of sight (reduces the range at which enemies are spotted)
+{War_Chief_effects_desc}
++1 Command, +1 to law (improves public order)
+{Mighty_War_Chief_effects_desc}
++2 Command, +2 to law (improves public order)
+{Warlord_effects_desc}
++3 Command, +3 to law (improves public order)
+{Legendary_Warlord_effects_desc}
++4 Command, +4 to law (improves public order)
+{Bureaucrat_effects_desc}
++1 Management, +1 to law (improves public order)
+{Skilled_Bureaucrat_effects_desc}
++2 Management, +2 to law (improves public order)
+{Superb_Administrator_effects_desc}
++3 Management, +3 to law (improves public order)
+{Jobsworth_effects_desc}
+-1 Management
+{Administratively_Inept_effects_desc}
+-2 Management
+{Stunningly_Incompetent_effects_desc}
+-3 Management
+{Outstanding_Speaker_effects_desc}
++1 Influence, 5% bonus to your popularity with the People
+{Famous_Orator_effects_desc}
++2 Influence, 10% bonus to your popularity with the People
+{Great_Orator_effects_desc}
++3 Influence, 15% bonus to your popularity with the People
+{Tedious_Speaker_effects_desc}
+-1 Influence, 5% penalty to your popularity with the People
+{Boring_Speaker_effects_desc}
+-2 Influence, 5% penalty to your popularity with the People
+{Boring_Beyond_Belief_effects_desc}
+-3 Influence, 10% penalty to your popularity with the People
+{Boring_Little_Tit_effects_desc}
+-4 Influence, 15% penalty to your popularity with the People
+{Fluent_Speaker_effects_desc}
++1 Management, Improves the chances of getting elected to senatorial offices, 5% bonus to your popularity with the Senate
+{Skilled_Debater_effects_desc}
++1 Influence, +1 Management, Improves the chances of getting elected to senatorial offices, 10% bonus to your popularity with the Senate
+{Rhetorical_Expert_effects_desc}
++2 Influence, +1 Management, Improves the chances of getting elected to senatorial offices, 15% bonus to your popularity with the Senate
+{Fond_of_Ribald_Rhymes_effects_desc}
++1 Influence
+{Poet_effects_desc}
++2 Influence
+{Epic_Poet_effects_desc}
+-1 Influence
+{Understanding_of_Strategy_effects_desc}
++1 Command
+{Strategic_Expert_effects_desc}
++2 Command
+{Strategist_effects_desc}
++3 Command
+{Understanding_of_Tactics_effects_desc}
++2 Command when ambushing, +1 to line of sight (increases the range at which enemies are spotted)
+{Tactical_Expert_effects_desc}
++3 Command when ambushing, +2 to line of sight (increases the range at which enemies are spotted)
+{Tactician_effects_desc}
++4 Command when ambushing, +3 to line of sight (increases the range at which enemies are spotted)
+{Understanding_of_Mathematics_effects_desc}
++1 Management, 5% bonus on all trade income
+{Mathematics_Expert_effects_desc}
++2 Management, 10% bonus on all trade income
+{Mathematician_effects_desc}
++3 Management, 15% bonus on all trade income
+{Political_Animal_effects_desc}
++1 Influence, Improves the chances of getting elected to senatorial offices, 5% bonus to your popularity with the Senate
+{Politician_effects_desc}
++2 Influence, Improves the chances of getting elected to senatorial offices, 10% bonus to your popularity with the Senate
+{Consummate_Politician_effects_desc}
++3 Influence, Improves the chances of getting elected to senatorial offices, 15% bonus to your popularity with the Senate
+{Understanding_of_Logistics_effects_desc}
++1 Morale for all troops on the battlefield, +10% to Movement Points (gives armies the ability to forced march)
+{Logistics_Expert_effects_desc}
++2 Morale for all troops on the battlefield, +15% to Movement Points (gives armies the ability to forced march)
+{Logistician_effects_desc}
++3 Morale for all troops on the battlefield, +20% to Movement Points (gives armies the ability to forced march)
+{Philosopher_effects_desc}
++2 Management, 150% increase to cost to bribe
+{Abstruse_Philosopher_effects_desc}
++3 Management, 200% increase to cost to bribe
+{Agitator_effects_desc}
++1 Influence, 5% bonus to your popularity with the People
+{Tub-Thumper_effects_desc}
++2 Influence, 10% bonus to your popularity with the People
+{Rabblerouser_effects_desc}
++3 Influence, 15% bonus to your popularity with the People
+{Demagogue_effects_desc}
++4 Influence, 20% bonus to your popularity with the People
+{Draughtsman_effects_desc}
+10% discount on construction costs
+{Architect_effects_desc}
+20% discount on construction costs
+{Great_Architect_effects_desc}
+30% discount on construction costs
+{Vanquisher}   Vanquisher
+{Vanquisher_desc}
+This man's many victories have made him popular and respected, but also a target in the eyes of his jealous compatriots.
+{Vanquisher_effects_desc}
+5% penalty to your popularity with the Senate, 10% bonus to your popularity with the People
+{Great_Vanquisher} Great Vanquisher
+{Great_Vanquisher_desc}
+Although this man is adored by the public for his victories, this has not endeared him to everyone.
+{Great_Vanquisher_effects_desc}
+10% penalty to your popularity with the Senate, 20% bonus to your popularity with the People
+{Conqueror_effects_desc}
+15% penalty to your popularity with the Senate, 30% bonus to your popularity with the People
+{Victor_effects_desc}
++2 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Famous_Victor_effects_desc}
++4 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Conquering_Hero_effects_desc}
++6 Influence, -2 from personal security (increases the chances of falling victim to assassination)
+{Gourmet_of_Life_effects_desc}
+5% bonus on all trade income, 10% decrease to cost to bribe
+{Refined_Tastes_effects_desc}
+10% bonus on all trade income, 20% decrease to cost to bribe
+{Rarified_Tastes_effects_desc}
+15% bonus on all trade income, 30% decrease to cost to bribe
+{Restrained_effects_desc}
+-1 Influence, 100% increase to cost to bribe
+{Cold_Manner_effects_desc}
+-2 Influence, 200% increase to cost to bribe
+{Stoic_effects_desc}
+-3 Influence, 300% increase to cost to bribe
+{Stern}    Stern
+{Stern_desc}
+This man's manner and lifestyle tends to be severe and unforgiving.
+{Stern_effects_desc}
++1 Management, 100% increase to cost to bribe
+{Spartan_effects_desc}
++2 Management, 200% increase to cost to bribe
+{Austere_effects_desc}
++3 Management, 300% increase to cost to bribe
+{Lover_of_Beauty_effects_desc}
++1 Influence, -1 Command
+{Connoisseur_effects_desc}
++2 Influence, -2 Command
+{Aesthete_effects_desc}
++3 Influence, -3 Command
+{Gourmand_effects_desc}
+10% penalty on all trade income
+{Glutton_effects_desc}
+15% penalty on all trade income
+{Apician_Glutton_effects_desc}
+20% penalty on all trade income
+{Ignorant_effects_desc}
+-1 Influence, -1 Management
+{Pig_Ignorant_effects_desc}
+-2 Influence, -2 Management
+{Willfully_Ignorant_effects_desc}
+-3 Influence, -3 Management
+{Likes_a_Flutter_effects_desc}
+5% penalty on all trade income, 10% decrease to cost to bribe
+{Gambler_effects_desc}
+10% penalty on all trade income, 20% decrease to cost to bribe
+{Inveterate_Gambler_effects_desc}
+15% penalty on all trade income, 30% decrease to cost to bribe
+{Ruled_by_Luck_effects_desc}
+20% penalty on all trade income, 40% decrease to cost to bribe
+{Self_Publicist_effects_desc}
++1 Influence, -10 from personal security (increases the chances of falling victim to assassination)
+{Spin_Doctor_effects_desc}
++2 Influence, -20 from personal security (increases the chances of falling victim to assassination)
+{Narcissist_effects_desc}
++3 Influence, -30 from personal security (increases the chances of falling victim to assassination)
+{Espionage_effects_desc}
+10% discount on agent training costs
+{Espionage_Expert_effects_desc}
+20% discount on agent training costs
+{Spy_Master_effects_desc}
+30% discount on agent training costs
+{Clean_Hands_effects_desc}
+10% discount on agent training costs
+{Killer_From_Necessity_effects_desc}
++1 to personal security (improves the chances of detecting and foiling assassination attempts), 20% discount on agent training costs
+{Master_of_Assassins_effects_desc}
++1 Influence, +2 to personal security (improves the chances of detecting and foiling assassination attempts), 25% discount on agent training costs
+{Counter-Spy_effects_desc}
++2 to public security (improves the chances of detecting and capturing enemy agents)
+{Counter-Espionage_effects_desc}
++3 to public security (improves the chances of detecting and capturing enemy agents)
+{Spycatcher_effects_desc}
++4 to public security (improves the chances of detecting and capturing enemy agents)
+{Survivor_effects_desc}
++2 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Expert_Survivor_effects_desc}
++3 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Immune_to_Death?_effects_desc}
++4 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Sneaky_effects_desc}
++1 to agent's skill, +1 to line of sight (increases the range at which enemies are spotted)
+{Spy_effects_desc}
++2 to agent's skill, +2 to line of sight (increases the range at which enemies are spotted)
+{Superior_Spy_effects_desc}
++3 to agent's skill, +3 to line of sight (increases the range at which enemies are spotted)
+{Expert_Spy_effects_desc}
++4 to agent's skill, +4 to line of sight (increases the range at which enemies are spotted)
+{Master_Spy_effects_desc}
++5 to agent's skill, +5 to line of sight (increases the range at which enemies are spotted)
+{Poor_Spy_effects_desc}
+-1 from agent's skill
+{Inferior_Spy_effects_desc}
+-2 from agent's skill
+{Useless_Spy_effects_desc}
+-3 from agent's skill
+{Cutthroat_effects_desc}
++1 to agent's skill
+{Murderer_effects_desc}
++2 to agent's skill
+{Superior_Assassin_effects_desc}
++3 to agent's skill
+{Expert_Assassin_effects_desc}
++4 to agent's skill
+{Master_Assassin_effects_desc}
++5 to agent's skill
+{Inept_Poisoner_effects_desc}
+-1 from agent's skill
+{Ham-fisted_Murderer_effects_desc}
+-2 from agent's skill
+{Useless_Assassin_effects_desc}
+-3 from agent's skill
+{Careless_effects_desc}
+-1 from personal security (increases the chances of falling victim to assassination)
+{Careless_of_Security_effects_desc}
+-2 from personal security (increases the chances of falling victim to assassination)
+{Trusting_Fool_effects_desc}
+-4 from personal security (increases the chances of falling victim to assassination)
+{Watchful_effects_desc}
++1 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Security_Conscious_effects_desc}
++2 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Obsessed_by_Security_effects_desc}
++4 to personal security (improves the chances of detecting and foiling assassination attempts)
+{No_Enemies_effects_desc}
++1 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Ingenuous_effects_desc}
++2 Influence, -2 from personal security (increases the chances of falling victim to assassination)
+{Trusting_effects_desc}
+-1 Influence, -3 from personal security (increases the chances of falling victim to assassination)
+{Scant_Trust_effects_desc}
++1 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Suspicious_effects_desc}
+-1 Influence, +2 to personal security (improves the chances of detecting and foiling assassination attempts)
+{A_Bit_Paranoid_effects_desc}
+-2 Influence, +3 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Paranoid_effects_desc}
+-2 Influence, -1 Command, +4 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Untruthful_effects_desc}
++1 Influence
+{Economical_with_the_Truth_effects_desc}
++2 Influence
+{Liar_effects_desc}
++3 Influence
+{Pathological_Liar_effects_desc}
+-3 Influence
+{Financially_Irregular_effects_desc}
+-1 Management
+{Fiscally_Flexible_effects_desc}
+-2 Management
+{Embezzler_effects_desc}
+-3 Management
+{Sly_effects_desc}
+Improves the chances of getting elected to senatorial offices, 5% bonus to your popularity with the Senate
+{Deceiver_effects_desc}
+Improves the chances of getting elected to senatorial offices, 10% bonus to your popularity with the Senate
+{Great_Deceiver_effects_desc}
++1 Influence, +1 Command, Improves the chances of getting elected to senatorial offices, 15% bonus to your popularity with the Senate
+{Trusty_effects_desc}
+100% increase to cost to bribe, +2 to law (improves public order)
+{Honest_effects_desc}
+200% increase to cost to bribe, +4 to law (improves public order)
+{Upright_effects_desc}
+300% increase to cost to bribe, +6 to law (improves public order)
+{Flexible_effects_desc}
+20% decrease to cost to bribe, -1 from law (has a negative effect on public order)
+{Dubious_effects_desc}
+40% decrease to cost to bribe, -2 from law (has a negative effect on public order)
+{Corrupt_effects_desc}
+60% decrease to cost to bribe, -3 from law (has a negative effect on public order)
+{Strict}   Strict
+{Strict_desc}
+This man believes in the smack of firm government.
+{Strict_effects_desc}
++1 to unrest (has a negative effect on public order), +2 to law (improves public order), 5% bonus to your popularity with the Senate
+{Authoritarian}    Authoritarian
+{Authoritarian_desc}
+This man believes that strengthening law and order is the prime duty of anyone in government.
+{Authoritarian_effects_desc}
++2 to unrest (has a negative effect on public order), +4 to law (improves public order), 10% bonus to your popularity with the Senate
+{Rods-And-Axes_effects_desc}
++3 to unrest (has a negative effect on public order), +6 to law (improves public order), 15% bonus to your popularity with the Senate
+{Strict_Governor_effects_desc}
++1 to unrest (has a negative effect on public order), +2 to law (improves public order)
+{Harsh_Governor_effects_desc}
++2 to unrest (has a negative effect on public order), +4 to law (improves public order)
+{Authoritarian_Governor_effects_desc}
++3 to unrest (has a negative effect on public order), +6 to law (improves public order)
+{Considerate_Governor_effects_desc}
+-2 from unrest (improves public order), -1 from law (has a negative effect on public order)
+{Benevolent_Governor_effects_desc}
+-4 from unrest (improves public order), -2 from law (has a negative effect on public order)
+{Liberal_Governor_effects_desc}
+-6 from unrest (improves public order), -3 from law (has a negative effect on public order)
+{Apparently_Loyal} Apparently Loyal
+{Apparently_Loyal_desc}
+This man's loyalty is loudly trumpeted, mostly by himself.
+{Apparently_Loyal_effects_desc}
+20% decrease to cost to bribe
+{Doubtful_Loyalties_effects_desc}
+40% decrease to cost to bribe
+{Disloyal_effects_desc}
+60% decrease to cost to bribe
+{Publicly_Loyal_effects_desc}
+100% increase to cost to bribe
+{Proven_Loyalties_effects_desc}
+200% increase to cost to bribe
+{Loyal_effects_desc}
+300% increase to cost to bribe
+{Fanatically_Loyal_effects_desc}
+400% increase to cost to bribe
+{Plausible_effects_desc}
+10% bonus on bribery attempts (increases the chances that a bribe will be successful)
+{Slick_effects_desc}
+20% bonus on bribery attempts (increases the chances that a bribe will be successful)
+{Smooth_Talker_effects_desc}
+30% bonus on bribery attempts (increases the chances that a bribe will be successful)
+{Subject_of_Rumours_effects_desc}
+-1 Influence
+{Cuckold_effects_desc}
+-2 Influence
+{Cuckold's_Cuckold_effects_desc}
+-3 Influence
+{Outraged_Husband_effects_desc}
+-4 Influence
+{Wife_Above_Reproach_effects_desc}
++1 Influence
+{Grower_effects_desc}
++1 to farming output
+{Farmer_effects_desc}
++2 to farming output
+{Agriculturalist_effects_desc}
++3 to farming output
+{Poor_Farmer_effects_desc}
+-1 from farming output
+{Dislikes_Farming_effects_desc}
+-2 from farming output
+{Loathes_Farmers_effects_desc}
+-3 from farming output
+{Miner_effects_desc}
+10% bonus on mining income
+{Superior_Miner_effects_desc}
+20% bonus on mining income
+{Expert_Miner} Expert Miner
+{Expert_Miner_desc}
+This man has a passion for mines, deep dark holes and pits. Even more, though, he loves the wealth that they produce.
+{Expert_Miner_effects_desc}
+30% bonus on mining income
+{Indifferent_Miner_effects_desc}
+10% penalty on mining income
+{Poor_Miner_effects_desc}
+20% penalty on mining income
+{Bad_Mine_Manager_effects_desc}
+30% penalty on mining income
+{Engineer_effects_desc}
++20 Build Points (required for the construction of siege equipment)
+{Superior_Engineer_effects_desc}
++1 Command when assaulting walls, +40 Build Points (required for the construction of siege equipment)
+{Master_Engineer_effects_desc}
++2 Command when assaulting walls, +60 Build Points (required for the construction of siege equipment)
+{Inferior_Engineer_effects_desc}
+-1 Command when assaulting walls
+{Bad_Engineer_effects_desc}
+-2 Command when assaulting walls
+{Appalling_Engineer_effects_desc}
+-3 Command when assaulting walls
+{Trader_effects_desc}
+10% bonus on all trade income
+{Superior_Trader_effects_desc}
+20% bonus on all trade income
+{Master_Trader_effects_desc}
+30% bonus on all trade income
+{Poor_Trader_effects_desc}
+10% penalty on all trade income
+{Inferior_Trader_effects_desc}
+20% penalty on all trade income
+{Appalling_Trader_effects_desc}
+30% penalty on all trade income
+{Even-handed_effects_desc}
++1 to law (improves public order)
+{Just_effects_desc}
++2 to law (improves public order)
+{Absolutely_Just_effects_desc}
++3 to law (improves public order)
+{Judgemental_effects_desc}
++1 to public security (improves the chances of detecting and capturing enemy agents), +1 to unrest (has a negative effect on public order)
+{Wrong-headed_effects_desc}
++2 to public security (improves the chances of detecting and capturing enemy agents), +2 to unrest (has a negative effect on public order)
+{Unjust_effects_desc}
++3 to public security (improves the chances of detecting and capturing enemy agents), +3 to unrest (has a negative effect on public order)
+{Punisher_effects_desc}
++1 to unrest (has a negative effect on public order), +2 to law (improves public order)
+{Severe_effects_desc}
++2 to unrest (has a negative effect on public order), +4 to law (improves public order)
+{Harsh_Judge_effects_desc}
++3 to unrest (has a negative effect on public order), +6 to law (improves public order)
+{Lenient_effects_desc}
+-1 from law (has a negative effect on public order)
+{Merciful_Judge_effects_desc}
+-2 from law (has a negative effect on public order)
+{Kind_Judge_effects_desc}
+-3 from law (has a negative effect on public order)
+{Heartless_Ruler_effects_desc}
++1 Influence
+{Harsh_Ruler_effects_desc}
+-1 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Cruel_Ruler_effects_desc}
+-2 Influence, -2 from personal security (increases the chances of falling victim to assassination)
+{Indifferent_Builder_effects_desc}
+5% increase to construction costs, +1 to squalor (decreases population growth and public order)
+{Inferior_Builder_effects_desc}
+10% increase to construction costs, +2 to squalor (decreases population growth and public order)
+{Appalling_Builder_effects_desc}
+15% increase to construction costs, +3 to squalor (decreases population growth and public order)
+{Positive_effects_desc}
++1 Influence, +1 Morale for all troops on the battlefield
+{Optimistic_effects_desc}
++2 Influence, +2 Morale for all troops on the battlefield
+{Sanguine_effects_desc}
++3 Influence, -1 Morale for all troops on the battlefield
+{Calm_effects_desc}
++1 Influence, +1 Management
+{Composed_effects_desc}
+-1 Influence, +2 Management
+{Phlegmatic_effects_desc}
+-1 Influence, +3 Management
+{Gloomy_effects_desc}
+-1 Influence, -1 Morale for all troops on the battlefield
+{Morose_effects_desc}
+-2 Influence, -2 Morale for all troops on the battlefield
+{Melancholic_effects_desc}
+-3 Influence, -4 Morale for all troops on the battlefield
+{Testy_effects_desc}
+-1 Influence, +1 Command
+{Cantankerous_effects_desc}
+-2 Influence, +1 Command
+{Choleric_effects_desc}
+-3 Influence, -1 Command
+{Gladiatorial_Fan_effects_desc}
+-1 from unrest (improves public order), 10% bonus to your popularity with the People
+{Gladiator_Obsessed_effects_desc}
+-2 from unrest (improves public order), 15% bonus to your popularity with the People
+{Hero-Worships_Gladiators_effects_desc}
+-3 from unrest (improves public order), 20% penalty to your popularity with the Senate, 20% bonus to your popularity with the People
+{No_Taste_for_Blood_effects_desc}
++1 to unrest (has a negative effect on public order), 5% bonus to your popularity with the Senate, 5% penalty to your popularity with the People
+{Quietly_Dislikes_the_Games_effects_desc}
++2 to unrest (has a negative effect on public order), 10% bonus to your popularity with the Senate, 10% penalty to your popularity with the People
+{Publicly_Despises_the_Games_effects_desc}
++3 to unrest (has a negative effect on public order), 15% bonus to your popularity with the Senate, 15% penalty to your popularity with the People
+{Race_Goer_effects_desc}
+5% bonus to your popularity with the People
+{Charioteer_effects_desc}
+Reduces the chances of being elected to senatorial offices, 10% bonus to your popularity with the People
+{Fanatical_Chariot_Racer_effects_desc}
+-1 Management, Reduces the chances of being elected to senatorial offices, 15% bonus to your popularity with the People
+{Bored_by_Races_effects_desc}
++1 to unrest (has a negative effect on public order), 5% penalty to your popularity with the People
+{Reads_During_Races_effects_desc}
++2 to unrest (has a negative effect on public order), 10% penalty to your popularity with the People
+{Works_During_Races_effects_desc}
++1 Management, +3 to unrest (has a negative effect on public order), 15% penalty to your popularity with the People
+{Open-handed_effects_desc}
++1 Influence, -1 Management
+{Unstinting_effects_desc}
++2 Influence, -2 Management
+{Generous_effects_desc}
++2 Influence, -3 Management
+{Careful_With_Money_effects_desc}
++2 Management, +1 to squalor (decreases population growth and public order)
+{Tight-fisted_effects_desc}
++3 Management, +2 to squalor (decreases population growth and public order)
+{Miserly_effects_desc}
++4 Management, +3 to squalor (decreases population growth and public order)
+{True_Roman_effects_desc}
++1 Influence, Improves the chances of getting elected to senatorial offices, 5% bonus to your popularity with the Senate
+{Good_Honest_Roman_effects_desc}
++2 Influence, Improves the chances of getting elected to senatorial offices, 10% bonus to your popularity with the Senate
+{Virtus_effects_desc}
++3 Influence, Improves the chances of getting elected to senatorial offices, 15% bonus to your popularity with the Senate
+{Alone_in_the_Dark_effects_desc}
+-1 Command when fighting at night
+{Night_Terrors_effects_desc}
+-2 Command when fighting at night, +1 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Noctophobic_effects_desc}
+-3 Command when fighting at night, +2 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Likes_the_Dark_effects_desc}
++1 Command when fighting at night
+{Night_Owl_effects_desc}
++2 Command when fighting at night
+{Noctophilic_effects_desc}
++3 Command when fighting at night
+{Immoral_effects_desc}
+-1 Influence
+{Degenerate_effects_desc}
+-2 Influence
+{Foul_Practices_effects_desc}
+-3 Influence
+{Debauched_effects_desc}
+-4 Influence
+{Perverse_effects_desc}
+-5 Influence
+{Not_Safe_with_Man_or_Beast_effects_desc}
+-6 Influence
+{Scout_effects_desc}
++1 to line of sight (increases the range at which enemies are spotted)
+{Expert_Scout_effects_desc}
++2 to line of sight (increases the range at which enemies are spotted)
+{Reconnaissance_Specialist_effects_desc}
++3 to line of sight (increases the range at which enemies are spotted)
+{Good_Sailor_effects_desc}
++1 Command at sea
+{Nautical_Expert_effects_desc}
++2 Command at sea
+{Old_Sea_Dog_effects_desc}
++3 Command at sea
+{Seasickness_effects_desc}
+-1 Command at sea
+{Poor_Sailor_effects_desc}
+-2 Command at sea
+{Wretched_Landlubber_effects_desc}
+-3 Command at sea
+{Been_in_the_Wars_effects_desc}
++2 to your general's hitpoints (how many hits your general can take before dying)
+{Scarred_effects_desc}
++4 to your general's hitpoints (how many hits your general can take before dying)
+{Horribly_Scarred_effects_desc}
+-1 Influence, +6 to your general's hitpoints (how many hits your general can take before dying)
+{Cruelly_Scarred_effects_desc}
+-2 Influence, +8 to your general's hitpoints (how many hits your general can take before dying)
+{Plotter_effects_desc}
++1 to agent's skill
+{Schemer_effects_desc}
++2 to agent's skill
+{Conspirator_effects_desc}
++3 to agent's skill
+{Foolish_Conspirator_effects_desc}
+-1 from agent's skill
+{Inept_Plotter_effects_desc}
+-2 from agent's skill
+{Pathetic_Schemer_effects_desc}
+-3 from agent's skill
+{Loose-lipped_effects_desc}
+-1 Influence, Reduces the chances of being elected to senatorial offices
+{Talkative_effects_desc}
+-2 Influence, Reduces the chances of being elected to senatorial offices
+{Foolishy_Indiscreet_effects_desc}
+-3 Influence, Reduces the chances of being elected to senatorial offices
+{Discreet_effects_desc}
+Improves the chances of getting elected to senatorial offices
+{Close-mouthed_effects_desc}
+Improves the chances of getting elected to senatorial offices
+{Secretive_effects_desc}
+Improves the chances of getting elected to senatorial offices
+{Skilled_Infantry_Commander_effects_desc}
++1 Command when commanding infantry
+{Expert_Infantry_Commander_effects_desc}
++2 Command when commanding infantry
+{Infantry_Commander_of_Genius_effects_desc}
++3 Command when commanding infantry
+{Poor_Infantry_Commander_effects_desc}
+-1 Command when commanding infantry
+{Inferior_Infantry_Commander_effects_desc}
+-2 Command when commanding infantry
+{Useless_Infantry_Commander_effects_desc}
+-3 Command when commanding infantry
+{Skilled_Cavalry_Commander_effects_desc}
++1 Command when commanding cavalry
+{Expert_Cavalry_Commander_effects_desc}
++2 Command when commanding cavalry
+{Cavalry_Commander_of_Genius_effects_desc}
++3 Command when commanding cavalry
+{Poor_Cavalry_Commander_effects_desc}
+-1 Command when commanding cavalry
+{Inferior_Cavalry_Commander_effects_desc}
+-2 Command when commanding cavalry
+{Useless_Cavalry_Commander_effects_desc}
+-3 Command when commanding cavalry
+{Uncomfortable_Near_Romans_effects_desc}
+-1 Command when fighting against Romans
+{Fears_Romans_effects_desc}
+-2 Command when fighting against Romans
+{Terrified_by_Roman_Ways_effects_desc}
+-3 Command when fighting against Romans
+{Despises_Roman_Ways_effects_desc}
++1 Command when fighting against Romans
+{Hates_Romans_effects_desc}
++2 Command when fighting against Romans
+{Loathes_Vile_Romans_effects_desc}
++3 Command when fighting against Romans
+{Uncomfortable_Near_Barbarians_effects_desc}
+-1 Command when fighting against Barbarians
+{Fears_Barbarians_effects_desc}
+-1 Morale for all troops on the battlefield, -2 Command when fighting against Barbarians
+{Terrified_by_Barbarians_effects_desc}
+-1 Morale for all troops on the battlefield, -3 Command when fighting against Barbarians
+{Despises_Trouser-wearers_effects_desc}
++1 Command when fighting against Barbarians
+{Hates_Smelly_Barbarians_effects_desc}
++1 Morale for all troops on the battlefield, +2 Command when fighting against Barbarians
+{Loathes_Disgusting_Barbarians_effects_desc}
++3 Command when fighting against Barbarians
+{Uncomfortable_Near_Carthaginians_effects_desc}
+-1 Command when fighting against Carthaginians
+{Fears_Carthaginians_effects_desc}
+-1 Morale for all troops on the battlefield, -2 Command when fighting against Carthaginians
+{Terrified_by_Carthaginians_effects_desc}
+-1 Morale for all troops on the battlefield, -3 Command when fighting against Carthaginians
+{Despises_Carthaginians_effects_desc}
++1 Command when fighting against Carthaginians
+{Hates_Grasping_Carthaginians_effects_desc}
++1 Morale for all troops on the battlefield, +2 Command when fighting against Carthaginians
+{Loathes_Avaricious_Carthaginians_effects_desc}
++3 Command when fighting against Carthaginians
+{Uncomfortable_Around_Greeks_effects_desc}
+-1 Command when fighting against Greeks
+{Fears_Greeks_effects_desc}
+-1 Morale for all troops on the battlefield, -2 Command when fighting against Greeks
+{Terrified_by_Greeks_effects_desc}
+-1 Morale for all troops on the battlefield, -3 Command when fighting against Greeks
+{Despises_Greeks_effects_desc}
++1 Command when fighting against Greeks
+{Hates_Clever-clever_Greeks_effects_desc}
++1 Morale for all troops on the battlefield, +2 Command when fighting against Greeks
+{Loathes_Conniving_Greeks_effects_desc}
++3 Command when fighting against Greeks
+{Nervous_About_Egyptians_effects_desc}
+-1 Command when fighting against Egyptians
+{Fears_Egyptians_effects_desc}
+-1 Morale for all troops on the battlefield, -2 Command when fighting against Egyptians
+{Terrified_by_Egyptians_effects_desc}
+-1 Morale for all troops on the battlefield, -3 Command when fighting against Egyptians
+{Despises_Egyptians_effects_desc}
++1 Command when fighting against Egyptians
+{Hates_Egyptians_effects_desc}
++1 Morale for all troops on the battlefield, +2 Command when fighting against Egyptians
+{Loathes_Egyptians_effects_desc}
++3 Command when fighting against Egyptians
+{Uncomfortable_Near_Easterners_effects_desc}
+-1 Command when fighting against eastern enemies
+{Fears_Easterners_effects_desc}
+-1 Morale for all troops on the battlefield, -2 Command when fighting against eastern enemies
+{Terrified_by_Easterners_effects_desc}
+-1 Morale for all troops on the battlefield, -3 Command when fighting against eastern enemies
+{Despises_Easterners_effects_desc}
++1 Command when fighting against eastern enemies
+{Hates_Easterners_effects_desc}
++1 Morale for all troops on the battlefield, +2 Command when fighting against eastern enemies
+{Loathes_Easterners_effects_desc}
++3 Command when fighting against eastern enemies
+{Nervous_Near_Slaves_effects_desc}
++1 to personal security (improves the chances of detecting and foiling assassination attempts), -1 Command when fighting against Rebels
+{Fears_Slaves_effects_desc}
+-1 Morale for all troops on the battlefield, +1 to personal security (improves the chances of detecting and foiling assassination attempts), -2 Command when fighting against Rebels
+{Terrified_by_Slaves_effects_desc}
+-2 Morale for all troops on the battlefield, +2 to personal security (improves the chances of detecting and foiling assassination attempts), -3 Command when fighting against Rebels
+{Despises_Slaves_effects_desc}
+-1 from personal security (increases the chances of falling victim to assassination), +1 Command when fighting against rebels
+{Hates_Revolting_Slaves_effects_desc}
++1 to personal security (improves the chances of detecting and foiling assassination attempts), +2 Command when fighting against rebels
+{Loathes_Rebellious_Slaves_effects_desc}
+-1 Morale for all troops on the battlefield, +2 to personal security (improves the chances of detecting and foiling assassination attempts), +3 Command when fighting against rebels
+{Weak-chinned_effects_desc}
+-1 Influence
+{Swivel-Eyed_effects_desc}
+-2 Influence
+{Feeble_of_Brain_effects_desc}
+-1 Influence, -1 Command, -1 Management
+{Thin-Skulled_effects_desc}
+-2 Influence, -1 Command, -2 Management
+{Bad_Bloodline_effects_desc}
+-2 Influence, -2 Command, -2 Management
+{Infamously_Inbred_effects_desc}
+-3 Influence, -3 Command, -3 Management
+{Good_Looking_effects_desc}
++1 Influence
+{Handsome_effects_desc}
++2 Influence
+{Noble_Aspect_effects_desc}
++3 Influence
+{Godlike_Perfection_effects_desc}
++3 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Plain_effects_desc}
+-1 Influence
+{Homely_effects_desc}
+-2 Influence, +1 Command
+{Ugly_effects_desc}
+-3 Influence, +1 Command
+{Repellent_effects_desc}
+-4 Influence, +2 Command
+{Scares_Small_Children_effects_desc}
+-5 Influence, +2 Command
+{Fruitful_effects_desc}
+Increases the chance of having children
+{Fertile_effects_desc}
+Increases the chance of having children
+{Prolific_effects_desc}
+Increases the chance of having children
+{Flaccid_effects_desc}
+Decreases the chance of having children
+{Infertile_effects_desc}
+Decreases the chance of having children
+{Barren_effects_desc}
+Decreases the chance of having children
+{Astute_Wife_effects_desc}
+Improves the chances of getting elected to senatorial offices, 5% bonus to your popularity with the Senate
+{Well_Mannered_Wife_effects_desc}
+Improves the chances of getting elected to senatorial offices, 10% bonus to your popularity with the Senate
+{Sophisticated_Wife_effects_desc}
+Improves the chances of getting elected to senatorial offices, 15% bonus to your popularity with the Senate
+{Tax_Assessor_effects_desc}
+10% bonus on tax income
+{Efficient_Taxman_effects_desc}
+20% bonus on tax income, +1 to unrest (has a negative effect on public order)
+{Cruelly_Efficient_Taxman_effects_desc}
+30% bonus on tax income, +2 to unrest (has a negative effect on public order)
+{Useless_Assessor_effects_desc}
+10% penalty on tax income
+{Inefficient_Taxman_effects_desc}
+20% penalty on tax income
+{Tax_Farmer_effects_desc}
+30% penalty on tax income
+{Divorced_effects_desc}
+No Effects
+{Chancer}  Chancer
+{Chancer_desc}
+This man has a habit of taking risks during attacks. So far, he has either been lucky or very clever…
+{Chancer_effects_desc}
++1 Command when attacking
+{Intelligent_Risk_Taker_effects_desc}
++2 Command when attacking
+{Victory_from_the_Jaws_of_Defeat_effects_desc}
++3 Command when attacking
+{Risk_Taker_effects_desc}
+-1 Command when attacking
+{Stupid_Risk_Taker_effects_desc}
+-2 Command when attacking
+{Over-Optimistic_effects_desc}
+-3 Command when attacking
+{Good_When_Outnumbered}    Good When Outnumbered
+{Good_When_Outnumbered_desc}
+Blessed with a good sense of the defensive possibilities of a position, this man can usually hold out against determined assaults.
+{Good_When_Outnumbered_effects_desc}
++1 Command when defending
+{Great_When_Outnumbered}   Great When Outnumbered
+{Great_When_Outnumbered_desc}
+Being outnumbered just increases the chances of fame for this man.
+{Great_When_Outnumbered_effects_desc}
++2 Command when defending
+{Stonewall_effects_desc}
++3 Command when defending
+{Mediocre_When_Outnumbered}    Mediocre When Outnumbered
+{Mediocre_When_Outnumbered_desc}
+This man shows little defensive sense, and when outnumbered is something of a liability.
+{Mediocre_When_Outnumbered_effects_desc}
+-1 Command when defending
+{Poor_When_Outnumbered_effects_desc}
+-2 Command when defending
+{To_the_Last_Gasp_effects_desc}
+-3 Command when defending
+{Rational_Concerns_effects_desc}
++1 Morale for all troops on the battlefield
+{Superstitious_effects_desc}
+-1 Management, +1 Morale for all troops on the battlefield
+{Hugely_Superstitious_effects_desc}
+-2 Management, -2 Morale for all troops on the battlefield
+{Rational_Beliefs_effects_desc}
++1 Management
+{Pragmatic_effects_desc}
++1 Management
+{Utterly_Pragmatic_effects_desc}
+-1 Influence, +2 Management
+{Mildly_Extravagant_effects_desc}
+-1 Management
+{Extravagant_effects_desc}
+-2 Management
+{Wildly_Extravagant_effects_desc}
+-3 Management
+{Frugal_effects_desc}
+5% discount on construction costs, 5% bonus on tax income, +1 to squalor (decreases population growth and public order)
+{Downright_Miserly_effects_desc}
+10% discount on construction costs, 10% bonus on tax income, +2 to squalor (decreases population growth and public order)
+{Cheapskate_effects_desc}
+15% discount on construction costs, 15% bonus on tax income, +3 to squalor (decreases population growth and public order)
+{Feeling_Poorly_effects_desc}
+-1 Command when attacking, -2 from your general's hitpoints (how many hits your general can take before dying)
+{Given_to_Ill-Health_effects_desc}
+-1 Command when attacking, -4 from your general's hitpoints (how many hits your general can take before dying)
+{Hypochondriac_effects_desc}
+-1 Command when attacking, -6 from your general's hitpoints (how many hits your general can take before dying)
+{In_The_Pink_effects_desc}
++2 to your general's hitpoints (how many hits your general can take before dying)
+{In_Rude_Health_effects_desc}
++4 to your general's hitpoints (how many hits your general can take before dying)
+{Hale_and_Hearty_effects_desc}
++6 to your general's hitpoints (how many hits your general can take before dying)
+{Pawn_of_the_Gods_effects_desc}
+-1 Influence
+{Falling_Sickness_effects_desc}
+-2 Influence
+{Touched_by_the_Gods_effects_desc}
+-3 Influence
+{Sane_effects_desc}
+No Effects
+{Dysfunctional_effects_desc}
+-1 Influence, -1 Morale for all troops on the battlefield
+{Quite_Mad_effects_desc}
+-2 Influence, -2 Morale for all troops on the battlefield
+{Utterly_Insane_effects_desc}
+-3 Influence, -3 Morale for all troops on the battlefield
+{Unusual_effects_desc}
++1 Influence, -1 Command, -1 Management
+{Deranged_effects_desc}
+-1 Influence, -2 Command, -2 Management
+{Dangerously_Mad_effects_desc}
+-2 Influence, -3 Command, -3 Management
+{Favour_of_the_Gods_effects_desc}
++1 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{Love_of_the_Gods_effects_desc}
++2 Influence, -1 from personal security (increases the chances of falling victim to assassination)
+{One_of_the_Gods_effects_desc}
+-1 Influence, -2 from personal security (increases the chances of falling victim to assassination)
+{Bloody_effects_desc}
++1 Command, +1 Morale for all troops on the battlefield
+{Sanguinary_effects_desc}
++1 Command, -1 Morale for all troops on the battlefield
+{Bloodthirsty_effects_desc}
+-1 Command, -3 Morale for all troops on the battlefield
+{Lily-Livered_effects_desc}
+-1 Morale for all troops on the battlefield
+{Hates_Blood_effects_desc}
+-2 Morale for all troops on the battlefield
+{Terrified_by_Blood_effects_desc}
+-3 Morale for all troops on the battlefield
+{Unlucky_Leader_effects_desc}
+-1 Command, +2 Morale for all troops on the battlefield
+{Glory_Hunter_effects_desc}
+-2 Command, +4 Morale for all troops on the battlefield
+{Glorious_Fool_effects_desc}
+-3 Command, +6 Morale for all troops on the battlefield
+{Anger_effects_desc}
+-1 Influence
+{Unquenched_Anger_effects_desc}
+-1 Influence
+{Uncontrollable_Rage_effects_desc}
+-2 Influence
+{Reverent_effects_desc}
++1 Influence, +1 Morale for all troops on the battlefield
+{Respectful_of_the_Gods_effects_desc}
++2 Influence
+{Pious_effects_desc}
++3 Influence, -1 Morale for all troops on the battlefield
+{Irreverent_effects_desc}
++1 to unrest (has a negative effect on public order)
+{Contemptuous_of_the_Gods_effects_desc}
++2 to unrest (has a negative effect on public order)
+{Sacrilegious_effects_desc}
++3 to unrest (has a negative effect on public order)
+{Filthy_Minded_effects_desc}
+-1 Influence, 20% decrease to cost to bribe
+{Licentious_effects_desc}
+-2 Influence, 30% decrease to cost to bribe
+{Lewd_effects_desc}
+-3 Influence, 50% decrease to cost to bribe
+{Firm_Personal_Morality_effects_desc}
++1 Influence, +1 to unrest (has a negative effect on public order), +1 to law (improves public order)
+{Prim_effects_desc}
+-1 Influence, +2 to unrest (has a negative effect on public order), +2 to law (improves public order)
+{Hesitant_Attacker_effects_desc}
+-1 Command when attacking
+{Over-Cautious_Attacker_effects_desc}
+-2 Command when attacking
+{Indecisive_Attacker_effects_desc}
+-3 Command when attacking
+{Office_of_Aedile_effects_desc}
++1 Management, +1 to law (improves public order)
+{Office_of_Censor_effects_desc}
++3 Influence, +2 Management
+{Office_of_Consul_effects_desc}
++2 Influence, +2 Command
+{Office_of_Pontifex_Maximus}   Office of Pontifex Maximus
+{Office_of_Pontifex_Maximus_desc}
+This man holds the Senatorial office of pontifex maximus. \nHe is the chief religious officer of the state.
+{Office_of_Pontifex_Maximus_effects_desc}
++5 Influence
+{Office_of_Praetor_effects_desc}
++1 Management, +2 to law (improves public order)
+{Office_of_Quaestor_effects_desc}
++1 Management
+{Ex_Aedile_effects_desc}
++1 to law (improves public order)
+{Ex_Censor_effects_desc}
++2 Influence
+{Ex_Consul_effects_desc}
++1 Command
+{Ex_Pontifex_Maximus}  Ex Pontifex Maximus
+{Ex_Pontifex_Maximus_desc}
+This man used to hold the office of pontifex maximus.
+{Ex_Pontifex_Maximus_effects_desc}
++3 Influence
+{Ex_Praetor_effects_desc}
++1 to law (improves public order)
+{Ex_Quaestor_effects_desc}
++1 Influence
+{Local_Hero}   Local Hero
+{Local_Hero_desc}
+Tales of this man's deeds on the field of battle are probably exaggerated in the telling, but he's becoming well known none the less…
+{Local_Hero_effects_desc}
++1 Morale for all troops on the battlefield, 5% bonus to your popularity with the People
+{Popular_Hero} Popular Hero
+{Popular_Hero_desc}
+This man is developing a name for heroic deeds. Young Roman girls whisper his name and sigh…
+{Popular_Hero_effects_desc}
++2 Morale for all troops on the battlefield, 10% bonus to your popularity with the People
+{Roman_Hero}   Roman Hero
+{Roman_Hero_desc}
+Tales of this man's courage are common currency in all the forums of the Roman world. He is becoming a celebrity, a true Roman hero.
+{Roman_Hero_effects_desc}
++3 Morale for all troops on the battlefield, 15% bonus to your popularity with the People
+{National_Hero}    National Hero
+{National_Hero_desc}
+This man is a Roman who fears no man - a new brother to Bellona, the goddess of war. The people love him!
+{National_Hero_epithet_desc}   the Brave
+{National_Hero_effects_desc}
++4 Morale for all troops on the battlefield, 20% bonus to your popularity with the People
+{Legendary_Hero_effects_desc}
++4 Morale for all troops on the battlefield, +1 Command when attacking, 25% bonus to your popularity with the People
+{Sharp}    Sharp
+{Sharp_desc}
+This man is quick to grasp new situations and doesn't miss much.
+{Sharp_effects_desc}
++1 Influence, +1 Command, +1 Management
+{Intellligent} Intellligent
+{Intellligent_desc}
+Blessed with a superior intellect, this man has the annoying habit of outperforming his peers apparently without having to do any work.
+{Intellligent_effects_desc}
++2 Influence, +2 Command, +2 Management
+{Genius}   Genius
+{Genius_desc}
+This man has such a sharp mind that he sees through problems straight to the solution. It's a natural aptitude that affects all he does.
+{Genius_effects_desc}
++3 Influence, +3 Command, +3 Management
+{Disgraced}    Disgraced
+{Disgraced_desc}
+The disgrace of losing an Eagle standard is something this man will never shake off.
+{Disgraced_effects_desc}
+-4 Influence, 10% penalty to your popularity with the People
+{Utterly_Disgraced_effects_desc}
+-8 Influence, 20% penalty to your popularity with the People
+{Partly_Redeemed}  Partly Redeemed
+{Partly_Redeemed_desc}
+Regaining a lost Eagle goes some way to removing the stain on this man's record. Even so it is not forgotten.
+{Partly_Redeemed_effects_desc}
++2 Influence, 5% bonus to your popularity with the People
+{Mostly_Redeemed_effects_desc}
++4 Influence, 10% bonus to your popularity with the People
+{Eagle_Taker}  Eagle Taker
+{Eagle_Taker_desc}
+Taking a Roman Eagle standard in battle is a great achievement.
+{Eagle_Taker_effects_desc}
++1 Command
+{Two_Eagles}   Two Eagles
+{Two_Eagles_desc}
+Taking two Eagles in battle makes this man a true hero.
+{Two_Eagles_effects_desc}
++2 Command
+{Eagle_Collector_effects_desc}
++3 Command
+{Pillager} Pillager
+{Pillager_desc}
+This man know how to pillage effectively, and finds wanton destruction strangely amusing.
+{Pillager_effects_desc}
+10% bonus to cash gained from looting
+{Plunderer}    Plunderer
+{Plunderer_desc}
+This man enjoys looting and pillaging, and encourages his troops to follow his example.
+{Plunderer_effects_desc}
+20% bonus to cash gained from looting
+{Despoiler}    Despoiler
+{Despoiler_desc}
+This man has turned looting in to an art form, systematically pillaging and destroying to achieve the maximum effect.
+{Despoiler_effects_desc}
+30% bonus to cash gained from looting
+{Butcher}  Butcher
+{Butcher_desc}
+The massacre is a useful and necessary tool of war, one that this man wields with some skill.
+{Butcher_effects_desc}
+10% bonus to cash gained from looting
+{Destroyer}    Destroyer
+{Destroyer_desc}
+Wiping out entire populations is sometime necessary. Enjoying doing it is not. Unless you treat it as an art form.
+{Destroyer_effects_desc}
+20% bonus to cash gained from looting
+{Exterminator_effects_desc}
+30% bonus to cash gained from looting
+{Command_Talent}   Command Talent
+{Command_Talent_desc}
+This man has shown a natural talent for military matters since birth.
+{Command_Talent_effects_desc}
++1 Command
+{Natural_Born_Leader}  Natural Born Leader
+{Natural_Born_Leader_desc}
+This man was born with a talent for leading men in to battle.
+{Natural_Born_Leader_effects_desc}
++2 Command
+{Natural_Born_General} Natural Born General
+{Natural_Born_General_desc}
+This man was born with a talent for strategy and tactics.
+{Natural_Born_General_effects_desc}
++3 Command
+{Military_Genius}  Military Genius
+{Military_Genius_desc}
+This man was born a military genius. With battle experience he could become an exceptional commander.
+{Military_Genius_effects_desc}
++4 Command
+{Tactful_effects_desc}
++1 to Influence (improves negotiation skills)
+{Courteous_effects_desc}
++2 to Influence (improves negotiation skills)
+{Diplomatic_effects_desc}
++3 to Influence (improves negotiation skills)
+{Polished_Diplomat_effects_desc}
++4 to Influence (improves negotiation skills)
+{Expert_Diplomat_effects_desc}
++5 to Influence (improves negotiation skills)
+{Tactless_effects_desc}
+-1 from Influence (increases the chances that negotiation will fail)
+{Discourteous_effects_desc}
+-2 from Influence (increases the chances that negotiation will fail)
+{Undiplomatic_effects_desc}
+-3 from Influence (increases the chances that negotiation will fail)
+{Understanding_of_Natural_Philosophy_effects_desc}
++1 Management, -1 from squalor (increases public order and population growth)
+{Expert_on_Natural_Philosophy_effects_desc}
++2 Management, -2 from squalor (increases public order and population growth)
+{Natural_Philosopher_effects_desc}
++3 Management, -3 from squalor (increases public order and population growth)
+{Benevolent_Ruler_effects_desc}
++1 Influence, -1 from squalor (increases public order and population growth)
+{Benign_Ruler_effects_desc}
++2 Influence, -2 from squalor (increases public order and population growth)
+{Humane_Ruler_effects_desc}
++3 Influence, -3 from squalor (increases public order and population growth)
+{Prim_and_Proper_effects_desc}
+-2 Influence, -1 from squalor (increases public order and population growth), +3 to unrest (has a negative effect on public order), +3 to law (improves public order)
+{Spying_Talent}    Spying Talent
+{Spying_Talent_desc}
+This man has shown a natural talent for spycraft since birth.
+{Spying_Talent_effects_desc}
++1 to agent's skill
+{Natural_Born_Spy} Natural Born Spy
+{Natural_Born_Spy_desc}
+This man was born with a talent for getting in to places he should not be, and not getting caught.
+{Natural_Born_Spy_effects_desc}
++2 to agent's skill
+{Subterfuge_Genius}    Subterfuge Genius
+{Subterfuge_Genius_desc}
+This man was born a genius at spying and deception. With experience he could become an exceptional spy.
+{Subterfuge_Genius_effects_desc}
++3 to agent's skill
+{Diplomatic_Talent}    Diplomatic Talent
+{Diplomatic_Talent_desc}
+This man has shown a natural talent for tact and diplomacy since birth.
+{Diplomatic_Talent_effects_desc}
++1 to Influence (improves negotiation skills)
+{Natural_Born_Diplomat}    Natural Born Diplomat
+{Natural_Born_Diplomat_desc}
+This man was born with a talent for persuasion and diplomacy. He has potential.
+{Natural_Born_Diplomat_effects_desc}
++2 to Influence (improves negotiation skills)
+{Diplomatic_Genius}    Diplomatic Genius
+{Diplomatic_Genius_desc}
+This man is a born genius with languages, negotiation, tact and diplomacy. With experience he could become a master of his art.
+{Diplomatic_Genius_effects_desc}
++3 to Influence (improves negotiation skills)
+{Talent_for_Assassination} Talent for Assassination
+{Talent_for_Assassination_desc}
+This man has shown a disturbing natural talent for quietly killing and getting away with it.
+{Talent_for_Assassination_effects_desc}
++1 to agent's skill
+{Natural_Born_Assassin}    Natural Born Assassin
+{Natural_Born_Assassin_desc}
+This man was born with a talent for moving in and out of places without trace, and leaving fresh corpses in his wake.
+{Natural_Born_Assassin_effects_desc}
++2 to agent's skill
+{Assassination_Genius} Assassination Genius
+{Assassination_Genius_desc}
+This man is a born genius when it comes to moving unseen, getting close to people, and killing silently. With experience he could become a true master.
+{Assassination_Genius_effects_desc}
++3 to agent's skill
+{Glutton}  Glutton
+{Glutton_desc}
+When the question is asked, "Who ordered the elephant pies?", this man has no decency and scoffs the lot! The cost can be met from any convenient purse.
+{Faction_Leader}   Faction Leader
+{Faction_Leader_desc}
+Being the leader of a faction gives this man a certain amount of power and influence regardless of his ability.
+{Faction_Leader_effects_desc}
++2 Influence, +1 Command, +3 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Faction_Heir} Faction Heir
+{Faction_Heir_desc}
+Being the faction heir gives this man a certain amount of power and influence regardless of his ability.
+{Faction_Heir_effects_desc}
++1 Influence, +2 to personal security (improves the chances of detecting and foiling assassination attempts)
+{Disinherited} Disinherited
+{Disinherited_desc}
+Once he was the faction heir, but he was considered unsuitable. He will have to live with the dishonour.
+{Disinherited_effects_desc}
+-1 Influence
+{Philosophically_Inclined} Philosophically Inclined
+{Philosophically_Inclined_desc}
+This man's reading and study have given him a good understanding of the knotty problems of existence itself.
+{Philosophically_Inclined_effects_desc}
++1 Management, 100% increase to cost to bribe
+{Superior_Builder_effects_desc}
+5% discount on construction costs, -1 from squalor (increases public order and population growth)
+{Excellent_Builder_effects_desc}
+10% discount on construction costs, -2 from squalor (increases public order and population growth)
+{Great_Builder_effects_desc}
++1 Influence, 15% discount on construction costs, -3 from squalor (increases public order and population growth)
+{Great_Admiral}    Great Admiral
+{Great_Admiral_desc}
+Having won many battles at sea, this man has gained a reputation as one of the great admirals of his era.
+{Great_Admiral_effects_desc}
++4 Command at sea
+{Legendary_Admiral_effects_desc}
++5 Command at sea
+{Philosopher}  Philosopher
+{Philosopher_desc}
+This man has sought out knowledge and learning for its own sake, but the skills he has can be used for mundane matters.
+{Confident_Commander}  Confident Commander
+{Confident_Commander_desc}
+This man is definitely developing his skills as a general.
+{Confident_Commander_gain_desc}
+This man has gained a Command star thanks to his battle skills.
+{Good_Commander}   Good Commander
+{Good_Commander_desc}
+This man shows signs of greatness when commanding armies in the field.
+{Good_Commander_gain_desc}
+This man has gained another Command star thanks to his battle skills.
+{Superior_Commander}   Superior Commander
+{Superior_Commander_desc}
+This man has a superior grasp of the tactics needed to fight a successful battle.
+{Superior_Commander_gain_desc}
+This man has gained another Command star thanks to his battle skills.
+{Great_Commander}  Great Commander
+{Great_Commander_desc}
+This man has an almost unsurpassed ability to command in battle and this confidence inspires his troops.
+{Great_Commander_gain_desc}
+This man has gained another Command star thanks to his superior battle skills.
+{Legendary_Commander}  Legendary Commander
+{Legendary_Commander_desc}
+His proven ability to command in battle has made this man a legend, not least amongst his men who will follow him into any fight!
+{Legendary_Commander_gain_desc}
+This man has gained high rank as a General.
+{Legendary_Commander_epithet_desc} the Mighty
+{Heroic_Attacker}  Heroic Attacker
+{Heroic_Attacker_desc}
+His proven ability to command in attacks has made this man legendary, not least amongst his men.
+{Heroic_Attacker_gain_desc}
+Thanks to his aggressive nature this man now has few equals when attacking in battle.
+{Heroic_Attacker_epithet_desc} the Attacker
+{Heroic_Defender}  Heroic Defender
+{Heroic_Defender_desc}
+This man's prowess when fighting defensively is almost unsurpassed and the stuff of legend.
+{Heroic_Defender_gain_desc}
+Thanks to his tenacious nature, this man has few equals when defending in battle.
+{Heroic_Defender_epithet_desc} the Defender
+{Intransigent_Clown}   Grotesquely Perverse
+{Intransigent_Clown_desc}
+Even the most abject slave goes in terror of this man, as his rampant lusts are never far from his debauched mind.
+{Intransigent_Clown_epithet_desc}  the Perverse
+{Humiliated_Homewrecker}   Sexual Predator
+{Humiliated_Homewrecker_desc}
+To see a woman is to want her, and this man lets nothing stand in the way of his unwelcome and unpleasant lusts.
+{Humiliated_Homewrecker_epithet_desc}  the Womaniser
+{Exceptional_Ambusher} Exceptional Ambusher
+{Exceptional_Ambusher_desc}
+The noble art of the surprise attack is almost personified in this man. He is adept at striking when and where his enemy least expects.
+{Exceptional_Ambusher_gain_desc}
+This man has become an expert at the art of ambushing his enemies.
+{Exceptional_Ambusher_epithet_desc}    the Cunning
+{Legendary_Siege_Expert}   Legendary Siege Expert
+{Legendary_Siege_Expert_desc}
+An almost unsurpassed ability to besiege enemy towns means few defenders have the skills to hold his army at bay.
+{Legendary_Siege_Expert_gain_desc}
+This man now has few equals when it comes to the arts of siege warfare.
+{Legendary_Siege_Expert_epithet_desc}  the Conqueror
+{Legendary_City_Defender}  Legendary City Defender
+{Legendary_City_Defender_desc}
+This man is known throughout the world as a valiant and unsurpassed defensive genius. Give him a wall and he will hold it against the Gods!
+{Legendary_City_Defender_gain_desc}
+This man has few equals when defending a fort, town or city.
+{Legendary_City_Defender_epithet_desc} the Defender
+{Insanely_Brave}   Insanely Brave
+{Insanely_Brave_desc}
+Like Hector, Hero and Achilles, this man's bravery knows no bounds. He is rightly famed for putting himself in danger and yet living to tell the tale!
+{Insanely_Brave_gain_desc}
+This man is now lauded as a hero by all - an inspiration to those he leads into battle!
+{Insanely_Brave_epithet_desc}  the Brave
+{Indolent_Lardy_Joker} Indolent Lardy Joker
+{Indolent_Lardy_Joker_desc}
+Not even the danger of battle can inspire this man to rouse himself from his comfortable torpor.
+{Indolent_Lardy_Joker_epithet_desc}    the Fat
+{Hates_The_Gods}   Hates The Gods
+{Hates_The_Gods_desc}
+This man has publicly turned his back on the Gods and all matters of religion, seeing them as a hollow sham. Some find his position extreme and worrying.
+{Hates_The_Gods_epithet_desc}  the Faithless
+{Venerates_The_Gods}   Venerates The Gods
+{Venerates_The_Gods_desc}
+Pious in the extreme, this man will not leave his home unless he has made the proper sacrifices for the day!
+{Venerates_The_Gods_epithet_desc}  the Pious
+{Legendary_Warlord}    Legendary Warlord
+{Legendary_Warlord_desc}
+This man's victories cannot be easily counted, and his presence on a battlefield inspires warriors to acts of insane heroism.
+{Legendary_Warlord_gain_desc}
+This man is now recognised as a great war leader for his people.
+{Legendary_Warlord_epithet_desc}   the Great
+{Great_Orator} Great Orator
+{Great_Orator_desc}
+This man's exceptional speaking ability can grip any audience and get them to follow his line of reasoning.
+{Great_Orator_epithet_desc}    the Orator
+{Strategist}   Strategist
+{Strategist_desc}
+Possessed of an admirable grasp of strategic theory, this man's schooling in military matters is the envy of many.
+{Strategist_gain_desc}
+This man is now seen as having almost no equals as a strategist.
+{Tactician}    Tactician
+{Tactician_desc}
+This man has an encyclopedic knowledge of tactical writings from many cultures, and shows inklings of how these might be applied to battle.
+{Tactician_gain_desc}
+This man is now seen as having almost no equals as a tactician.
+{Natural_Philosopher}  Natural Philosopher
+{Natural_Philosopher_desc}
+Blessed with a superb education, this man can apply it to his work, making him something of an intimidating figure to the ignorant.
+{Natural_Philosopher_epithet_desc} the Thinker
+{Logistician}  Logistician
+{Logistician_desc}
+This man has a deep understanding of the work needed to keep troops supplied and healthy when on the march, something as important as battlefield skills when on campaign.
+{Logistician_gain_desc}
+This General is now seen as highly skilled in keeping his troops well fed - and therefore happy!
+{Abstruse_Philosopher} Abstruse Philosopher
+{Abstruse_Philosopher_desc}
+This man has a deep understanding of philosophy, so much so that his reasoning is almost impenetrable to lesser men.
+{Abstruse_Philosopher_epithet_desc}    the Philosopher
+{Great_Architect}  Great Architect
+{Great_Architect_desc}
+This man's abiding interest in great architecture and grand design can sometimes lead to excess on construction projects.
+{Great_Architect_epithet_desc} the Builder
+{Apician_Glutton}  Apician Glutton
+{Apician_Glutton_desc}
+When asked, "Who ate all the lark's tongue pies?", this man merely digs deep into the state purse and orders some more!
+{Apician_Glutton_epithet_desc} Corpulentus
+{Ruled_by_Luck}    Ruled by Luck
+{Ruled_by_Luck_desc}
+This man's devotion to games of chance is absolute. His losses are now met from any source he can find.
+{Ruled_by_Luck_epithet_desc}   the Gambler
+{Immune_to_Death?} Immune to Death?
+{Immune_to_Death?_desc}
+This man has become more than adept at avoiding the knives, poisons, garrottes and other stratagems of assassins and then turning the tables on assailants.
+{Immune_to_Death?_epithet_desc}    the Fortunate
+{Sneaky}   Sneaky
+{Sneaky_desc}
+It's not spying, it's a quest for knowledge!
+{Sneaky_gain_desc}
+This agent has improved his suberfuge skills thanks to a successful mission.
+{Spy}  Spy
+{Spy_desc}
+This man has a taste for reading other people's correspondence.
+{Spy_gain_desc}
+This agent has improved his suberfuge skills thanks to a successful mission.
+{Superior_Spy} Superior Spy
+{Superior_Spy_desc}
+The art of espionage is no mystery to this man, and neither are the secrets of his enemies!
+{Superior_Spy_gain_desc}
+This agent has improved his suberfuge skills thanks to a successful mission.
+{Expert_Spy}   Expert Spy
+{Expert_Spy_desc}
+This man is expert in all the skills useful to a spy, and has useful contacts in all sorts of places.
+{Expert_Spy_gain_desc}
+This agent has improved his suberfuge skills thanks to a successful mission.
+{Master_Spy}   Master Spy
+{Master_Spy_desc}
+This man is a master of his trade, and would be legendary were it not for the fact he's just as good at covering his tracks.
+{Master_Spy_gain_desc}
+This agent has reached the pinnacle of his profession thanks to his almost matchless skills.
+{Master_Spy_epithet_desc}  the Clever
+{Cutthroat}    Cutthroat
+{Cutthroat_desc}
+People die. Sometimes this man helps them to die.
+{Cutthroat_gain_desc}
+This assassin has improved his suberfuge skills thanks to a successful murder.
+{Murderer} Murderer
+{Murderer_desc}
+Killing has become second nature to this man. He has no qualms about removing 'targets'.
+{Murderer_gain_desc}
+This assassin has improved his suberfuge skills thanks to a successful murder.
+{Superior_Assassin}    Superior Assassin
+{Superior_Assassin_desc}
+Is this man an assassin, or do targets conveniently die when he is near? Who can tell?
+{Superior_Assassin_gain_desc}
+This assassin has improved his suberfuge skills thanks to a successful murder.
+{Superior_Assassin_epithet_desc}   the Killer
+{Expert_Assassin}  Expert Assassin
+{Expert_Assassin_desc}
+If you want a nice clean job, or have a particularly difficult assignment, this is your man.
+{Expert_Assassin_gain_desc}
+This assassin has improved his suberfuge skills thanks to a successful murder.
+{Expert_Assassin_epithet_desc} the Killer
+{Master_Assassin}  Master Assassin
+{Master_Assassin_desc}
+A true master brings art to his work. This man's art is sudden death, and he is a true master.
+{Master_Assassin_gain_desc}
+This assassin has reached the top of his profession, thanks to his cunning and skill.
+{Master_Assassin_epithet_desc} the Killer
+{Expert_Diplomat}  Expert Diplomat
+{Expert_Diplomat_desc}
+This man has mastered the art of diplomacy and tackles the most difficult negotiations with ease.
+{Expert_Diplomat_gain_desc}
+This man now has few equals in the arts of persuasion and diplomacy.
+{Pathological_Liar}    Pathological Liar
+{Pathological_Liar_desc}
+Lies and falsehoods flow from this man like water. It is doubtful whether or not he even knows the truth himself.
+{Pathological_Liar_epithet_desc}   the Liar
+{Upright}  Upright
+{Upright_desc}
+This man can be relied on to do the 'right thing' no matter how personally unpleasant or costly.
+{Upright_epithet_desc} the Honest
+{Rods-And-Axes}    Rods-And-Axes
+{Rods-And-Axes_desc}
+This man's belief in the rightness of Roman law is unshakeable, and his enforcement of it is inflexible, even harsh.
+{Rods-And-Axes_epithet_desc}   the Harsh
+{Authoritarian_Governor}   Authoritarian Governor
+{Authoritarian_Governor_desc}
+This man believes in absolute control of society by those given positions of power. Control is for the good of all.
+{Authoritarian_Governor_epithet_desc}  the Harsh
+{Liberal_Governor} Liberal Governor
+{Liberal_Governor_desc}
+This man believes that people generally are happiest when they run their own affairs.
+{Liberal_Governor_epithet_desc}    the Kind
+{Outraged_Husband} Outraged Husband
+{Outraged_Husband_desc}
+Is there anyone that this man's wife has not slept with? Her behaviour makes him a laughing stock!
+{Outraged_Husband_epithet_desc}    the Cuckold
+{Master_Engineer}  Master Engineer
+{Master_Engineer_desc}
+This man is blessed with a masterful command of the arts of the military engineer.
+{Master_Engineer_gain_desc}
+This man now has matchless technical expertise in siege warfare.
+{Master_Engineer_epithet_desc} the Engineer
+{Great_Builder}    Great Builder
+{Great_Builder_desc}
+This man has such an abiding passion for creating magnificent buildings that he will immortalise his reputation.
+{Great_Builder_epithet_desc}   the Builder
+{Phlegmatic}   Phlegmatic
+{Phlegmatic_desc}
+This man's cold and unemotional ways make him an uncharismatic figure. Or not quite human.
+{Phlegmatic_epithet_desc}  the Cold-hearted
+{Melancholic}  Melancholic
+{Melancholic_desc}
+This man is given to fits of depression so deep and hopeless that he can barely concentrate on his duty.
+{Melancholic_epithet_desc} the Morbid
+{Choleric} Choleric
+{Choleric_desc}
+This man has an excess of spleen that makes him easy to annoy and slow to forget a slight.
+{Choleric_epithet_desc}    the Angry
+{Fanatical_Chariot_Racer}  Fanatical Chariot Racer
+{Fanatical_Chariot_Racer_desc}
+Nothing gives this man more pleasure than spending all day at the races. Duty is conveniently forgotten.
+{Fanatical_Chariot_Racer_epithet_desc} the Charioteer
+{Miserly}  Miserly
+{Miserly_desc}
+This man is mean to the point of his name being a byword for being mean.
+{Miserly_epithet_desc} the Mean
+{Virtus}   Virtus
+{Virtus_desc}
+This man is a model for all Romans: he has 'virtus' - the quality of a true man - in annoying abundance, but never boasts about it.
+{Virtus_epithet_desc}  Augustus
+{Noctophilic}  Noctophilic
+{Noctophilic_desc}
+Born at midnight, or in love with the moonlight, this man is a real night bird, almost resenting the coming of dawn…
+{Noctophilic_gain_desc}
+This man is now seen as an expert when commanding battles at night.
+{Not_Safe_with_Man_or_Beast}   Not Safe with Man or Beast
+{Not_Safe_with_Man_or_Beast_desc}
+This man's debauchery is so foul and continuous that he provokes disgust and not a little fear.
+{Not_Safe_with_Man_or_Beast_epithet_desc}  the Foul
+{Legendary_Admiral}    Legendary Admiral
+{Legendary_Admiral_desc}
+This man's victories at sea are so numerous that he has become a legend in his own lifetime.
+{Legendary_Admiral_gain_desc}
+This man is now seen as almost unmatched in his grasp of naval warfare.
+{Legendary_Admiral_epithet_desc}   the Navigator
+{Cruelly_Scarred}  Cruelly Scarred
+{Cruelly_Scarred_desc}
+Fate - and his enemies - have dealt this man many a cruel blow, and more than few low blows too!
+{Cruelly_Scarred_gain_desc}
+This general's many scars now prove that he is very difficult to kill!
+{Cruelly_Scarred_epithet_desc} "Scarface"
+{Foolishy_Indiscreet}  Foolishy Indiscreet
+{Foolishy_Indiscreet_desc}
+No secret is secret for long when this man knows it. His name is a byword for foolish indiscretion and loose talk.
+{Foolishy_Indiscreet_epithet_desc} the Gossip
+{Skilled_Infantry_Commander}   Skilled Infantry Commander
+{Skilled_Infantry_Commander_desc}
+This man has a fine understanding of the best way to command infantry in battle.
+{Infantry_Commander_of_Genius} Infantry Commander of Genius
+{Infantry_Commander_of_Genius_desc}
+This man has a superb grasp of infantry tactics, and this inspires confidence in the men he leads.
+{Infantry_Commander_of_Genius_gain_desc}
+This man is now seen as one of the great infantry leaders of the current day.
+{Infantry_Commander_of_Genius_epithet_desc}    the Infantryman
+{Skilled_Cavalry_Commander}    Skilled Cavalry Commander
+{Skilled_Cavalry_Commander_desc}
+This man has great insight into the best way to command cavalry in battle.
+{Cavalry_Commander_of_Genius}  Cavalry Commander of Genius
+{Cavalry_Commander_of_Genius_desc}
+This man has a consummate grasp of cavalry tactics, and this instills confidence in the men he commands.
+{Cavalry_Commander_of_Genius_gain_desc}
+This man is now seen as one of the great cavalry commanders of the current day.
+{Cavalry_Commander_of_Genius_epithet_desc} the Horseman
+{Terrified_by_Roman_Ways}  Terrified by Roman Ways
+{Terrified_by_Roman_Ways_desc}
+The very word "Roman" brings this man out in a cold sweat. His nightmares are filled with visions of Roman evil and cruelty.
+{Terrified_by_Roman_Ways_gain_desc}
+This man has allowed Rome and the Romans to instil a deep fear in his soul.
+{Terrified_by_Barbarians}  Terrified by Barbarians
+{Terrified_by_Barbarians_desc}
+The random "bar-bar-bar" gibberings of barbarians echo through this man's darkest nightmares…
+{Terrified_by_Barbarians_gain_desc}
+Fear of barbarians has mastered this man's mind.
+{Terrified_by_Carthaginians}   Terrified by Carthaginians
+{Terrified_by_Carthaginians_desc}
+Carthaginians are monsters in human form! They... do things... in secret, when no one is watching.
+{Terrified_by_Carthaginians_gain_desc}
+This man has let his fear of Carthaginians become his master.
+{Terrified_by_Greeks}  Terrified by Greeks
+{Terrified_by_Greeks_desc}
+Every nightmare is the same for this man: torn apart by the Furies, egged on by shrieking Greeks…
+{Terrified_by_Greeks_gain_desc}
+This man has allowed his fear of Greeks to overwhelm his reason.
+{Terrified_by_Egyptians}   Terrified by Egyptians
+{Terrified_by_Egyptians_desc}
+Egyptians know things because of their obsession with the dead - terrible secrets that they will use against their enemies!
+{Terrified_by_Egyptians_gain_desc}
+This man has allowed his fear of Egyptians to eat into his soul.
+{Terrified_by_Easterners}  Terrified by Easterners
+{Terrified_by_Easterners_desc}
+Eastern plans and plotting make this man afraid, and this paralyses his ability to act effectively.
+{Terrified_by_Easterners_gain_desc}
+This man's fear of Easterners has become his master.
+{Terrified_by_Slaves}  Terrified by Slaves
+{Terrified_by_Slaves_desc}
+Slave rebellions fill this man with horror. The thought of being murdered in his bed at any time is more than he can bear!
+{Terrified_by_Slaves_gain_desc}
+This man has allowed his irrational fear of slaves to become a new master in his house.
+{Weak-chinned} Weak-chinned
+{Weak-chinned_desc}
+This man is cursed with a weakling's countenance.
+{Infamously_Inbred}    Infamously Inbred
+{Infamously_Inbred_desc}
+The Gods dealt this man a cruel blow at birth. All the sins of his family have been visited upon him, and a few more besides.
+{Infamously_Inbred_epithet_desc}   the Idiot
+{Godlike_Perfection}   Godlike Perfection
+{Godlike_Perfection_desc}
+Adonis would gaze upon this man with jealousy. Many ordinary mortals already do.
+{Godlike_Perfection_epithet_desc}  the Handsome
+{Scares_Small_Children}    Scares Small Children
+{Scares_Small_Children_desc}
+Small children cannot bear to be in the same room as this man, thanks to his remarkably hideous appearance.
+{Scares_Small_Children_epithet_desc}   the Ugly
+{Victory_from_the_Jaws_of_Defeat}  Victory from the Jaws of Defeat
+{Victory_from_the_Jaws_of_Defeat_desc}
+This man can turn almost suicidal attacks into victories. His men, or the survivors, are less convinced of his abilities.
+{Victory_from_the_Jaws_of_Defeat_epithet_desc} the Lucky
+{Stonewall}    Stonewall
+{Stonewall_desc}
+This man has an eye for a defensive position that almost guarantees him victory, no matter what the odds or the cost.
+{Stonewall_epithet_desc}   the Steadfast
+{Utterly_Insane}   Unhinged Loon
+{Utterly_Insane_desc}
+This man's habit of painting his bottom purple and wearing goat bladders has led many to suspect his headaches may not be all that is amiss.
+{Utterly_Insane_epithet_desc}  the Mad
+{Dangerously_Mad}  Dangerously Mad
+{Dangerously_Mad_desc}
+This man has a disturbing tendency to bite people at inopportune moments: there is the mute testimony of his guests' and slaves' scars.
+{Dangerously_Mad_epithet_desc} the Mad
+{Glorious_Fool}    Glorious Fool
+{Glorious_Fool_desc}
+This man is a born leader who inspires his men to follow him to almost certain death. Unfortunately, the 'almost' bit only seems to apply to him.
+{Glorious_Fool_gain_desc}
+This popular commander has become a serious danger to his own troops!
+{Glorious_Fool_epithet_desc}   the Glorious
+{Uncontrollable_Rage}  Uncontrollable Rage
+{Uncontrollable_Rage_desc}
+When the red mist descends upon this man, nobody is safe. His family, slaves and few remaining friends know that to hide is to live…
+{Uncontrollable_Rage_epithet_desc} the Wrathful
+{Pious}    Pious
+{Pious_desc}
+This man has deep and genuinely held religious convictions, and has a genuine respect for the priesthood and the advice they give him.
+{Pious_epithet_desc}   the Holy
+{Sacrilegious} Sacrilegious
+{Sacrilegious_desc}
+This man is openly contemptuous of money-grubbing, sanctimonious priests, refusing them any courtesy and always ascribing the basest of motives to their prattling.
+{Sacrilegious_epithet_desc}    the Blasphemer
+{Lewd} Lewd
+{Lewd_desc}
+This man has no restraint in his lewd and lascivious language and behaviour, and delights in his collection of 'unusual' artworks…
+{Lewd_epithet_desc}    the Lewd
+{Legendary_Hero}   Legendary Hero
+{Legendary_Hero_desc}
+Like Horatius, this man's bravery knows no bounds. He is rightly famed among Romans as Aeneas reborn, or even a new Romulus!
+{Legendary_Hero_epithet_desc}  the Great
+{Utterly_Disgraced}    Utterly Disgraced
+{Utterly_Disgraced_desc}
+To lose one Eagle might be unlucky. To lose two looks like incompetence.
+{Utterly_Disgraced_epithet_desc}   Infortunatus
+{Mostly_Redeemed}  Mostly Redeemed
+{Mostly_Redeemed_desc}
+Regaining two Eagles goes a long way to restoring this man's stained reputation, but the people are not quick to forgive.
+{Mostly_Redeemed_epithet_desc} Signifer
+{Eagle_Collector}  Eagle Collector
+{Eagle_Collector_desc}
+Taking more than two Eagles makes this man a Legend.
+{Eagle_Collector_epithet_desc} of the Eagles
+{Exterminator} Exterminator
+{Exterminator_desc}
+If you want an entire people wiped out this man is one of the few individuals with the stomach for the job.
+{Exterminator_epithet_desc}    the Butcher
+{Night_Fighter}    Night Fighter
+{Night_Fighter_desc}
+This trait allows a general to fight a battle at night.
+{Night_Fighter_effects_desc}
++1 Command when fighting at night
+#for @Religion in @Get.AllReligions():
+{@{Religion.Id}}Worships @{Religion.Name}
+{@{Religion.Id}_desc}This man is a believer in @{Religion.Name}.
+{@{Religion.Id}_effects_desc}+5% conversion to @{Religion.Name}
+#end
+#for @HiddenTrait in ["AIAssist1", "AIAssist2", "BonusesAllGenerals1"]:
+{@{HiddenTrait}}Hidden Trait @{HiddenTrait}
+{@{HiddenTrait}_desc}Hidden Trait @{HiddenTrait}
+{@{HiddenTrait}_effects_desc}Hidden Trait @{HiddenTrait}
+#end
+#for @Culture in @Get.AllCultures():
+{CultureBonus@{Culture.Id}1}Culture Bonus @{Culture.Name}
+{CultureBonus@{Culture.Id}1_desc}This general gets a culture bonus.
+{CultureBonus@{Culture.Id}1_effects_desc}@{Culture.TraitBonus}
+#end

@@ -1,0 +1,19 @@
+#for @Faction in @Get.AllFactions():
+"Rome.Override.IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_TITLE" = "@{Faction.Name}";
+"Rome.Override.IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_DESCR" = "Population: @{Faction.getPopulationCount()}\nTroops: @{Faction.getTroopCount()}\n\nFaction and culture bonuses:\n\n@{Faction.getBonusText()}\n\n@{Faction.CampaignDescription}";
+#end
+"Rome.Override.SMT_DIP_INIT_OFFER" = "@{Get.Setting("CostPlayerDiplomacyAction")} denarii\nLeave offers or demands blank to find out what the opposition would give or take in return";
+"Rome.Override.SMT_DIP_ACCEPT_OFFER" = "@{Get.Setting("CostPlayerDiplomacyAction")} denarii\nAccept the current proposal";
+"Rome.Override.SMT_DIP_COUNTER_OFFER" = "@{Get.Setting("CostPlayerDiplomacyAction")} denarii\nMake a counter offer to the current proposal";
+"Rome.Override.SMT_SET_AS_CAPITAL" = "Set this settlement to be the factions capital (@{Get.Setting("CostPlayerCapitalChange")} denarii)";
+"Rome.Override.SIEGE_UPKEEP_EXPENDITURES" = "Siege upkeep expenditures";
+
+
+"Rome.Override.REBEL_REVOLT_SURPRESSED" = "Faction Destroyed";
+"Rome.Override.REBEL_REVOLT_SUPRESSED" = "Faction Destroyed";
+"Rome.Override.REBEL_REVOLT_SUPPRESSED" = "Faction Destroyed";
+#for @Culture in @Get.AllCultures():
+"Rome.Override.REBEL_REVOLT_SURPRESSED_@{Culture.Id.upper()}" = "Faction Destroyed";
+"Rome.Override.REBEL_REVOLT_SUPRESSED_@{Culture.Id.upper()}" = "Faction Destroyed";
+"Rome.Override.REBEL_REVOLT_SUPPRESSED_@{Culture.Id.upper()}" = "Faction Destroyed";
+#end

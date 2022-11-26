@@ -1,0 +1,134 @@
+"cultures":
+[
+#for @Culture in @Get.AllCultures():
+    "@{Culture.Id}":
+    {
+        "string": "@{Culture.Id.upper()}",
+		"portrait mapping": "@{Culture.UIGroup}",
+		"civilised": @{Culture.getIsCivilizedLower()},
+		"max settlement level": "@{Culture.getMaxCityLvlId()}",
+		"ai assist under settlements": 0,
+		"unrest factors":
+		{
+			"squalor rate": 1500,
+			"overcrowding rate": 350,
+			"capital distance multiplier": 1,
+		},
+		"settlement upgrade levels":
+		{
+			"village":
+			{
+				"base": 400,
+				"upgrade": 0,
+				"min pop": 400,
+				"max pop": 1500,
+				"squalour pop": 800,
+			},
+			"town":
+			{
+				"base": 400,
+				"upgrade": 400,
+				"min pop": 400,
+				"max pop": 3500,
+				"squalour pop": 800,
+			},
+			"large_town":
+			{
+				"base": 2000,
+				"upgrade": 2000,
+				"min pop": 400,
+				"max pop": 9000,
+				"squalour pop": 4000,
+			},
+			"city":
+			{
+				"base": 6000,
+				"upgrade": 6000,
+				"min pop": 400,
+				"max pop": 18000,
+				"squalour pop": 12000,
+			},
+			"large_city":
+			{
+				"base": 12000,
+				"upgrade": 12000,
+				"min pop": 400,
+				"max pop": 36000,
+				"squalour pop": 24000,
+			},
+			"huge_city":
+			{
+				"base": 24000,
+				"upgrade": 24000,
+				"min pop": 400,
+				"max pop": 72000,
+				"squalour pop": 48000,
+			},
+		},
+		"settlement icons":
+		{
+			"village": "data/ui/cities/@{Culture.UIGroupBuildings}_village.tga",
+			"town": "data/ui/cities/@{Culture.UIGroupBuildings}_town.tga",
+			"large_town": "data/ui/cities/@{Culture.UIGroupBuildings}_large_town.tga",
+			"city": "data/ui/cities/@{Culture.UIGroupBuildings}_city.tga",
+			"large_city": "data/ui/cities/@{Culture.UIGroupBuildings}_large_city.tga",
+			"huge_city": "data/ui/cities/@{Culture.UIGroupBuildings}_huge_city.tga",
+		},
+		"fort":
+		{
+			"card path": "data/ui/cities/@{Culture.UIGroupBuildings}_fort.tga",
+			"cost": @{Culture.CostFort},
+		},
+		"watchtower":
+		{
+			"card path": "data/ui/cities/@{Culture.UIGroupBuildings}_watchtower.tga",
+			"base model": "data/models_strat/residences/watchtower_roman.CAS",
+			"aerial map base": "watchtower_roman",
+			"cost": @{Culture.CostTower},
+		},
+		"agents":
+		{
+			"spy":
+			{
+				"info card": "spy_info.tga",
+				"unit card": "spy.tga",
+				"recruitment cost": @{Culture.CostSpy},
+				"population cost": 1,
+				"recruitment points": 1,
+			},
+			"assassin":
+			{
+				"info card": "assassin_info.tga",
+				"unit card": "assassin.tga",
+				"recruitment cost": @{Culture.CostAssassin},
+				"population cost": 1,
+				"recruitment points": 1,
+			},
+			"diplomat":
+			{
+				"info card": "diplomat_info.tga",
+				"unit card": "diplomat.tga",
+				"recruitment cost": @{Culture.CostDiplomat},
+				"population cost": 1,
+				"recruitment points": 1,
+			},
+			"merchant":
+			{
+				"info card": "merchant_info.tga",
+				"unit card": "merchant.tga",
+				"recruitment cost": @{Culture.CostMerchant},
+				"population cost": 1,
+				"recruitment points": 1,
+			},
+			"admiral":
+			{
+				"info card": "admiral_info.tga",
+				"unit card": "admiral.tga",
+				"recruitment cost": 1,
+				"population cost": 1,
+				"recruitment points": 1,
+			},
+		},
+    },
+#end
+],

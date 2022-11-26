@@ -1,0 +1,16 @@
+;
+; regions list
+;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+#for @Region in @Get.AllRegions():@Region.IdRegion
+	legion: Legion_@{Region.IdCity}
+	@Region.IdCity
+	@Region.FactionNative
+	@Region.RebelFaction
+	@Region.R @Region.G @Region.B
+	@Region.getAllHiddenResourceIdsAsCommaSeparatedString()
+	5
+	@Region.Fertility
+	@Region.getDescrRegionsReligionDistribution()
+#end

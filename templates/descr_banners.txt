@@ -1,0 +1,74 @@
+
+banner		roman
+model		data/models/standard_general_julii.cas			; generals banner
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+model		data/models/standard_julii.cas					; standard unit banner
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_units.cas
+model		data/models/standard_general_julii.cas			; mini banner
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+
+banner		barbarian
+model		data/models/standard_general_gaul.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_barb_general.cas
+model		data/models/standard_gaul.cas
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_barb_units.cas
+model		data/models/standard_general_gaul.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_barb_general.cas
+
+banner		carthaginian
+model		data/models/standard_general_carthage.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+model		data/models/standard_carthage.cas
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_units.cas
+model		data/models/standard_general_carthage.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+
+banner		greek
+model		data/models/standard_general_macedonia.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+model		data/models/standard_macedonia.cas
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_units.cas
+model		data/models/standard_general_macedonia.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+
+banner		egyptian
+model		data/models/standard_general_egypt.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+model		data/models/standard_julii.cas
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_units.cas
+model		data/models/standard_general_egypt.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_general.cas
+
+banner		eastern
+model		data/models/standard_general_julii.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_eastern.cas
+model		data/models/standard_julii.cas
+skeleton	standard_legion_pole
+outline		data/models/standard_battle_glow_eastern_units.cas
+model		data/models/standard_general_julii.cas
+skeleton	general_legion_pole
+outline		data/models/standard_battle_glow_eastern.cas
+
+#for @Faction in @Get.AllFactions():
+faction				@Faction.Id
+standard_texture	textures/battleStandards/@{Faction.Id}.tga
+rebels_texture		textures/battleStandardRebels.tga
+routing_texture		textures/battleStandardRouting.tga
+ally_texture		textures/battleStandards/@{Faction.Id}.tga
+#end

@@ -1,0 +1,5 @@
+#for @Unit in @Get.AllUnits():
+@{Unit.Dictionary}
+@{Unit.Dictionary}_descr
+@{Unit.Dictionary}_descr_short
+#end

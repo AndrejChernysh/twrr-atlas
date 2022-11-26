@@ -1,0 +1,4 @@
+
+#for @RebelFaction in @Get.AllRebelFactions():
+{@{RebelFaction.Id}}@{RebelFaction.Name}
+#end

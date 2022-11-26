@@ -1,0 +1,105 @@
+; DO NOT REMOVE THIS LINE
+
+campaign		imperial_campaign
+playable
+#for @FactionId in @Get.FactionIdsPlayable():@FactionId
+#end
+end
+unlockable
+end
+nonplayable
+#for @FactionId in @Get.FactionIdsNonPlayable():@FactionId
+#end
+end
+
+start_date	@Get.Setting("StartDate") summer
+end_date	@Get.Setting("EndDate") summer
+
+rebelling_characters_active
+brigand_spawn_value @Get.Setting("BrigandSpawnValue")
+pirate_spawn_value @Get.Setting("PirateSpawnValue")
+
+#for @Landmark in @Get.AllLandmarks():landmark	@Landmark.Id	@Landmark.Position.X,	@Landmark.Position.Y
+#end
+
+#for @Region in @Get.AllRegions():
+;@Region.IdRegion - @Region.IdCity
+#for @PositionResource in @Region.getPositionsResourcesOnMap():resource	@PositionResource.Resource.Id,  @PositionResource.Quantity,  @PositionResource.Position.X,	@PositionResource.Position.Y
+#end
+#for @PositionResource in @Region.getPositionsResourcesByResourceId("slaves"):resource	@PositionResource.Resource.Id,  1,  @PositionResource.Position.X,	@PositionResource.Position.Y
+#end
+#end
+
+#for @Faction in @Get.AllFactionsNonSlave():
+
+faction @Faction.Id, @{Faction.getAIPersonalityId()} @Faction.getSuperFactionString() @Faction.getShadowFactionString()
+re_emergent
+denari @Faction.Money
+#for @Region in @Faction.getStartingRegions():
+settlement
+{
+	level @Region.getSettlementLevel().Id
+	region @Region.IdRegion
+	year_founded 0
+	population @Region.Population
+	plan_set default_set
+	faction_creator @Region.FactionNative
+	@Region.getCoreBuildingDescrStratEntry()
+	@Region.getNonCoreBuildingDescrStratEntry()
+}
+#end
+#for @Character in @Faction.NamedCharacters:
+@Character.getDescrStratEntry()
+#end
+
+#for @General in @Faction.Generals:
+@General.getDescrStratEntry()
+#end
+
+@Faction.getDescrStratAgentsEntry()
+#for @Female in @Faction.FemaleCharacters:@Female.getDescrStratEntry()
+#end
+
+#for @FamilySubTree in @Faction.FamilyTree:@FamilySubTree.getDescrStratEntry()
+#end
+#end
+
+faction	slave, balanced_smith
+denari @Get.FactionById("slave").Money
+#for @Region in @Get.FactionById("slave").getStartingRegions():
+settlement
+{
+	level @Region.getSettlementLevel().Id
+	region @Region.IdRegion
+	year_founded 0
+	population @Region.Population
+	plan_set default_set
+	faction_creator @Region.FactionNative
+	@Region.getCoreBuildingDescrStratEntry()
+	@Region.getNonCoreBuildingDescrStratEntry()
+}
+#end
+
+#for @Character in @Get.FactionById("slave").NamedCharacters:
+@Character.getDescrStratEntry()
+#end
+
+#for @Faction in @Get.AllFactions():
+@Faction.getDescrStratAttitudesEntry()
+#end
+
+#for @Faction in @Get.AllFactions():
+@Faction.getDescrStratRelationshipsEntry()
+#end
+
+@Get.DescrStratSuperfactionSetupEntries()
+
+#for @Faction in @Get.AllFactionsPlayable():
+spawn_script @{Faction.Id}, revolt, FactionRespawnInCapital/@{Faction.Id}.txt
+#end
+#for @Faction in @Get.AllDeadFactionsExShadow():
+spawn_script @{Faction.Id}, revolt, FactionRespawnInCapital/@{Faction.Id}.txt
+#end
+
+script
+script.txt

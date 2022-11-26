@@ -1,0 +1,24 @@
+monitor_event BuildingCompleted TrueCondition
+and SettlementBuildingExists = autonomy
+    console_command add_population local 20000
+    console_command create_building local muster_field
+    console_command create_building local stables
+    console_command create_building local ammo_depot
+    provoke_rebellion local
+    console_command add_population local -20000
+    destroy_building "local" autonomy
+    #for @i in ["10000", "9000", "8000", "7000", "6000", "5000", "4000", "3000", "2000"]:
+    if RandomPercent < 10
+        and I_CompareCounter randomdummy = 0
+        console_command add_money @i
+        set_counter randomdummy 1
+        @Scripter.MessageInfo("Autonomy settled", "The new rulers of the settlement we granted autonomy to paid us @{i} denarii for control of the region.")
+    end_if
+    #end
+    if I_CompareCounter randomdummy = 0
+        console_command add_money 1000
+        @Scripter.MessageInfo("Autonomy settled", "The new rulers of the settlement we granted autonomy to paid us 1000 denarii for control of the region.")
+    end_if
+    set_counter randomdummy 0
+    console_command reseed_random
+end_monitor

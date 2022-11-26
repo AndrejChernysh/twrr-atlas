@@ -1,0 +1,8 @@
+#for @Faction in @Get.AllFactionsNonSlaveSortByLogoIndex():@Faction.Id
+hold_regions @Faction.getCapital().IdCity
+take_regions 50
+short_campaign outlive_factions
+@Faction.getRandomOtherFactionIdNonSlaveNonShadow()
+
+
+#end

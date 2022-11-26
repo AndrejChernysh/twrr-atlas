@@ -1,0 +1,4 @@
+monitor_event CharacterTurnEnd CharacterIsLocal
+    and IsBesieging
+    console_command add_money @{Get.Setting("CostPlayerSiegePerRound")}
+end_monitor

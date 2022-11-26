@@ -1,0 +1,9 @@
+#for @RebelFaction in @Get.AllRebelFactions():rebel_type			@RebelFaction.Id	//@RebelFaction.Name
+category			@RebelFaction.Category
+chance				@RebelFaction.Chance
+description			@RebelFaction.Id
+#for @Unit in @RebelFaction.Units:
+unit				@Unit
+#end
+
+#end

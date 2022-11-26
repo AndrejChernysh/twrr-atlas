@@ -1,0 +1,7 @@
+;; JNF 2021-09-23 - Used to define the indexes for the logos referenced in descr_sm_factions
+;; trying to have multiple logos on a single page caused all logos to revert to the one in the
+;; top left after you moved the camera for the first time. I don't understand it either.
+;; so anyway, one logo per page please
+
+#for @Entry in @Get.DescrSMFactionLogosIconEntries():icon	ui/faction_icons/@{Entry}
+#end

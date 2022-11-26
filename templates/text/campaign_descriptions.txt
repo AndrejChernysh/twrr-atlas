@@ -1,0 +1,8 @@
+
+#for @Faction in @Get.AllFactions():
+{IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_TITLE}@{Faction.Name}
+{IMPERIAL_CAMPAIGN_@{Faction.Id.upper()}_DESCR}@{Faction.CampaignDescription}
+#end
+{SONS_OF_MARS_TITLE}Sons of Mars
+{IMPERIAL_CAMPAIGN_TITLE}Imperial Campaign
+{CAESER_IN_GAUL_TITLE}Caesar in Gaul

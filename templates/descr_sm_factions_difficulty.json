@@ -1,0 +1,6 @@
+{
+#for @Faction in @Get.AllFactionsNonSlave():
+  "@{Faction.Id}": @{Faction.Difficulty},
+#end
+  "slave": -1
+}

@@ -1,0 +1,263 @@
+
+;;; Building Priorities
+
+building_priority Balanced
+population_growth_bonus 80
+population_loyalty_bonus 64
+population_health_bonus 32
+trade_base_income_bonus 32
+trade_level_bonus 64
+trade_fleet 48
+taxable_income_bonus 80
+mine_resource_level 16
+farming_level 48
+road_level 48
+gate_strength 16
+gate_defenses 16
+wall_level 64
+tower_level 16
+stage_games 48
+stage_races 48
+weapon_bladed 32
+weapon_missile 32
+armour 32
+population_fire_risk_bonus 16
+bodyguard 48
+recruits_morale_bonus 32
+recruits_experience_bonus 64
+happiness_bonus 48
+law_bonus 48
+
+building_priority Trader
+population_growth_bonus 80
+population_loyalty_bonus 32
+population_health_bonus 48
+trade_base_income_bonus 64
+trade_level_bonus 64
+trade_fleet 48
+taxable_income_bonus 80
+mine_resource_level 48
+farming_level 64
+road_level 80
+gate_strength 16
+gate_defenses 16
+wall_level 48
+tower_level 16
+stage_games 64
+stage_races 64
+weapon_bladed 64
+weapon_missile 64
+armour 64
+population_fire_risk_bonus 16
+bodyguard 48
+recruits_morale_bonus 32
+recruits_experience_bonus 64
+happiness_bonus 48
+law_bonus 48
+
+building_priority Religious
+population_growth_bonus 80
+population_loyalty_bonus 80
+population_health_bonus 32
+trade_base_income_bonus 32
+trade_level_bonus 32
+trade_fleet 48
+taxable_income_bonus 80
+mine_resource_level 48
+farming_level 64
+road_level 48
+gate_strength 16
+gate_defenses 16
+wall_level 64
+tower_level 16
+stage_games 64
+stage_races 16
+weapon_bladed 48
+weapon_missile 48
+armour 48
+population_fire_risk_bonus 16
+bodyguard 48
+recruits_morale_bonus 64
+recruits_experience_bonus 48
+happiness_bonus 32
+law_bonus 64
+
+building_priority Comfortable
+population_growth_bonus 80
+population_loyalty_bonus 64
+population_health_bonus 64
+trade_base_income_bonus 48
+trade_level_bonus 64
+trade_fleet 48
+taxable_income_bonus 48
+mine_resource_level 16
+farming_level 80
+road_level 64
+gate_strength 16
+gate_defenses 16
+wall_level 64
+tower_level 16
+stage_games 80
+stage_races 80
+weapon_bladed 32
+weapon_missile 32
+armour 32
+population_fire_risk_bonus 32
+bodyguard 48
+recruits_morale_bonus 32
+recruits_experience_bonus 64
+happiness_bonus 64
+law_bonus 32
+
+building_priority Bureaucrat
+population_growth_bonus 64
+population_loyalty_bonus 48
+population_health_bonus 64
+trade_base_income_bonus 64
+trade_level_bonus 48
+trade_fleet 48
+taxable_income_bonus 80
+mine_resource_level 16
+farming_level 64
+road_level 64
+gate_strength 16
+gate_defenses 16
+wall_level 64
+tower_level 16
+stage_games 16
+stage_races 16
+weapon_bladed 32
+weapon_missile 32
+armour 32
+population_fire_risk_bonus 32
+bodyguard 64
+recruits_morale_bonus 32
+recruits_experience_bonus 64
+happiness_bonus 32
+law_bonus 64
+
+building_priority Craftsman
+population_growth_bonus 64
+population_loyalty_bonus 32
+population_health_bonus 64
+trade_base_income_bonus 64
+trade_level_bonus 48
+trade_fleet 32
+taxable_income_bonus 80
+mine_resource_level 64
+farming_level 48
+road_level 64
+gate_strength 48
+gate_defenses 48
+wall_level 80
+tower_level 48
+stage_games 48
+stage_races 80
+weapon_bladed 64
+weapon_missile 64
+armour 64
+population_fire_risk_bonus 32
+bodyguard 48
+recruits_morale_bonus 32
+recruits_experience_bonus 64
+happiness_bonus 48
+law_bonus 48
+
+building_priority Sailor
+population_growth_bonus 64
+population_loyalty_bonus 32
+population_health_bonus 48
+trade_base_income_bonus 64
+trade_level_bonus 48
+trade_fleet 80
+taxable_income_bonus 80
+mine_resource_level 16
+farming_level 48
+road_level 64
+gate_strength 48
+gate_defenses 48
+wall_level 80
+tower_level 48
+stage_games 48
+stage_races 32
+weapon_bladed 32
+weapon_missile 32
+armour 16
+population_fire_risk_bonus 48
+bodyguard 32
+recruits_morale_bonus 64
+recruits_experience_bonus 48
+happiness_bonus 48
+law_bonus 32
+
+building_priority Fortified
+population_growth_bonus 64
+population_loyalty_bonus 64
+population_health_bonus 48
+trade_base_income_bonus 48
+trade_level_bonus 48
+trade_fleet 32
+taxable_income_bonus 80
+mine_resource_level 16
+farming_level 48
+road_level 148
+gate_strength 64
+gate_defenses 64
+wall_level 80
+tower_level 64
+stage_games 16
+stage_races 16
+weapon_bladed 48
+weapon_missile 48
+armour 64
+population_fire_risk_bonus 48
+bodyguard 64
+recruits_morale_bonus 64
+recruits_experience_bonus 32
+happiness_bonus 32
+law_bonus 64
+
+building_priority DoNotCareAboutRevolts
+population_growth_bonus 80
+population_loyalty_bonus 2
+population_health_bonus 32
+trade_base_income_bonus 100
+trade_level_bonus 100
+trade_fleet 48
+taxable_income_bonus 70
+mine_resource_level 80
+farming_level 48
+road_level 90
+gate_strength 110
+gate_defenses 110
+wall_level 110
+tower_level 110
+stage_games 4
+stage_races 4
+weapon_bladed 65
+weapon_missile 65
+armour 65
+population_fire_risk_bonus 1
+bodyguard 3
+recruits_morale_bonus 60
+recruits_experience_bonus 64
+happiness_bonus 2
+law_bonus 2
+
+;;; Military Priorities
+
+#for @Faction in @Get.AllFactions():
+@Faction.AIProfile.getDescrAIPersonalityTXTMilitaryPriorityEntry()
+#end
+
+;;; Diplomatic Priorities
+
+#for @Faction in @Get.AllFactions():
+@Faction.AIProfile.getDescrAIPersonalityTXTDiplomaticPriorityEntry()
+#end
+
+;;; Personalities
+
+#for @Faction in @Get.AllFactions():
+@Faction.AIProfile.getDescrAIPersonalityTXTPersonalitiesEntry()
+#end

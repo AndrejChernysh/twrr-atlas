@@ -1,0 +1,11 @@
+monitor_event ButtonPressed ButtonPressed diplomacy_offer_button
+    console_command add_money @{Get.Setting("CostPlayerDiplomacyAction")}
+end_monitor
+
+monitor_event ButtonPressed ButtonPressed diplomacy_accept_offer_button
+    console_command add_money @{Get.Setting("CostPlayerDiplomacyAction")}
+end_monitor
+
+monitor_event ButtonPressed ButtonPressed diplomacy_counter_offer_button
+    console_command add_money @{Get.Setting("CostPlayerDiplomacyAction")}
+end_monitor

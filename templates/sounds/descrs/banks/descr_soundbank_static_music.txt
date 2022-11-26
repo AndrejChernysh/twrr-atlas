@@ -1,0 +1,132 @@
+;; Last updated by jburnett on 2021/07/14
+;; DESCR file generated via RTW Amber pack editor
+
+"default sound parameters":
+{
+	"3d": false,				;;is the sound 3D (DO NOT CHANGE THIS)
+	"Probability": 100.0,		;;the chance the sound will play when triggered
+	"Volume": 100,				;;the volume of the sample as a percentage of the base file's
+	"Min pitch": 100.0,			;;the random pitch of the sample (0-200%)
+	"Max pitch": 100.0,
+	"Priority": 9999,			;;sound with high priority will replace lower priority sounds if all soundchannels are used
+	"Fade in": 0.0,				;;the time, in seconds, for the sound to fade in and out
+	"Fade out": 0.0,
+	"Looped": false,			;;should the sound loop?
+	"Random volume": 0,			;;the random adjustment applied to the volume (must be negative)
+	"Start delay": 0.0,			;;the constant delay before the sound should play when triggered
+	"Random delay": 0.0,		;;the maximum random delay added to the constant delay
+	"Pref type": "Music",		;;the slider the sound should be attached to
+	"Ignore pause": false,		;;should this sound ignore being paused?
+	"Streamed": true,			;;should this sound be streamed from disk?
+	"Pan": 0.5,					;;direction the sound should come from (nonfunctional as of writing this)
+	"Dry level": 1.0,			;; ???
+	"Wet level": 0.0,			;; ???
+},
+
+"soundbank_static_music":
+{
+	"entries":
+	[
+		{
+			"state": "frontend",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/menu1.opus",
+				{
+				},
+			],
+		},
+		{
+			"state": "stratmap_summer",
+			"factions":
+				[ "all", ],
+
+			"sounds":
+			[
+			    @{OStools.ListFilesInModfolder("sounds/music/summer*.opus")},
+				{
+				},
+			],
+		},
+		{
+			"state": "prebattle_scroll",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/silence.opus",
+				{
+				},
+			],
+		},
+		{
+			"state": "credits1",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/Credits-Forever_(Rome_Total_War).opus",
+				{
+				},
+			],
+		},
+		{
+			"state": "credits2",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/CampaignWin1-Invicta.opus",
+				{
+				},
+			],
+		},
+		{
+			"state": "city",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+			    @{OStools.ListFilesInModfolder("sounds/music/summer*.opus")},
+				{
+				},
+			],
+		},
+		{
+			"state": "near_victory",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/Campaign8-Contemplation.opus",
+				{
+					"Priority": 0,				;;sound with high priority will replace lower priority sounds if all soundchannels are used
+				},
+			],
+		},
+		{
+			"state": "stratmap_winter",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+			    @{OStools.ListFilesInModfolder("sounds/music/winter*.opus")},
+				{
+				},
+			],
+		},
+		{
+			"state": "postbattle_scroll",
+			"factions":
+				[ "all", ],
+			"sounds":
+			[
+				"data/sounds/music/silence.opus",
+				{
+				},
+			],
+		},
+	],
+}, ;;soundbank_static_music

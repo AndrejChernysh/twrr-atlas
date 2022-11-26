@@ -1,0 +1,180 @@
+
+{settlement_taken}				Settlement Lost
+{settlement_besieged}				Settlement Besieged
+{settlement_destroyed}				Settlement Destroyed
+{naval_blockade}					Settlement Blockaded
+{wonder_captured}				Wonder Captured
+{wonder_lost}					Wonder Lost
+{faction_leader_dies}				Faction Leader Dies
+{faction_leader_killed}				Faction Leader Killed
+{faction_leader_imperator}				Imperator
+{faction_richest}					Richest Faction
+{faction_largest}					Largest Faction
+{faction_strongest}				Strongest Faction
+{faction_advanced}				Most Advanced Faction
+{army_revolt}					Army In Revolt
+{settlement_unrest}				Civil Unrest
+{settlement_revolts}				Civil Revolt
+{games_held}					Games Held
+{building_completed}				Construction Complete
+{construction_complete_many}			Construction Report
+{unit_completed}					Unit Recruitment Completed
+{recruitment_complete_many}			Recruitment Report
+{agent_recruited}					Agent Recruited
+{character_dies_natural}				Death In The Family
+{character_dies_heroic}				Heroic Death
+{settlement_surrender}				Settlement Surrenders
+{general_appointed}				New General Appointed
+{general_promoted}				Promotion
+{general_dies}					General Dies
+{new_faction_leader}				New Faction Leader
+{new_faction_heir}				New Faction Heir
+{new_bouncing_baby}				New Family Member
+{coming_of_age}					Coming Of Age
+{marriage}					Marriage Celebrations
+{adoption}					A New Son Adopted
+{faction_defeated}				Faction Destroyed
+{mission_spy_character}				Spying Mission Success
+{mission_spy_settlement}				Spying Mission Success
+{mission_assassinate}				Assassination Mission Success
+{mission_sabotage}				Sabotage Mission Success
+{hidden_agent_detected_in_settlement}		Agent Detected
+{reinforcements_arrived}				Reinforcements
+{war_declared}					War!!!
+{year_end_report}					End Of Turn Report
+{chat_message}					Messenger Arrives
+{disaster_earthquake}				Earthquake
+{disaster_volcano}					Volcano Erupts
+{disaster_flood}					Flash Flood
+{disaster_storm}					Storm
+{disaster_disorder}				Civil Disorder
+{disaster_riot}					Rioting!
+{disaster_mutiny}					Mutiny On The High Seas!
+{disaster_plague}					Death Stalks The Land
+{disaster_famine}					Famine
+{disaster_barbarian_horde}				Barbarian Horde Sighted
+{disaster_pirates}					Pirates Sighted
+{disaster_brigands}				Brigands Sighted
+{disaster_fire}					Uncontrolled Fire
+{family_report}					Faction Announcements
+{senate_message}					Message From Senate
+{senate_mission_issued}				Senate Mission Assigned
+{senate_mission_failed}				Senate Mission Failure!
+{senate_mission_success}				Senate Mission Successful!
+{character_trait_gained}				Trait Increase
+{character_trait_lost}				Trait Decrease
+{unit_routs_in_battle}				Unit Routs
+{building_captured_battle}				Building Captured
+{building_lost_battle}				Building Captured
+{general_killed_ally}				Allied General Fallen
+{general_killed_enemy}				Enemy General Fallen
+{settlement_surrenders_own}			Our Settlement Surrenders
+{settlement_surrenders_enemy}			Enemy Settlement Conquered
+{alliance_declared}				Alliance Announced
+{ceasefire_declared}				Ceasefire In Effect
+{advisor_dummy_msg}				Your Advisor Has Information
+{new_ancillary_character}				Retinue Expands
+{diplomacy_report}				Diplomatic Information
+{war_declared_on_ally}				War Declared On Ally
+{peacy_treaty_signed}				Peace Treaty Enacted
+{alliance_broken}					Alliance In Tatters
+{protectorate_established}				Client Kingdom Established
+{ally_declared_alliance_with_enemy}			Ally Loyalty In Question
+{suitor_available_for_daughter}			A Suitable Husband
+{daughter_retired}					Past Childbearing Age
+{adopta_general_offer}				The Man Of The Hour
+{character_available_for_adoption}			A Candidate For Adoption
+{female_dies}					Family Tragedy
+{adoption_failed}					Adoption Not Completed
+{mission_spy_fail_and_killed}			Spy Killed During Mission
+{mission_spy_fail}					Spy Mission Failure
+{mission_assassinate_fail_and_killed}			Assassin Slain By Bodyguards
+{mission_assassinate_fail}				Assassin Misses Target
+{mission_sabotage_fail_and_killed}			Spy Killed In Sabotage Attempt
+{mission_sabotage_fail}				Sabotage Attempt Fails
+{settlement_occupied}				Settlement Occupied
+{settlement_enslaved}				Settlement Enslaved
+{settlement_exterminated}				Settlement Exterminated
+{banner_lost_warning}				Eagle Lost In Combat
+{banner_lost_final}				Legionary Eagle Lost!
+{banner_captured}				An Eagle of Rome
+{building_repair_complete}				Repair Complete
+{historic_event}					Historic Event
+{races_held}					Races Held
+{player_faction_richest}				Richest Faction
+{player_faction_strongest}				Strongest Faction
+{player_faction_advanced}				Most Advanced Faction
+{player_faction_largest}				Largest Faction
+{building_sabotaged}				Sabotage!
+{players_army_destroyed}				All Is Lost
+{character_dies_suspicious}				Suspicious Death of Important Figure
+{character_dies_disaster}				Disaster Costs Life of Important Figure
+{exterminate_populace}				Resistance is Futile!
+{upgrade_settlement_to_town}			Settlement Expands
+{upgrade_settlement_to_large_town}			Town Expands
+{upgrade_settlement_to_city}			Town Grows
+{upgrade_settlement_to_large_city}			City Expands
+{upgrade_settlement_to_huge_city}			City Grows
+{multiturn_path_blocked}			Path Blocked
+{retraining_complete}			Retraining Complete
+{senate_office_gained}		Senate Office Gained
+{senate_office_lost}		Senate Office Lost
+{war_declared_non_player}		War Declared
+{mission_sabotage_fail_and_killed}			Agent Killed In Sabotage Attempt
+{players_army_destroyed}				Fallen Heroes All!
+{agent_detected_and_expelled}			Agent Found!
+{building_lost_battle}				Building Lost
+{character_dies_natural}			A Worthy Life Ends
+{building_captured_by_allies}			Allies Capture Building
+{marian_reform}					THIS TEXT SHOULD BE REPLACED BY TEXT FROM ANOTHER FILE AND SHOULDNT BE LOCALISED
+{settlement_bribed}				Settlement Bribed!
+{army_bribed}					Turncoat Army!
+{character_bribed}					Despicable Treachery!
+{betrayed}					Betrayed!
+{fort_bribed}					Garrison of Traitors!
+{outlawed}				THIS TEXT SHOULD NEVER APPEAR AND DOESN'T NEED TRANSLATING
+{civil_war_possible}		A Chance For Power
+{civil_war}				THIS TEXT SHOULD NEVER APPEAR AND DOESN'T NEED TRANSLATING
+{player_lose_warning}		Defeat Imminent
+{senate_election_results}	Senate Offices Assigned
+{transgression}			Transgression
+{senate_election_results_no_offices_gained}	No Senate Offices Assigned
+{senate_congratulation_message}	A Triumph For Rome
+{your_machine_needs_upgrading}	Reinforcements Delayed?
+{character_dies_suspicious}		Assassinated
+{small_army_disbands}				Enemy Army Routs
+{faction_defeated_by_player}			Faction Destroyed
+{small_army_disbands_loser}			Your Forces Melt Away
+{your_machine_needs_upgrading_ai_to_reinforce}	Enemies Reinforcements Delayed?
+{new_eastern_emperor}		A New Augustus for Constantinople
+{new_western_emperor}		A New Augustus for Rome
+{new_eastern_ceasar}		A New Caesar for Constantinople
+{new_western_ceasar}		A New Caesar for Rome
+{shadow_faction_appears}		A New Faction Emerges
+{eastern_shadow_faction}		A New Roman Empire in the East?
+{western_shadow_faction}		A New Western Roman Empire?
+{shadow_faction_destroyed}		Pretenders Destroyed
+{emergent_faction_appears}		A New Faction Emerges
+{new_barbarian_horde}		A People in Flight
+{horde_settles}			A New Homeland
+{horde_in_your_region}		The Hordes Arrive
+{city_sacked}			Plundered!
+{dominant_religion}		A Powerful Faith
+{roman_empire_reunited}		The Roman Empire is Reborn!
+{settlement_razed}		Settlement Sacked
+{rebels_victorious}			The Old Order Collapses!
+{hun_hording}			The Huns are coming!
+{huns_hording}			A Storm from the East!
+{disaster_report}			Civil Disorder
+{city_gained_through_revolt}	Loyalist Revolt
+{character_rebels}				A Traitor To Our People
+{character_joins_through_rebellion}		A Convert to Our Cause
+{script_prompt}	[PLACEHOLDER]
+{rebel_revolt_surpressed}Faction Destroyed
+{rebel_revolt_suppressed}Faction Destroyed
+{rebel_revolt_supressed}Faction Destroyed
+#for @Culture in @Get.AllCultures():
+{rebel_revolt_suppressed_@{Culture.Id}}Faction Destroyed
+{rebel_revolt_surpressed_@{Culture.Id}}Faction Destroyed
+{rebel_revolt_supressed_@{Culture.Id}}Faction Destroyed
+#end

@@ -1,0 +1,211 @@
+skin
+{
+	african
+	{
+		male data/characters/skin_textures/african_m_skin.tga 1 6 14
+		female data/characters/skin_textures/african_f_skin.tga 1 10 12
+	}
+	arabic
+	{
+		male data/characters/skin_textures/arabic_m_skin.tga 3 10 15
+		female data/characters/skin_textures/arabic_f_skin.tga 1 5 13
+	}
+	berber
+	{
+		male data/characters/skin_textures/arabic_m_skin.tga 3 10 15
+		female data/characters/skin_textures/arabic_f_skin.tga 1 5 13
+	}
+	caucasian
+	{
+		male data/characters/skin_textures/caucasian_m_skin.tga 3 11 13
+		female data/characters/skin_textures/caucasian_f_skin.tga 1 6 15
+	}
+	eastasian
+	{
+		male data/characters/skin_textures/eastasian_m_skin.tga 1 8 13
+		female data/characters/skin_textures/eastasian_f_skin.tga 1 7 14
+	}
+	egyptian
+	{
+		male data/characters/skin_textures/egyptian_m_skin.tga 0 8 15
+		female data/characters/skin_textures/egyptian_f_skin.tga 1 6 13
+	}
+	indian
+	{
+		male data/characters/skin_textures/indian_m_skin.tga 2 10 15
+		female data/characters/skin_textures/indian_f_skin.tga 2 8 13
+	}
+	mediterranean
+	{
+		male data/characters/skin_textures/mediterranean_m_skin.tga 1 11 15
+		female data/characters/skin_textures/mediterranean_f_skin.tga 1 9 12
+	}
+}
+
+ethnicities
+{
+	african
+	{
+		hair_styles ( 13, 5.0 ), ( 16, 35.0 ), ( 17, 35.0 ), ( -1, 25.0 )
+		female_hair ( 7, 75.0 ), ( -1, 25.0 )
+		beard_styles ( 2, 25.0 ), ( 3, 20.0 ), ( 4, 20.0 ), ( -1, 35.0 )
+		hair_color ( black, 100.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+	arabic
+	{
+		hair_styles ( 0, 10.0 ), ( 1, 6.0 ), ( 4, 16.0 ), ( 9, 21.0 ), ( 11, 21.0 ), ( 13, 21.0 ), ( -1, 5.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 5.0 )
+		beard_styles ( 1, 5.0 ), ( 4, 15.0 ), ( 5, 15.0 ), ( 6, 15.0 ), ( 9, 5.0 ), ( 12, 15.0 ), ( 13, 15.0 ), ( -1, 15.0 )
+		hair_color ( black, 80.0 ), ( dark_brown, 20.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+	berber
+	{
+		hair_styles ( 0, 10.0 ), ( 1, 6.0 ), ( 4, 16.0 ), ( 9, 21.0 ), ( 11, 21.0 ), ( 13, 21.0 ), ( -1, 5.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 5.0 )
+		beard_styles ( 1, 5.0 ), ( 4, 15.0 ), ( 5, 15.0 ), ( 6, 15.0 ), ( 9, 5.0 ), ( 12, 15.0 ), ( 13, 15.0 ), ( -1, 15.0 )
+		hair_color ( black, 80.0 ), ( dark_brown, 20.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+	caucasiandark
+	{
+		hair_styles ( 1, 8.0 ), ( 2, 12.0 ), ( 3, 12.0 ), ( 4, 10.0 ), ( 9, 10.0 ), ( 10, 10.0 ), ( 13, 15.0 ), ( 14, 15.0 ), ( -1, 8.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 8.0 )
+		beard_styles ( 1, 15.0 ), ( 4, 15.0 ), ( 5, 20.0 ), ( 6, 15.0 ), ( 10, 25.0 ), ( -1, 10.0 )
+		hair_color ( black, 25.0 ), ( dark_brown, 55.0 ), ( light_brown, 20.0 )
+		aged_hair_color ( white, 100.0 )
+	}
+
+	berserker
+	{
+		hair_styles ( 1, 8.0 ), ( 2, 12.0 ), ( 3, 12.0 ), ( 4, 10.0 ), ( 9, 10.0 ), ( 10, 10.0 ), ( 13, 15.0 ), ( 14, 15.0 ), ( -1, 8.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 8.0 )
+		beard_styles ( 4, 35.0 ), ( 5, 35.0 ), ( 6, 30.0 )
+		hair_color ( light_brown, 50.0 ), ( blond, 35.0 ), ( ginger, 15.0 )
+		aged_hair_color ( white, 100.0 )
+	}
+
+	caucasian
+	{
+		hair_styles ( 1, 8.0 ), ( 2, 12.0 ), ( 3, 12.0 ), ( 4, 10.0 ), ( 9, 10.0 ), ( 10, 10.0 ), ( 13, 15.0 ), ( 14, 15.0 ), ( -1, 8.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 8.0 )
+		beard_styles ( 1, 15.0 ), ( 4, 15.0 ), ( 5, 20.0 ), ( 6, 15.0 ), ( 10, 25.0 ), ( -1, 10.0 )
+		hair_color ( light_brown, 50.0 ), ( blond, 35.0 ), ( ginger, 15.0 )
+		aged_hair_color ( white, 100.0 )
+	}
+
+	eastasian
+	{
+		hair_styles ( 1, 12.0 ), ( 3, 17.0 ), ( 4, 17.0 ), ( 9, 14.0 ), ( 10, 6.0 ), ( 11, 12.0 ), ( 13, 12.0 ), ( -1, 10.0 )
+		female_hair ( 6, 50.0 ), ( 7, 40.0 ), ( -1, 10.0 )
+		beard_styles ( 1, 10.0 ), ( 4, 10.0 ), ( 7, 5.0 ), ( 8, 20.0 ), ( 9, 15.0 ), ( 11, 20.0 ), ( -1, 20.0 )
+		hair_color ( black, 100.0 )
+		aged_hair_color ( white, 100.0 )
+	}
+
+	egyptian
+	{
+		hair_styles ( 4, 4.0 ), ( 8, 15.0 ), ( 13, 8.0 ), ( 16, 20.0 ), ( 17, 23.0 ), ( -1, 30.0 )
+		female_hair ( 6, 40.0 ), ( 7, 30.0 ), ( -1, 30.0 )
+		beard_styles ( 2, 15.0 ), ( 3, 10.0 ), ( 4, 10.0 ), ( 7, 40.0 ), ( -1, 25.0 )
+		hair_color ( black, 100.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+	mediterranean
+	{
+		hair_styles ( 0, 15.0 ), ( 1, 10.0 ), ( 3, 15.0 ), ( 8, 10.0 ), ( 9, 10.0 ), ( 11, 16.0 ), ( 12, 15.0 ), ( -1, 9.0 )
+		female_hair ( 6, 50.0 ), ( 7, 46.0 ), ( -1, 9.0 )
+		beard_styles ( 1, 5.0 ), ( 4, 10.0 ), ( 5, 10.0 ), ( 6, 5.0 ), ( -1, 70.0 )
+		hair_color ( black, 50.0 ), ( dark_brown, 30.0 ), ( light_brown, 20.0 )
+		aged_hair_color ( white, 100.0 )
+	}
+
+	north_african
+	{
+		hair_styles ( 4, 20.0 ), ( 9, 20.0 ), ( 11, 20.0 ), ( 13, 20.0 ), ( 16, 5.0 ), ( 17, 10.0 ), ( -1, 5.0 )
+		female_hair ( 6, 50.0 ), ( 7, 45.0 ), ( -1, 5.0 )
+		beard_styles ( 2, 12.0 ), ( 3, 12.0 ), ( 4, 12.0 ), ( 5, 12.0 ), ( 6, 12.0 ), ( 12, 7.0 ), ( 13, 8.0 ), ( -1, 25.0 )
+		hair_color ( black, 100.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+	indian
+	{
+		hair_styles ( 3, 20.0 ), ( 4, 15.0 ), ( 5, 15.0 ), ( 9, 13.0 ), ( 13, 13.0 ), ( 15, 20.0 ), ( -1, 4.0 )
+		female_hair ( 6, 50.0 ), ( 7, 46.0 ), ( -1, 4.0 )
+		beard_styles ( 1, 10.0 ), ( 5, 10.0 ), ( 6, 15.0 ), ( 9, 15.0 ), ( 11, 5.0 ), ( 12, 2.5 ), ( 13, 2.5 ), ( -1, 40.0 )
+		hair_color ( black, 80.0 ), ( dark_brown, 20.0 )
+		aged_hair_color ( grey, 100.0 )
+	}
+
+}
+
+
+region
+{
+#for @Region in @Get.AllRegions():
+    @Region.IdRegion
+    {
+		variant
+		{
+			ethnicity african
+			distribution @Region.DistAfrican
+		}
+		variant
+		{
+			ethnicity arabic
+			distribution @Region.DistArabic
+		}
+		variant
+		{
+			ethnicity berber
+			distribution @Region.DistBerber
+		}
+		variant
+		{
+			ethnicity caucasiandark
+			distribution @Region.DistCaucasianDark
+		}
+		variant
+		{
+			ethnicity berserker
+			distribution @Region.DistBerserker
+		}
+		variant
+		{
+			ethnicity caucasian
+			distribution @Region.DistCaucasian
+		}
+		variant
+		{
+			ethnicity eastasian
+			distribution @Region.DistEastAsian
+		}
+		variant
+		{
+			ethnicity egyptian
+			distribution @Region.DistEgyptian
+		}
+		variant
+		{
+			ethnicity mediterranean
+			distribution @Region.DistMediterranean
+		}
+		variant
+		{
+			ethnicity north_african
+			distribution @Region.DistNorthAfrican
+		}
+		variant
+		{
+			ethnicity indian
+			distribution @Region.DistIndian
+		}
+    }
+#end
+}

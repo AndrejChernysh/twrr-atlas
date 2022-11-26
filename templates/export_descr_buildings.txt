@@ -1,0 +1,56 @@
+tags
+{
+#for @Tag in @Get.AllExclusiveTags():     @Tag
+#end
+}
+
+#for @Tag in @Get.AllExclusiveTags():
+alias no_other_@Tag
+{
+    requires no_building_tagged @Tag queued
+}
+#end
+
+#for @BuildingChain in @Get.AllBuildingChains():
+building @BuildingChain.Id
+{
+    classification @BuildingChain.Classification
+    @BuildingChain.getPossibleExclusiveTag()
+    icon @BuildingChain.Icon
+    levels @BuildingChain.getLevelsBuildingIdString(" ")
+    {
+    #for @Building in @BuildingChain.getLevelsBuilding():
+        @Building.Id @Building.getRequiresString()
+        {
+            capability
+            {
+            #for @Unit in @Building.getUnitsRecruitableHere():
+            recruit "@Unit.Id" 0 @Unit.GetRequiredStringNoBonus()
+            #end
+            #for @Unit in @Building.getUnitsRecruitableHereWithBonus():
+            recruit "@Unit.Id" 1 @Unit.GetRequiredStringWithBonus()
+            #end
+            #for @Capability in @Building.getCapabilityStringsExRecruit():
+            @Capability
+            #end
+            }
+            faction_capability
+            {
+            #for @FactionWideCapability in @Building.FactionWideCapabilities: @FactionWideCapability
+            #end
+            }
+            construction @Building.getConstructionTurns()
+            cost @Building.getConstructionCost()
+            settlement_min @Building.getSettlementLevel().Id
+            upgrades
+            {
+                @Building.getNextLevelBuildingId()
+            }
+        }
+    #end
+    }
+    plugins
+    {
+    }
+}
+#end

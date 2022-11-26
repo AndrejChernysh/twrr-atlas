@@ -1,0 +1,14 @@
+"campaign list":
+[
+	{
+		"menu": "UI_FERAL_LP_CAMPAIGN",
+		"title": "UI_FERAL_CAMPAIGN",
+		"folder": "imperial_campaign",
+		"features":
+		{
+			"loyalty":  true,
+			"religion": true,
+			"rebel merchants": false,
+		},
+	},
+],

@@ -1,0 +1,69 @@
+;;triggers will only be checked at the end of each round (including the start of the game)
+
+;;to set triggers at game start in the descr_strat, do:
+; trigger_status <trigger name>, true
+
+;;to set it for all factions. If it's not a global event, you can also do
+; trigger_status <trigger name>, <faction_name>, true
+
+;;to set it for individual factions
+
+;;if you want to enable/disable a particular event, do
+; set_major_event_enabled <trigger name>, false
+
+;;also note that the message uses the marian reforms message as a base, in case you were wondering
+
+"major events":
+[
+	"marian_reforms":
+	{
+		;;which factions should get notifications about this
+		"affects": [ "all", ],
+
+		;;should this event be tracked globally or individually for each affected faction
+		;;(if false, notifications will only be sent to the faction that meets the condition)
+		"global": true,
+
+		;;when general units are assigned to this event, should it take priority over general units assigned to other events with lower priorities
+		;;the default general units have a priority of 0, so make sure to set that
+		"priority": 100,
+
+		;;settings for when the event is activated
+		"activation":
+		{
+			;;script for the trigger conditions for this event
+			;;NOTE: if individual is true, this will be triggered from a faction scope, otherwise it won't be scoped at all
+			"trigger conditions": "major_event_scripts/marian_reforms_trigger.txt",
+
+			;;when this triggers, switch these units to those units
+			"unit switches":
+			{
+				;;bodyguard swaps
+				"barb chieftain cavalry early dacian": "barb chieftain cavalry dacian",
+				"barb chieftain cavalry early gaul": "barb chieftain cavalry gaul",
+				"barb chieftain cavalry early german": "barb chieftain cavalry german",
+				"barb chieftain cavalry early scythian": "barb scythian general scythian",
+				"carthaginian general's cavalry early": "carthaginian general's cavalry",
+				"egyptian general's bodyguard early": "egyptian general's bodyguard",
+				"greek general's guard cavalry early": "greek general's guard cavalry",
+				"thracian bodyguard early": "thracian bodyguard",
+				"roman generals guard cavalry early": "roman generals guard cavalry",
+			},
+
+			;;should we also use a large panel in addition to a news message
+			;;also triggers the near victory music
+			"use big panel": true,
+
+			;;title and body, as defined in text/major_events.txt
+			"title":	"SMT_A_NEW_MAN__GAIUS_MARIUS_TITLE",
+			"body":		"SMT_A_NEW_MAN__GAIUS_MARIUS_BODY",
+
+			;;image, as redirected per-culture in ui/<culture name>/eventpics
+			"image":	"marian_reform",
+		},
+		;;settings for when the event is deactivated (needs to be activated first ofc)
+		"deactivation":
+		{
+		},
+	},
+],

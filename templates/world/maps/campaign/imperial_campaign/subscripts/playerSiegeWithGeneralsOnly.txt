@@ -1,0 +1,8 @@
+monitor_event ScrollOpened ScrollOpened seige_scroll
+    if I_CompareCounter LastSelectedArmyHasGeneral = 0
+        and I_CompareCounter SiegeScrollOpen = 1
+        ui_flash_start siege_end_button circle
+        @Scripter.ClickOn("siege_end_button")
+        @Scripter.MessageInfo("Siege aborted", "You can only lay siege to a settlement with armies led by a general.")
+    end_if
+end_monitor

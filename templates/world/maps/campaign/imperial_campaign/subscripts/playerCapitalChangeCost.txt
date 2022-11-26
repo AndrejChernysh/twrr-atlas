@@ -1,0 +1,4 @@
+monitor_event ButtonPressed ButtonPressed make_capital
+    console_command add_money @Get.Setting("CostPlayerCapitalChange")
+	@Scripter.MessageInfo("A New Capital", "Our capital has been relocated. A factions capital should always be as close to the center of all your regions. The further a region is away from your capital, the more likely that region is to rebel against you. Keep in mind, that changing your capital costs you denarii every time.")
+end_monitor

@@ -1,0 +1,28 @@
+
+{generic_repair}REPAIR
+{generic_repair_desc}REPAIR DAMAGE TO BUILDING
+{generic_repair_desc_short}REPAIR DAMAGE TO BUILDING
+{generic_dismantle}DISMANTLE
+{generic_dismantle_desc}DISMANTLE BUILDING, RECOUPING SOME OF THE VALUE OF THE BUILDING
+{generic_dismantle_desc_short}DISMANTLE BUILDING, RECOUPING SOME OF THE VALUE OF THE BUILDING
+{settlement_upgrade_fort}UPGRADE FORT
+{settlement_upgrade_fort_desc}UPGRADE FORT
+{settlement_upgrade_fort_desc_short}UPGRADE FORT
+#for @settlementlevel in @Get.AllSettlementLevels():
+{settlement_upgrade_@{settlementlevel.Id}}UPGRADE @{settlementlevel.Name.upper()}
+{settlement_upgrade_@{settlementlevel.Id}_desc}UPGRADE @{settlementlevel.Name.upper()}
+{settlement_upgrade_@{settlementlevel.Id}_desc_short}UPGRADE @{settlementlevel.Name.upper()}
+#end
+#for @building in @Get.AllBuildings():
+{@{building.Id}}@{building.Name}
+{@{building.Id}_desc}@{building.Description}
+{@{building.Id}_desc_short}@{building.DescriptionShort}
+#end
+#for @chain in @Get.AllBuildingChains():
+{@{chain.Id}_name}@{chain.Name}
+#end
+#for @Faction in @Get.AllFactions():
+    #for @Building in @Get.AllBuildingsWithVariableName():
+{@{Building.Id}_@{Faction.Id}}@{Building.getNameEvaluated(@Faction)}
+    #end
+#end

@@ -1,0 +1,33 @@
+
+monitor_event FactionTurnStart TrueCondition
+and FactionIsLocal
+    for_each settlement in world
+        destroy_building "local" aiassist
+    end_for
+end_monitor
+
+monitor_event FactionTurnEnd TrueCondition
+and FactionIsLocal
+    for_each settlement in world
+        #for @Faction in @Get.AllFactions():
+            if not SettlementIsLocal
+            and I_SettlementOwner local = @Faction.Id
+            and I_NumberOfSettlements @Faction.Id < 15
+                console_command create_building local aiassist
+            end_if
+        #end
+    end_for
+end_monitor
+
+monitor_event FactionTurnEnd TrueCondition
+and FactionIsLocal
+    for_each settlement in world
+        if not SettlementIsLocal
+            #for @BuildingId in ["muster_field", "ammo_depot"]:
+                destroy_building "local" @BuildingId
+                console_command create_building local @BuildingId
+            #end
+        end_if
+    end_for
+    terminate_monitor
+end_monitor

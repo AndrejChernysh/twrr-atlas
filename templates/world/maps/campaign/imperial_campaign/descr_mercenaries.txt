@@ -1,0 +1,6 @@
+#for @MercPoolId in @Get.AllMercPoolIds():
+pool @MercPoolId
+    regions @Get.RegionIdsByMercPoolIdSpaceSeparatedString(@MercPoolId)
+    #for @MPU in @Get.MercPoolUnitsByMercPoolId(@MercPoolId):unit @MPU.UnitId,	exp @MPU.Exp cost @Get.UnitById(@MPU.UnitId).CostRecruit replenish @MPU.ReplenishMin - @MPU.ReplenishMax max @MPU.Cap initial @MPU.Initial
+    #end
+#end

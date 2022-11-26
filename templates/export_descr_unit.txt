@@ -1,0 +1,155 @@
+;
+; RTW Unit Details spreadsheet-generated unit descriptions
+;
+
+;Data entries are as follows
+; Type          The internal name of the unit. Note this not necessarily the same as the on screen name
+; dictionary        The tag used to look up the on screen name
+;
+;Category and class define the rough type of the unit. They're used for setting some
+;default attributes and for determining where units go in formation amongst other things
+; category      infantry, cavalry, siege, handler, ship or non_combatant
+; class         light, heavy, missile or spearmen
+;
+; voice_type        Used to determine the type of voice used by the unit
+; JNF 2021-05-04 - Now possible to optionally specify a culture override to force a unit to use a specific culture's lines, rather
+;                  than the previous system where it was relying on a unit having a selection voiceine
+;
+; soldier       Name of the soldier model to use (from descr_models_battle.txt)
+;               followed by the number of ordinary soldiers in the unit
+;               followed by the number of extras (pigs dogs, elephants, chariots artillery pieces etc attached to the unit)
+;               followed by the collision mass of the men. 1.0 is normal. Only applies to infantry
+; officer       Name of officer model. There may be up to 0-3 officer lines per unit
+; ship          Type of ship used if applicable
+; engine        Type of siege engine used by unit
+; animal        The type of non ridden on animals used by the unit
+; mount         Type of animal or vehicle ridden on
+;
+; mount_effect  Factors to add when in combat against enemy units that have the specified mounts
+;               Up to three factors may be specified, which may be classes of mount, or specific types
+;
+; attributes    A miscellanious list of attributes and abilities the unit may have. Including
+;               sea_faring = can board ships
+;               hide_forest, hide_improved_forest, hide_long_grass, hide_anywhere   = defines where the unit can hide
+;               can_sap = Can dig tunnels under walls
+;               frighten_foot, frighten_mounted = Cause fear to certain nearby unit types
+;               can_run_amok = Unit may go out of control when riders lose control of animals
+;               general_unit = The unit can be used for a named character's bodyguard
+;               cantabrian_circle = The unit has this special ability
+;               no_custom = The unit may not be selected in custom battles
+;               command = The unit carries a legionary eagle, and gives bonuses to nearby units
+;               mercenary_unit = The unit is s mercenary unit available to all factions
+;
+; formation     soldier spacing (in metres) side to side, then front to back for close formation
+;               followed by the same measurements in loose formation.
+;               followed by the default number of ranks for the unit
+;               followed by the formations possible for the unit. One or two of
+;               square, horde, phalanx, testudo, or wedge
+;
+; stat_health   Hit points of man, followed by hit points of mount or attached animal (if applicable)
+;               Ridden horses and camels do not have separate hit points
+;
+;Details of unit's primary weapon. If the unit has a missile weapon it must be the primary
+; stat_pri      From left to right
+;               attack factor
+;               attack bonus factor if charging
+;               missile type fired (no if not a missile weapon type)
+;               range of missile
+;               amount of missile ammunition per man
+;               Weapon type = melee, thrown, missile, or siege_missile
+;               Tech type = simple, other, blade, archery or siege
+;               Damage type = piercing, blunt, slashing or fire. (I don't think this is used anymore)
+;               Sound type when weapon hits = none, knife, mace, axe, sword, or spear
+;               Min delay between attacks (in 1/10th of a second)
+; stat_pri_attr
+;               primary weapon attributes any or all of
+;                   ap = armour piercing. Only counts half of target's armour
+;                   bp = body piercing. Missile can pass through men and hit those behind
+;                   spear = Used for long spears. Gives bonuses fighting cavalry, and penalties against infantry
+;                   long_pike = Use very long pikes. Phalanx capable units only
+;                   short_pike = Use shorter than normal spears. Phalanx capable units only
+;                   prec = Missile weapon is only thrown just before charging into combat
+;                   thrown = The missile type if thrown rather than fired
+;                   launching = attack may throw target men into the air
+;                   area = attack affects an area, not just one man
+;
+;Details of secondary weapons. If the unit rides on, or has attached animals or vehicles
+;then the secondary weapon details refer to their attacks. If the unit has missile weapons
+;the secondary weapon will be the one used for melee
+;If the unit has a primary melee weapon, it may have a secondary side arm
+; stat_sec      As per stat_pri     (a value of no means no secondary weapon)
+; stat_sec_attr As per stat_pri_attr
+;
+; stat_pri_armour   Details of the man's defences
+;                   armour factor
+;                   defensive skill factor (not used when shot at)
+;                   shield factor (only used for attacks from the front of left)
+;                   sound type when hit = flesh, leather, wood, or metal
+;					Sound type when shield hit = flesh, leather, wood, or metal (optional)
+;
+; stat_sec_armour   Details of animal's or vehicle's defenses (note riden horses do not have a separate defence)
+;                   As per stat_pri_armour, except that the shield entry is ommited
+;
+; stat_heat         Extra fatigue suffered by the unit in hot climates
+;
+; stat_ground       Combat modifiers on different ground types. From left to right
+;                   scrub, sand, forest, snow
+; stat_mental       The base morale level, followed by discipline and training
+;                   discipline may be normal, low, disciplined or imperuous. Impetuous units may charge without orders
+;                   training determines how tidy the unit's formation is
+;
+; stat_charge_distance Distance from the enemy that the unit will begin charging
+; stat_fire_delay   Ectra delay over that imposed by animation, hetween volleys
+;
+; stat_food         No longer used
+; stat_cost         Number of turns to build,
+;                   Cost of unit to construct
+;                   Cost of upkeep
+;                   Cost of upgrading weapons
+;                   Cost of upgrading armour
+;                   Cost for custom battles
+;
+; recruit_priority_offset	% modifier for AI recruitment priority (optional)
+;
+; stat_ownership    List of factions and cultures that may have this unit
+; ethnicity <faction> <home_region> <hair_color> <tattoo_color> (opt)<don't_allow_mixed> (opt)<don't_allow_regional> (opt)<don't_allow_custom>
+
+; JNF 2021-02-10 - I've removed all instances of the "General_1" voice type from here. If a general
+;                  is contained within a unit they will override the voice anyway, and this way I
+;                  can make it so that if a general dies the unit voice will change to reflect that,
+;                  which I think is cool, at least.
+; JNF 2021-04-15 - I've corrected all the animal IDs here to actually be IDs, since they were previously just using classes which were then turned into ids
+;                  which meant it was impossible to add new animals, which is fixed now
+; JNF 2021-05-27 - FEDU and EDU have been reunited together into just EDU, now to define a remastered unit you just need to have a partial definition:
+;                  add a line for "rebalance_statblock" after the unit you want to edit, then redefine everything between "soldier" and "stat_cost"
+;                  (minus "officer", "mount", "ship", "engine", or "animal") and the game will automatically duplicate the other properties.
+; JNF 2021-10-06 - Replaced all instances of general_unit_upgrade with general_unit_upgrade "marian_reforms", so we can specify multiple general unit upgrades
+#for @Unit in @Get.AllUnits():
+type             @Unit.Id
+dictionary       @Unit.Dictionary      ; @Unit.Name
+category         @Unit.Category
+class            @Unit.Class
+voice_type       @Unit.VoiceType
+voice_indexes    0 1 2
+soldier          @Unit.Soldier, @Unit.NumberSoldiers, @Unit.NumberExtras, @Unit.CollisionMass @Unit.GetExportDescrUnitShipEntry() @Unit.GetExportDescrUnitAnimalEntry() @Unit.GetExportDescrUnitEngineEntry() @Unit.GetExportDescrUnitMountEntries()
+attributes       @Unit.GetAttributesAsCommaDelimitedString()
+formation        @Unit.Formation
+stat_health      @Unit.HP, @Unit.HPExtras
+stat_pri         @Unit.StatPri
+stat_pri_attr    @Unit.StatPriAttr
+stat_sec         @Unit.StatSec
+stat_sec_attr    @Unit.StatSecAttr
+stat_pri_armour  @Unit.StatPriArmour
+stat_sec_armour  @Unit.StatSecArmour
+stat_heat        @Unit.StatHeat
+stat_ground      @Unit.StatGround
+stat_mental      @Unit.Morale, @Unit.Discipline, @Unit.Training
+stat_charge_dist @Unit.StatChargeDist
+stat_fire_delay  0
+stat_food        60, 300
+stat_cost        @Unit.Turns, @Unit.CostRecruit, @Unit.CostUpkeep, @Unit.CostUpgradeWeapons, @Unit.CostUpgradeArmour, @Unit.CostRecruit
+ownership        @Unit.GetOwnershipAsCommaDelimitedString()
+#for @Faction in @Unit.GetOwnershipFactions():ethnicity @Faction.Id, @Faction.getCapital().IdRegion
+#end
+@Unit.GetIsFemaleOrEmpty()
+#end
